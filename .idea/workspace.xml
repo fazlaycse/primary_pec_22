@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be88953a-4c70-49e9-81a5-8b2ca03a3d69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/site/resources/views/entry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mb2zUy3vXNL6IfVq35hDyEdVWP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/site/resources/views" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\primary_pec\site\resources\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/site/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be88953a-4c70-49e9-81a5-8b2ca03a3d69" name="Default Changelist" comment="" />
+      <created>1609748233127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609748233127</updated>
+      <workItem from="1609748234272" duration="3857000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
