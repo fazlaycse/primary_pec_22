@@ -9,7 +9,7 @@
     <div class="col-md-4">Organized by BANBEIS</div>
     <div class="col-md-4">Developed by ICT Division</div>
 </div>
-<div class="row"><a href="entry"><button type="button" class="btn btn-primary">Open The Form</button></a> </div>
+<div class="row"><a href="first_page"><button type="button" class="btn btn-primary">Open The Form</button></a> </div>
 <script src="js/app.js" defer></script>
 </body>
 </html>

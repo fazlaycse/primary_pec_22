@@ -1,0 +1,57 @@
+/*custom fonts*/
+@font-face {
+    font-family: 'Kalpurush';
+    src: url('https://fonts.maateen.me/kalpurush/Kalpurush.eot');
+    src: url('https://fonts.maateen.me/kalpurush/Kalpurush.woff') format('woff'),
+    url('https://fonts.maateen.me/kalpurush/Kalpurush.ttf') format('truetype'),
+    url('https://fonts.maateen.me/kalpurush/Kalpurush.svg#Kalpurush') format('svg'),
+    url('https://fonts.maateen.me/kalpurush/Kalpurush.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.kalpurus {
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+}
+/*custom fonts*/
+
+
+.label-text {
+    background: gray;
+    color: white;
+    padding: 5px;
+}
+.heading {
+    background: #6cb2eb;
+    padding: 10px
+}
+.first_body {
+    background:#cfe1e8;
+}
+.pull-right{
+    float:right;
+}
+
+/*Navigation bar*/
+.topnav {
+    overflow: hidden;
+    background-color: #3a5b84;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
