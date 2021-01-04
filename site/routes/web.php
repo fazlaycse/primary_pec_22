@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/entry', function () {
     return view('entry');
 });
+Route::resource('institute', 'InstituteController');
