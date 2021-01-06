@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2679798-9e50-4f6a-8d94-f1557a1a1087" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
@@ -102,6 +103,7 @@
       <change afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,6 +271,7 @@
       <workItem from="1609748150960" duration="76000" />
       <workItem from="1609752520133" duration="1450000" />
       <workItem from="1608025986273" duration="323000" />
+      <workItem from="1608026322482" duration="5635000" />
       <workItem from="1608026322482" duration="1299000" />
       <workItem from="1609756825664" duration="10627000" />
       <workItem from="1609819020583" duration="23851000" />

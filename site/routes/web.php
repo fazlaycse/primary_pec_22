@@ -26,3 +26,4 @@ Route::get('/second_page', function () {
 Route::get('/third_page', function () {
     return view('third_page');
 });
+Route::resource('institute', 'InstituteController');
