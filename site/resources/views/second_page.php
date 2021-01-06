@@ -39,10 +39,17 @@
     </div>
     <hr>
     <div class="topnav">
-        <a class="" href="#">প্রথম পাতা</a>
+        <a href="#">প্রথম পাতা</a>
         <a href="#" class="active">দ্বিতীয় পাতা</a>
-        <a href="#" class="">তৃতীয় পাতা</a>
-        <a href="#">চতুর্থ পাতা</a>
+        <a href="#">তৃতীয় পাতা</a>
+        <a href="#">প্রাক-প্রাথমিক</a>
+        <a href="#">প্রথম শ্রেণি</a>
+        <a href="#">দ্বিতীয় শ্রেণি</a>
+        <a href="#">তৃতীয় শ্রেণি</a>
+        <a href="#">চতুর্থ শ্রেণি</a>
+        <a href="#">পঞ্চম শ্রেণি</a>
+        <a href="#">ষষ্ঠ-অষ্টম শ্রেণি</a>
+        <a href="#">শিক্ষক ও কর্মচারী</a>
     </div>
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">

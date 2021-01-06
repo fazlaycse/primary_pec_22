@@ -26,4 +26,28 @@ Route::get('/second_page', function () {
 Route::get('/third_page', function () {
     return view('third_page');
 });
+Route::get('/pre_primary', function () {
+    return view('pre_primary');
+});
+Route::get('/class_one', function () {
+    return view('class_one');
+});
+Route::get('/class_two', function () {
+    return view('class_two');
+});
+Route::get('/class_three', function () {
+    return view('class_three');
+});
+Route::get('/class_four', function () {
+    return view('class_four');
+});
+Route::get('/class_five', function () {
+    return view('class_five');
+});
+Route::get('/class_six', function () {
+    return view('class_six');
+});
+Route::get('/teacher_info', function () {
+    return view('teacher_info');
+});
 Route::resource('institute', 'InstituteController');
