@@ -34,7 +34,7 @@
     <hr>
     <div class="form_name">
         <div class="heading col-md-12">
-            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম <h6>
+            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
         </div>
     </div>
     <hr>
@@ -46,7 +46,7 @@
     </div>
 
     <div class="first_body">
-        <div class="institute_info border" style="padding:10px">
+        <div class="institute_info border" style="padding:10px; font-size:14px">
             <form class="form-group">
                 <div class="table_heading">
                     ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:<br>
@@ -109,9 +109,103 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <div class="table_heading">
+                    ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:<br>
+                </div>
+
+        <div class="row border" style="margin:0px">
+            <div class="col-md-1 border justify-content-center align-self-center">
+                বিদ্যালয়ের শিক্ষক সংখ্যা
+            </div>
+            <div class="col-6 border">
+                <div class="teacher_number">
+                    <table class="table teacher">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ধরণ</th>
+                            <th scope="col">প্রধান শিক্ষক</th>
+                            <th scope="col">সহকারী শিক্ষক</th>
+                            <th scope="col">প্রাক-প্রাথমিক শিক্ষক</th>
+                            <th scope="col">দপ্তরী কাম প্রহরী</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">অনুমোদিত</th>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">সংযুক্তি(In)</th>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">সংযুক্তি(Out)</th>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">কর্মরত</th>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">অবসর/পিআরএল**</th>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">মৃত/ইস্তফা**</th>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="col-md-1 border justify-content-center align-self-center">
+                ভবন ও কক্ষ সংক্রান্ত তথ্য
+            </div>
+            <div class="col-4 border justify-content-center align-self-center">
+                <div class="building_number">
+                    <table class="table teacher">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ভবন সংখ্যা</th>
+                            <th scope="col">কক্ষ সংখ্যা</th>
+                            <th scope="col">ওয়াশব্লক সংখ্যা</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                            <td><input type="number" style="width: 50px" name=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+        </form>
     </div>
-    </form>
+    </div>
 
     <div class="pull-right">
         <a href="second_page">
@@ -120,6 +214,21 @@
             </button>
         </a>
     </div>
+    <div style="clear: both">
+
+    </div>
+
+    <hr>
+    <div class="footer">
+        <div class="row footer">
+            <div class="col-md-12"
+                 style="text-align:center; padding:5px; font-family: 'Lucida Sans'; background-color: #a1cbef;">
+                <span> &copy; Powered by ICT Division, BANBEIS</span> <br>
+                <span> Ministry of Education</span>
+            </div>
+        </div>
+    </div>
+    <hr>
 </div>
 
 <script src="js/app.js" defer></script>
