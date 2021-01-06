@@ -4,18 +4,19 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class institute extends Model
+class Institute extends Model
 {
-    //
     protected $fillable = [
         'emis_code',
         'inst_type',
         'name_bangla',
         'name_english',
-        'zila',
-        'upazila_thana',
-        'union_municipal',
+        'division_id',
+        'district_id',
+        'thana_id',
+        'union_id',
         'village_word',
         'cluster'
     ];
+
 }

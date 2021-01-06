@@ -14,17 +14,19 @@ class CreateInstitutesTable extends Migration
     public function up()
     {
         Schema::create('institutes', function (Blueprint $table) {
-            $table->id('id');
+            $table->id();
             $table->timestamps();
             $table->integer('emis_code');
             $table->integer('inst_type');
             $table->string('name_bangla');
             $table->string('name_english');
-            $table->integer('zila');
-            $table->integer('upazila_thana');
-            $table->string('union_municipal');
+            $table->integer('division_id');
+            $table->integer('district_id');
+            $table->integer('thana_id');
+            $table->integer('union_id');
             $table->string('village_word');
             $table->string('cluster');
+
         });
     }
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0aed4c7b66470008a27652cb12efe6a4",
+    "content-hash": "cf6edbbc009c54a648ade0d119e373fe",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4483,6 +4483,130 @@
                 }
             ],
             "time": "2020-11-12T00:07:28+00:00"
+        },
+        {
+            "name": "yajra/laravel-oci8",
+            "version": "v7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-oci8.git",
+                "reference": "0d0db3c21a15438ee4bd610f6a0c585cb45fd974"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-oci8/zipball/0d0db3c21a15438ee4bd610f6a0c585cb45fd974",
+                "reference": "0d0db3c21a15438ee4bd610f6a0c585cb45fd974",
+                "shasum": ""
+            },
+            "require": {
+                "ext-oci8": ">=2.0.0",
+                "ext-pdo": "*",
+                "illuminate/database": "^7",
+                "illuminate/support": "^7",
+                "php": "^7.2.5",
+                "yajra/laravel-pdo-via-oci8": "^2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^8.4|^9.0",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\Oci8\\Oci8ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Yajra\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Oracle DB driver for Laravel 4|5|6|7 via OCI8",
+            "keywords": [
+                "laravel",
+                "oci8",
+                "oracle",
+                "pdo_oci"
+            ],
+            "support": {
+                "issues": "https://github.com/yajra/laravel-oci8/issues",
+                "source": "https://github.com/yajra/laravel-oci8/tree/v7.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yajra",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/yajra",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-03-04T02:15:19+00:00"
+        },
+        {
+            "name": "yajra/laravel-pdo-via-oci8",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/pdo-via-oci8.git",
+                "reference": "93610843b7abe975413288bcc4adb347edefb4b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/pdo-via-oci8/zipball/93610843b7abe975413288bcc4adb347edefb4b8",
+                "reference": "93610843b7abe975413288bcc4adb347edefb4b8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "PDO userspace driver proxying calls to PHP OCI8 driver",
+            "support": {
+                "issues": "https://github.com/yajra/pdo-via-oci8/issues",
+                "source": "https://github.com/yajra/pdo-via-oci8/tree/v2.2.0"
+            },
+            "time": "2020-12-11T12:29:18+00:00"
         }
     ],
     "packages-dev": [
@@ -6565,5 +6689,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
