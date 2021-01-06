@@ -26,4 +26,14 @@ Route::get('/second_page', function () {
 Route::get('/third_page', function () {
     return view('third_page');
 });
-Route::resource('institute', 'InstituteController');
+
+/*class controller  [done by : suzon@1/6/2021*/
+Route::get('classes/create', 'ClassesController@create');
+Route::post('classes/create', 'ClassesController@create');
+
+Route::get('classes/read', 'ClassesController@read');
+
+Route::get('classes/update', 'ClassesController@update');
+Route::post('classes/update', 'ClassesController@update');
+
+/*class controller*/
