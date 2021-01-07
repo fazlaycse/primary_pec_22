@@ -53,6 +53,8 @@ Route::get('/teacher_info', function () {
 /*Page View:end*/
 
 /*class controller  [done by : suzon@1/6/2021*/
+Route::get('classes/', 'ClassesController@index');
+
 Route::get('classes/create', 'ClassesController@create');
 Route::post('classes/create', 'ClassesController@create');
 
@@ -60,5 +62,8 @@ Route::get('classes/read', 'ClassesController@read');
 
 Route::get('classes/update', 'ClassesController@update');
 Route::post('classes/update', 'ClassesController@update');
+
+Route::post('classes/delete', 'ClassesController@delete');
+Route::get('classes/delete', 'ClassesController@delete');
 
 /*class controller*/

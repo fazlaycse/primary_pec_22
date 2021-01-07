@@ -8,6 +8,11 @@ use Session;
 
 class ClassesController extends Controller
 {
+    public function index()
+    {
+        return view('classes.index');
+    }
+
     public function create(Request $request)
     {
         if ($request->method() == 'POST') {
@@ -57,8 +62,24 @@ class ClassesController extends Controller
         return view('classes.update')->with(compact('getRow'));
     }
 
-    public function delete()
+    public function delete(Request $request)
     {
+        $id = $request->input('id');
+
+        try {
+            $customer = Classes::findOrFail($id);
+        } catch (\Exception $exception) {
+            Session::flash('message', 'No record found to delete!');
+            return redirect('classes/read');
+        }
+
+        if (Classes::destroy($id)) {
+            Session::flash('message', 'Data Deleted Successfully!');
+            return redirect('classes/read');
+        } else {
+            Session::flash('message', 'Something went wrong!');
+            return redirect('classes/read');
+        }
 
     }
 }

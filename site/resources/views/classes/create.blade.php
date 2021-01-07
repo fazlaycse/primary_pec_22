@@ -3,6 +3,6 @@
 @endif
 <form action="create" method="post">
     @csrf <!-- {{ csrf_field() }} -->
-   Name: <input type="text" name="name">
+ Add Class  Name: <input type="text" name="name">
     <button type="submit" value="submit">submit</button>
 </form>

@@ -13,7 +13,7 @@
             <td>{{ $row->id }} <input type="hidden" value="{{$row->id }}" name="id"/> </td>
             <td>{{ $row->name  }}</td>
             <td><a href="update?id={{$row->id}}">Update</a></td>
-            <td><a href="delete?id={{$row->id}}">Update</a></td>
+            <td><a href="delete?id={{$row->id}}">Delete</a></td>
         </tr>
     @endforeach
 </table>
