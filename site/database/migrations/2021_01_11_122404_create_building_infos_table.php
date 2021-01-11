@@ -23,6 +23,7 @@ class CreateBuildingInfosTable extends Migration
             $table->integer('bld_condition');
             $table->string('bld_projt_name');
             $table->integer('bld_ramp_yn');
+            $table->integer('year');
             $table->integer('institute_id');
             $table->foreign('institute_id')->references('id')->on('institutes');
             $table->integer('building_id');
