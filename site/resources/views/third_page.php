@@ -53,9 +53,9 @@
     <div class="body_table" style="background-color: #b0d4f1;">
         <form class="form-group">
             <div class="table_third_heading">
-                <span style="font-weight: bold; font-size: 18px"> ৪. বিদ্যালয়ের ভবনের তথ্য: </span>
+                <span style="font-weight: bold; font-size: 17px"> ৩. বিদ্যালয়ের ভবনের তথ্য: </span> <span style=" font-size: 15px">(শুধুমাত্র বিদ্যালয়ের ধরন: ০১, ০৪, ২৬ এবং ৯৯ এর জন্য প্রযোজ্য) </span>
                 <div class="table_third_one">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" style="text-align: center">
                         <thead class="thead-dark">
                         <tr>
                             <th scope="col">মোট ভবন সংখ্যা</th>
@@ -169,10 +169,369 @@
                 </div>
             </div>
             <hr>
+            <div class="table_third_heading2new">
+                <span style="font-weight: bold; font-size: 17px"> ৪. বিদ্যালয়ের স্যানিটেশন ব্যবস্থা </span> <span style="font-size: 15px "> (ওয়াশব্লক ব্যতীত): </span>
+                <div class="table_third_two">
+                    <table class="table table-bordered" style="text-align: center">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" style="width: 100px">টয়লেটের ক্রমিক নম্বর</th>
+                            <th scope="col">ব্যবহারকারী</th>
+                            <th scope="col">বর্তমান অবস্থা</th>
+                            <th scope="col">পরিস্কারক দ্রব্যাদি আছে কি?</th>
+                            <th scope="col">Hand-Wash/সাবান/হারপিক/ফিনাইল ব্যবহার হয় কি না?</th>
+                            <th scope="col">টয়লেটে পানির সরবরাহ</th>
+                            <th scope="col">কোন প্রকল্প/প্রোগ্রামে নির্মিত হয়েছে?</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="col">১.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">২.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">৩.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">৪.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">৫.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">৬.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">৭.</th>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক </option>
+                                    <option value="4">মহিলা শিক্ষিকা </option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px">
+                                    <option selected value="1">আছে </option>
+                                    <option value="2">নাই</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:90px">
+                                    <option selected value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩ </option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
             <div class="table_third_heading2">
                 <span style="font-weight: bold; font-size: 18px"> ৫. বিদ্যালয়ের ওয়াশব্লক ব্যবস্থা (বিদ্যালয়ের ওয়াশব্লক নির্মিত বলতে নির্মাণকাজ সম্পন্ন পূর্বক ব্যবহার উপযোগী বুঝাবে): </span>
                 <div class="table_third_two">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" style="text-align: center">
                         <thead class="thead-dark">
                         <tr>
                             <th scope="col">ওয়াশ ব্লকের সংখ্যা</th>

@@ -57,7 +57,7 @@
         <div class="institute_info border" style="padding:10px; font-size:14px">
             <form class="form-group">
                 <div class="table_heading">
-                    ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:<br>
+                    <span style="font-weight: bold; font-size: 15px"> ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:</span>
                 </div>
                 <div class="row">
                     <div class="col-6 form-group form-inline">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="row border" style="margin:0px">
                     <div class="col-md-1 border text-center">
-                        বিদ্যালয়ের নাম (গেজেট অনুযায়ী):
+                        <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের নাম (গেজেট অনুযায়ী):</span>
                     </div>
                     <div class="col-11 border">
                         <div class="row form-group form-inline">
@@ -89,9 +89,7 @@
                 </div>
 
                 <br>
-                <div class="table_heading">
-                    বিদ্যালয়ের ঠিকানা:<br>
-                </div>
+
                 <div class="row border" style="margin:0px">
 
                     <div class="col-6 border">
@@ -119,12 +117,12 @@
                 </div>
                 <br>
                 <div class="table_heading">
-                    ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:<br>
+                    <span style="font-weight: bold; font-size: 15px"> ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:</span>
                 </div>
 
         <div class="row border" style="margin:0px">
             <div class="col-md-1 border justify-content-center align-self-center">
-                বিদ্যালয়ের শিক্ষক সংখ্যা
+                <span style="font-weight: bold; font-size: 16px">বিদ্যালয়ের শিক্ষক সংখ্যা </span>
             </div>
             <div class="col-6 border">
                 <div class="teacher_number">
@@ -188,7 +186,7 @@
             </div>
 
             <div class="col-md-1 border justify-content-center align-self-center">
-                ভবন ও কক্ষ সংক্রান্ত তথ্য
+                <span style="font-weight: bold; font-size: 16px"> ভবন ও কক্ষ সংক্রান্ত তথ্য </span>
             </div>
             <div class="col-4 border justify-content-center align-self-center">
                 <div class="building_number">
