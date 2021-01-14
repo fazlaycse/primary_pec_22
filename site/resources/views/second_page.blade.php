@@ -154,18 +154,14 @@
             </div>
         </div>
     </div>
-
     <div class="pull-right">
-        <a href="third_page">
-            <button type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px">পরবর্তী
-                পাতা
-            </button>
-        </a>
+
+        <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
     <div style="clear: both">
 
     </div>
-
+    </form>
     <hr>
     <div class="footer">
         <div class="row footer">

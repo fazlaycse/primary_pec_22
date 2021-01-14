@@ -60,7 +60,7 @@
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">
             <form class="form-group" method="POST" action="institutteadd">
-                @csrf <!-- {{ csrf_field() }} -->
+
                 {{ csrf_field() }}
                 <div class="table_heading">
                     <span style="font-weight: bold; font-size: 15px"> ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:</span>
@@ -126,8 +126,7 @@
 
     <div class="pull-right">
 
-            <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward
-">
+            <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
     <div style="clear: both">
 
@@ -146,7 +145,10 @@
     </div>
     <hr>
 </div>
+</div>
+</div>
 
-<script src="js/app.js" defer></script>
+
+<script src="js/app.js" type="text/javascript" defer></script>
 </body>
 </html>

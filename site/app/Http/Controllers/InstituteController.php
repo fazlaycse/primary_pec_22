@@ -33,6 +33,8 @@ class InstituteController extends Controller
                 return redirect('/second_page');
             } catch (\Exception $e) {
                 // do task when error
+                echo $e->getMessage();
+                exit();
                 Session::flash('message', 'Something went wrong!');
                 return redirect('/first_page');
             }
