@@ -54,8 +54,7 @@
         <form class="form-group">
             <div class="teacher_info border" style="background-color: #b0d4f1;">
                 <div class="teacher_number">
-                    <span
-                        style="font-weight: bold; font-size: 18px"> ১০. বিদ্যালয়ের শিক্ষক ও কর্মচারী সংক্রান্ত তথ্য: </span>
+                    <span style="font-weight: bold; font-size: 18px"> ১০. বিদ্যালয়ের শিক্ষক ও কর্মচারী সংক্রান্ত তথ্য: </span>
                     <br> <br>
                     <span style="font-size: 18px"> ক) বিদ্যালয়ের শিক্ষক ও কর্মচারীর সংখ্যাগত তথ্য: </span>
                     <div class="table_third_three">
@@ -168,23 +167,38 @@
                                 <th scope="col">দীর্ঘ মেয়াদি</th>
                             </tr>
                             <tr>
-                                <td>#</td>
+                                <td style="width: 10px">#</td>
                                 <td>
-                                    Name in Bangla : <input type="text" placeholder="নাম"><br>
-                                    Name in English : <input type="text" placeholder="Name">
+                                    Name in Bangla : <input type="text" style="width: 120px;" placeholder="নাম"><br>
+                                    Name in English : <input type="text"  style="width: 120px;" placeholder="Name">
                                 </td>
                                 <td><button>Date</button></td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
+                                <td><select class="custom-select" style="width:55px">
+                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="2">না</option>
+                                    </select></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
+                                <td><input type="text" style="width: 90px; align-content: center" name=""></td>
+                                <td><select class="custom-select" style="width:55px">
+                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="2">না</option>
+                                    </select></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
+                                <td><select class="custom-select" style="width:95px">
+                                        <option selected value="1">ডিগ্রী(পাশ)</option>
+                                        <option value="2">স্নাতক(সম্মান)</option>
+                                        <option value="3">স্নাতকোত্তর</option>
+                                        <option value="4">উচ্চ মাধ্যমিক</option>
+                                        <option value="5">মাধ্যমিক</option>
+                                    </select></td>
+                                <td><button>Date</button></td>
+                                <td><select class="custom-select" style="width:55px">
+                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="2">না</option>
+                                    </select></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
                             </tr>
                             </tbody>
                         </table>
