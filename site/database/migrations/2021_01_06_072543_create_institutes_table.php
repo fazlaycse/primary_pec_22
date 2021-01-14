@@ -22,8 +22,8 @@ class CreateInstitutesTable extends Migration
             $table->string('name_english');
             $table->integer('division_id');
             $table->integer('district_id');
-            $table->integer('thana_id');
-            $table->integer('union_id');
+            $table->string('thana_id');
+            $table->string('union_id');
             $table->string('village_word');
             $table->string('cluster');
 

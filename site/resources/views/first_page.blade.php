@@ -55,18 +55,20 @@
 
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">
-            <form class="form-group">
+            <form class="form-group" method="POST" action="institutteadd">
+                @csrf <!-- {{ csrf_field() }} -->
+                {{ csrf_field() }}
                 <div class="table_heading">
                     <span style="font-weight: bold; font-size: 15px"> ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:</span>
                 </div>
                 <div class="row">
                     <div class="col-6 form-group form-inline">
                         <label for="school_code" class="label-text">বিদ্যালয়ের EMIS কোড:</label> &nbsp;
-                        <input type="text" style="width:auto" class="form-control" name="school_code" id="school_code">
+                        <input type="text" style="width:auto" class="form-control" name="emis_code" id="school_code">
                     </div>
                     <div class="col-4 form-group form-inline">
                         <label class="label-text" for="school_type">বিদ্যালয়ের ধরণ:</label> &nbsp;
-                        <input type="text" style="width:auto" class="form-control" name="school_type" id="school_type">
+                        <input type="text" style="width:auto" class="form-control" name="inst_type" id="school_type">
                     </div>
                 </div>
                 <div class="row border" style="margin:0px">
@@ -76,12 +78,12 @@
                     <div class="col-11 border">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="bangla_name" style="width:80px">বাংলায়: </label> &nbsp;
-                            <input type="text" style="width:450px" class="form-control" name="bangla_name"
+                            <input type="text" style="width:450px" class="form-control" name="name_bangla"
                                    id="bangla_name">
                         </div>
                         <div class="row form-group form-inline">
                             <label class="label-text" for="english_name" style="width:80px"> In English </label> &nbsp;
-                            <input type="text" style="width:450px" class="form-control" name="english_name"
+                            <input type="text" style="width:450px" class="form-control" name="name_english"
                                    id="english_name">
                         </div>
                     </div>
@@ -95,18 +97,18 @@
                     <div class="col-6 border">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="thana" style="width:120px">উপজেলা/থানা: </label> &nbsp;
-                            <input type="text" style="width:250px" class="form-control" name="thana" id="thana">
+                            <input type="text" style="width:250px" class="form-control" name="thana_id" id="thana">
                         </div>
                         <div class="row form-group form-inline"
                              style="border-top: 1px solid darkgrey; padding-top: 5px;">
                             <label class="label-text" for="village" style="width:120px"> গ্রাম/ওয়ার্ড: </label> &nbsp;
-                            <input type="text" style="width:250px" class="form-control" name="village" id="village">
+                            <input type="text" style="width:250px" class="form-control" name="village_word" id="village">
                         </div>
                     </div>
                     <div class="col-6 border">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="union" style="width:150px"> ইউনিয়ন/পৌরসভা: </label> &nbsp;
-                            <input type="text" style="width:250px" class="form-control" name="union" id="union">
+                            <input type="text" style="width:250px" class="form-control" name="union_id" id="union">
                         </div>
                         <div class="row form-group form-inline"
                              style="border-top: 1px solid darkgrey; padding-top: 5px;">
@@ -119,6 +121,8 @@
                 <div class="table_heading">
                     <span style="font-weight: bold; font-size: 15px"> ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:</span>
                 </div>
+                <input type="submit" value="Submit"/>
+            </form>
 
         <div class="row border" style="margin:0px">
             <div class="col-md-1 border justify-content-center align-self-center">
@@ -209,7 +213,6 @@
                 </div>
             </div>
         </div>
-        </form>
     </div>
     </div>
 

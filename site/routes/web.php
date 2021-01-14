@@ -67,3 +67,7 @@ Route::post('classes/delete', 'ClassesController@delete');
 Route::get('classes/delete', 'ClassesController@delete');
 
 /*class controller*/
+
+Route::post('institutteadd', 'InstituteController@create');
+Route::get('institutteadd', 'InstituteController@create');
+//Route::get('classes/delete', 'ClassesController@delete');
