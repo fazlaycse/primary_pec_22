@@ -1,3 +1,6 @@
+@if(Session::has('message'))
+    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
 <html>
 <head>
 
@@ -43,6 +46,7 @@
         <a href="#" class="active">প্রথম পাতা</a>
         <a href="#">দ্বিতীয় পাতা</a>
         <a href="#">তৃতীয় পাতা</a>
+        <a href="#">চতুর্থ পাতা</a>
         <a href="#">প্রাক-প্রাথমিক</a>
         <a href="#">প্রথম শ্রেণি</a>
         <a href="#">দ্বিতীয় শ্রেণি</a>
@@ -118,114 +122,17 @@
                     </div>
                 </div>
                 <br>
-                <div class="table_heading">
-                    <span style="font-weight: bold; font-size: 15px"> ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:</span>
-                </div>
-                <input type="submit" value="Submit"/>
-            </form>
 
-        <div class="row border" style="margin:0px">
-            <div class="col-md-1 border justify-content-center align-self-center">
-                <span style="font-weight: bold; font-size: 16px">বিদ্যালয়ের শিক্ষক সংখ্যা </span>
-            </div>
-            <div class="col-6 border">
-                <div class="teacher_number">
-                    <table class="table teacher">
-                        <thead class="thead-light">
-                        <tr>
-                            <th scope="col">ধরণ</th>
-                            <th scope="col">প্রধান শিক্ষক</th>
-                            <th scope="col">সহকারী শিক্ষক</th>
-                            <th scope="col">প্রাক-প্রাথমিক শিক্ষক</th>
-                            <th scope="col">দপ্তরী কাম প্রহরী</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">অনুমোদিত</th>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">সংযুক্তি(In)</th>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">সংযুক্তি(Out)</th>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">কর্মরত</th>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">অবসর/পিআরএল**</th>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">মৃত/ইস্তফা**</th>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-            </div>
-
-            <div class="col-md-1 border justify-content-center align-self-center">
-                <span style="font-weight: bold; font-size: 16px"> ভবন ও কক্ষ সংক্রান্ত তথ্য </span>
-            </div>
-            <div class="col-4 border justify-content-center align-self-center">
-                <div class="building_number">
-                    <table class="table teacher">
-                        <thead class="thead-light">
-                        <tr>
-                            <th scope="col">ভবন সংখ্যা</th>
-                            <th scope="col">কক্ষ সংখ্যা</th>
-                            <th scope="col">ওয়াশব্লক সংখ্যা</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                            <td><input type="number" style="width: 50px" name=""></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
     <div class="pull-right">
-        <a href="second_page">
-            <button type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px">পরবর্তী
-                পাতা
-            </button>
-        </a>
+
+            <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward
+">
     </div>
     <div style="clear: both">
 
     </div>
+    </form>
 
     <hr>
     <div class="footer">

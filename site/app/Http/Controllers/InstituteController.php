@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Institute;
+use Session;
+
 
 class InstituteController extends Controller
 {
@@ -27,15 +29,14 @@ class InstituteController extends Controller
             $table->cluster = $request->cluster;
             try {
                 $table->save(); // returns false
-               echo "done";
+                Session::flash('message', 'Data Saved Successfully!');
+                return redirect('/second_page');
             } catch (\Exception $e) {
                 // do task when error
-              echo $e->getMessage();   // insert query
-                echo "Note done";
-
+                Session::flash('message', 'Something went wrong!');
+                return redirect('/first_page');
             }
         }
-
     }
     public function read(){
 

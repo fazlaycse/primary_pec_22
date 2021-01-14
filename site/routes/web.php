@@ -26,6 +26,9 @@ Route::get('/second_page', function () {
 Route::get('/third_page', function () {
     return view('third_page');
 });
+Route::get('/fourth_page', function () {
+    return view('fourth_page');
+});
 Route::get('/pre_primary', function () {
     return view('pre_primary');
 });
