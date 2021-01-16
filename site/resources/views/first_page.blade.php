@@ -59,7 +59,7 @@
 
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">
-            <form class="form-group" method="POST" action="institutteadd">
+            <form class="form-group" method="POST" action="instituteadd">
 
                 {{ csrf_field() }}
                 <div class="table_heading">

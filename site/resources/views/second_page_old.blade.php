@@ -71,7 +71,7 @@
                             <th scope="row"><label for="academic_function_yn">বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে
                                     কি? </label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="acdmic_function_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -80,7 +80,7 @@
                         <tr>
                             <th scope="row"><label for="">বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -89,7 +89,7 @@
                         <tr>
                             <th scope="row"><label for="">বিদ্যালয়ের গ্রেড </label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="school_grade">
                                     <option selected value="1">এ</option>
                                     <option value="2">বি</option>
                                     <option value="3">সি</option>
@@ -102,7 +102,7 @@
                         <tr>
                             <th scope="row"><label for="">নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="safe_water_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -112,7 +112,7 @@
                             <th scope="row"><label for="">বিদ্যালয়ের ভবন সমূহ নিজস্ব সম্পত্তিতে প্রতিষ্ঠিত? </label>
                             </th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="blding_own_land_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -122,7 +122,7 @@
                             <th scope="row"><label for="">বিদ্যালয়টি আশ্রয়কেন্দ্র কাম বিদ্যালয় হিসেবে নির্মিত
                                     কি?</label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="cycln_shelter_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -130,12 +130,12 @@
                         </tr>
                         <tr>
                             <th scope="row"><label for="">রেজিস্ট্রেশন/ নিবন্ধনের সন </label></th>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px" name="reg_year"></td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="">বিদ্যুৎ সংযোগ আছে কি? </label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="electricity_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -145,7 +145,7 @@
                             <th scope="row"><label for="">বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত করতে)
                                     জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="sntz_facility_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -155,7 +155,7 @@
                             <th scope="row"><label for="">একই ক্যাম্পাসে/ভবনে একাধিক স্কুল পরিচালিত হয় কি না? </label>
                             </th>
                             <td>
-                                <select class="custom-select" style="width:70px">
+                                <select class="custom-select" style="width:70px" name="mltpl_inst_cmps_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -172,7 +172,7 @@
                         <tr>
                             <th scope="row"><label for="academic_function_yn">শিখন মাধ্যম? </label></th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="learning_media">
                                     <option selected value="1">বাংলা</option>
                                     <option value="2">ইংরেজি ভার্সন</option>
                                     <option value="3">উভয়</option>

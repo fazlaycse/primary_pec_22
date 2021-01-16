@@ -71,6 +71,10 @@ Route::get('classes/delete', 'ClassesController@delete');
 
 /*class controller*/
 
-Route::post('institutteadd', 'InstituteController@create');
-Route::get('institutteadd', 'InstituteController@create');
+Route::post('instituteadd', 'InstituteController@create');
+Route::get('instituteadd', 'InstituteController@create');
+Route::post('institute_summaries_add', 'InstituteSummariesController@create');
+Route::get('institute_summaries_add', 'InstituteSummariesController@create');
+Route::post('general_infos_add', 'GeneralInfosController@create');
+Route::get('general_infos_add', 'GeneralInfosController@create');
 //Route::get('classes/delete', 'ClassesController@delete');

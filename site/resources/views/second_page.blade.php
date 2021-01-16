@@ -59,7 +59,8 @@
 
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">
-
+            <form class="form-group" method="POST" action="institute_summaries_add">
+                {{ csrf_field() }}
             <div class="table_heading">
                 <span style="font-weight: bold; font-size: 15px"> ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:</span>
             </div>
@@ -82,45 +83,45 @@
                             <tbody>
                             <tr>
                                 <th scope="row">অনুমোদিত</th>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="onu_head_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="onu_ast_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="onu_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="onu_sg"></td>
                             </tr>
                             <tr>
                                 <th scope="row">সংযুক্তি(In)</th>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="att_in_head_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="att_in_ast_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="att_in_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="att_in_sg"></td>
                             </tr>
                             <tr>
                                 <th scope="row">সংযুক্তি(Out)</th>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="att_out_hd_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="att_out_ast_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="att_out_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="att_out_sg"></td>
                             </tr>
                             <tr>
                                 <th scope="row">কর্মরত</th>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="wk_hd_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="wk_ast_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="wk_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="working_sg"></td>
                             </tr>
                             <tr>
                                 <th scope="row">অবসর/পিআরএল**</th>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="prl_hd_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="prl_ast_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="prl_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="prl_sg"></td>
                             </tr>
                             <tr>
                                 <th scope="row">মৃত/ইস্তফা**</th>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="dd_hd_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="dd_ast_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="dd_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 50px" name="dead_sg"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -143,25 +144,24 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
-                                <td><input type="number" style="width: 50px" name=""></td>
+                                <td><input type="number" style="width: 50px" name="building_number"></td>
+                                <td><input type="number" style="width: 50px" name="room_number"></td>
+                                <td><input type="number" style="width: 50px" name="washblock_number"></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </div>
-        </div>
     </div>
     <div class="pull-right">
 
         <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
+    </form>
     <div style="clear: both">
 
     </div>
-    </form>
+
     <hr>
     <div class="footer">
         <div class="row footer">
