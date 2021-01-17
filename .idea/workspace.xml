@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8675d66-f9f5-4757-87a9-b21a7a769c4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_five.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_five.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_four.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_four.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_six.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_six.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_three.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_three.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_two.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_two.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/fourth_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/fourth_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/pre_primary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/pre_primary.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/teacher_info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/teacher_info.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="d8675d66-f9f5-4757-87a9-b21a7a769c4c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,6 +147,9 @@
       <path value="$PROJECT_DIR$/site/vendor/hamcrest/hamcrest-php" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
@@ -237,7 +228,7 @@
       <workItem from="1610729496495" duration="16511000" />
       <workItem from="1610867276943" duration="2620000" />
       <workItem from="1610874737139" duration="534000" />
-      <workItem from="1610875518774" duration="9265000" />
+      <workItem from="1610875518774" duration="9567000" />
     </task>
     <servers />
   </component>
