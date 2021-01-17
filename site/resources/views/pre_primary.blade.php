@@ -37,11 +37,11 @@
     </div>
     <hr>
     <div class="topnav">
-        <a href="#" class="active">প্রথম পাতা</a>
+        <a href="#" >প্রথম পাতা</a>
         <a href="#">দ্বিতীয় পাতা</a>
         <a href="#">তৃতীয় পাতা</a>
         <a href="#">চতুর্থ পাতা</a>
-        <a href="#">প্রাক-প্রাথমিক</a>
+        <a href="#" class="active">প্রাক-প্রাথমিক</a>
         <a href="#">প্রথম শ্রেণি</a>
         <a href="#">দ্বিতীয় শ্রেণি</a>
         <a href="#">তৃতীয় শ্রেণি</a>
@@ -56,7 +56,7 @@
             <form class="form-group">
                 <div class="student_info1">
                     <div class="table_heading">
-                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ৮. শিক্ষার্থী সংক্রান্ত: প্রাক-প্রাথমিক শ্রেণি</h5></span>
+                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ৮. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">প্রাক-প্রাথমিক শ্রেণি</span></h5></span>
                     </div>
 
                     <div class="row border" style="margin:0px">
@@ -79,51 +79,51 @@
                                     <tbody>
                                     <tr>
                                         <th scope="row">চাকমা</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="cakma_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="cakma_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="cakma_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">মারমা</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="..." name="marma_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="marma_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="marma_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">ত্রিপুরা</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="tripura_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="tripura_girl"></td>
+                                        <td><input type="number" style="..." name="tripura_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">গারো</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="garo_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="garo_girl"></td>
+                                        <td><input type="number" style="..." name="garo_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">সাঁওতাল</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="..." name="saotal_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="saotal_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="saotal_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">মনিপুরি</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="monipuri_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="monipuri_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="monipuri_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">সাদরি (ওরাও)</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="sadri_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="sadri_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="sadri_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">অন্যান্য</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="other_ethnic_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="other_ethnic_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="other_ethnic_total"></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -239,7 +239,13 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুলরাবৃত্তি</th>
+                                        <th scope="row">২০১৯</th>
+                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">২০২০</th>
                                         <td><input type="number" style="width: 50px" name=""></td>
                                         <td><input type="number" style="width: 50px" name=""></td>
                                         <td><input type="number" style="width: 50px" name=""></td>
@@ -251,16 +257,18 @@
                         </div>
                     </div>
                 </div>
-            </form>
+
         </div>
     </div>
 
     <div class="pull-right">
-        <a href="class_one">
-            <button type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px">পরবর্তী পাতা
-            </button>
-        </a>
+
+        <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
+    <div style="clear: both">
+
+    </div>
+    </form>
     <div style="clear: both">
 
     </div>
