@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-6 border">
                     <div class="teacher_number">
-                        <table class="table teacher">
+                        <table class="table teacher" style="text-align: center">
                             <thead class="thead-light">
                             <tr>
                                 <th scope="col">ধরণ</th>

@@ -37,7 +37,7 @@
     </div>
     <hr>
     <div class="topnav">
-        <a href="#" class="active">প্রথম পাতা</a>
+        <a href="#">প্রথম পাতা</a>
         <a href="#">দ্বিতীয় পাতা</a>
         <a href="#">তৃতীয় পাতা</a>
         <a href="#">চতুর্থ পাতা</a>
@@ -48,14 +48,14 @@
         <a href="#">চতুর্থ শ্রেণি</a>
         <a href="#">পঞ্চম শ্রেণি</a>
         <a href="#">ষষ্ঠ-অষ্টম শ্রেণি</a>
-        <a href="#">শিক্ষক ও কর্মচারী</a>
+        <a href="#" class="active">শিক্ষক ও কর্মচারী</a>
     </div>
     <br>
     <div class="body_table">
         <form class="form-group">
             <div class="teacher_info border" style="background-color: #b0d4f1;">
                 <div class="teacher_number">
-                    <span style="font-weight: bold; font-size: 18px"> ১০. বিদ্যালয়ের শিক্ষক ও কর্মচারী সংক্রান্ত তথ্য: </span>
+                    <span style="font-weight: bold; font-size: 18px"> ১৫. বিদ্যালয়ের শিক্ষক ও কর্মচারী সংক্রান্ত তথ্য: </span>
                     <br> <br>
                     <span style="font-size: 18px"> ক) বিদ্যালয়ের শিক্ষক ও কর্মচারীর সংখ্যাগত তথ্য: </span>
                     <div class="table_third_three">
@@ -147,7 +147,7 @@
                                 <th rowspan="2" scope="col">১১</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="background-color: skyblue">
                             <tr>
                                 <th rowspan="2"></th>
                                 <th rowspan="2"></th>
@@ -208,14 +208,15 @@
                 </div>
             </div>
 
-        </form>
     </div>
     <div class="pull-right">
-        <a href="">
-            <button type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px">সাবমিট
-            </button>
-        </a>
+
+        <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
+    <div style="clear: both">
+
+    </div>
+    </form>
     <div style="clear: both">
 
     </div>

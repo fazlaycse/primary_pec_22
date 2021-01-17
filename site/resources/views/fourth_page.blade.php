@@ -104,13 +104,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building"></td>
+                            <td><input type="number" style="width: 70px" name="building_no"></td>
+                            <td><input type="number" style="width: 70px" name="storied_number"></td>
+                            <td><input type="number" style="width: 70px" name="estb_year"></td>
+                            <td><input type="number" style="width: 70px" name="bld_foundation"></td>
+                            <td><input type="number" style="width: 70px" name="room_number"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="bld_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -119,7 +120,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="bld_projt_name">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -128,20 +129,21 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="bld_ramp_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building"></td>
+                            <td><input type="number" style="width: 70px" name="building_no"></td>
+                            <td><input type="number" style="width: 70px" name="storied_number"></td>
+                            <td><input type="number" style="width: 70px" name="estb_year"></td>
+                            <td><input type="number" style="width: 70px" name="bld_foundation"></td>
+                            <td><input type="number" style="width: 70px" name="room_number"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="bld_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -150,7 +152,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="bld_projt_name">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -159,7 +161,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="bld_ramp_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -193,9 +195,11 @@
                                 <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
@@ -238,16 +242,18 @@
                         <tr>
                             <th scope="col">২.</th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -256,19 +262,19 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
@@ -286,16 +292,18 @@
                         <tr>
                             <th scope="col">৩.</th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -304,19 +312,19 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
@@ -334,16 +342,18 @@
                         <tr>
                             <th scope="col">৪.</th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -352,19 +362,19 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
@@ -382,16 +392,18 @@
                         <tr>
                             <th scope="col">৫.</th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -400,19 +412,19 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
@@ -430,16 +442,18 @@
                         <tr>
                             <th scope="col">৬.</th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -448,25 +462,25 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px"> <!-- new field NEEDED in DB-->
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -478,16 +492,18 @@
                         <tr>
                             <th scope="col">৭.</th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
+                                    <option value="3">বালক-বালিকা যৌথ</option>
+                                    <option value="4">সহ: শিক্ষক </option>
+                                    <option value="5">প্রধান শিক্ষক </option>
+                                    <option value="6">শিক্ষকদের যৌথ </option>
+                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="wsblk_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -496,19 +512,19 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
@@ -530,7 +546,7 @@
             </div>
             <hr>
             <div class="table_third_heading2">
-                <span style="font-weight: bold; font-size: 18px"> ৫. বিদ্যালয়ের ওয়াশব্লক ব্যবস্থা (বিদ্যালয়ের ওয়াশব্লক নির্মিত বলতে নির্মাণকাজ সম্পন্ন পূর্বক ব্যবহার উপযোগী বুঝাবে): </span>
+                <span style="font-weight: bold; font-size: 18px"> ৫. বিদ্যালয়ের ওয়াশব্লক ব্যবস্থা <span style="font-size: 15px">(বিদ্যালয়ের ওয়াশব্লক নির্মিত বলতে নির্মাণকাজ সম্পন্ন পূর্বক ব্যবহার উপযোগী বুঝাবে):</span> <span style="font-size: 14px; font-weight: normal"> ( শুধুমাত্র বিদ্যালয়ের ধরণ: ০১, ০৪ এবং ৯৯ এর জন্য প্রযোজ্য) </span> </span>
                 <div class="table_third_two">
                     <table class="table table-bordered" style="text-align: center">
                         <thead class="thead-dark">
@@ -547,10 +563,10 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="washblock_amount"></td>
+                            <td><input type="number" style="width: 70px" name="washblock_establishment_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="washblock_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
                                     <option value="3">পুরুষ শিক্ষক </option>
@@ -559,7 +575,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="washblock_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -568,35 +584,35 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="washblock_usedby_student_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="washblock_amount"></td>
+                            <td><input type="number" style="width: 70px" name="washblock_establishment_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="washblock_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
                                     <option value="3">পুরুষ শিক্ষক </option>
@@ -605,7 +621,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="washblock_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -614,35 +630,35 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="washblock_usedby_student_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="washblock_amount"></td>
+                            <td><input type="number" style="width: 70px" name="washblock_establishment_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="washblock_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
                                     <option value="3">পুরুষ শিক্ষক </option>
@@ -651,7 +667,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="washblock_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -660,35 +676,35 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="washblock_usedby_student_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="washblock_amount"></td>
+                            <td><input type="number" style="width: 70px" name="washblock_establishment_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="washblock_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
                                     <option value="3">পুরুষ শিক্ষক </option>
@@ -697,7 +713,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="washblock_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -706,35 +722,35 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="washblock_usedby_student_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="washblock_amount"></td>
+                            <td><input type="number" style="width: 70px" name="washblock_establishment_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="washblock_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
                                     <option value="3">পুরুষ শিক্ষক </option>
@@ -743,7 +759,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="washblock_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -752,35 +768,35 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="washblock_usedby_student_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="washblock_amount"></td>
+                            <td><input type="number" style="width: 70px" name="washblock_establishment_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="washblock_user">
                                     <option selected value="1">বালক</option>
                                     <option value="2">বালিকা</option>
                                     <option value="3">পুরুষ শিক্ষক </option>
@@ -789,7 +805,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="washblock_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">জরাজীর্ণ</option>
@@ -798,71 +814,25 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="washblock_usedby_student_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
                                     <option selected value="1">আছে </option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td>
-                                <select class="custom-select" style="width:90px">
-                                    <option selected value="1">বালক</option>
-                                    <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক </option>
-                                    <option value="4">মহিলা শিক্ষিকা </option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী </option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="custom-select" style="width:90px">
-                                    <option selected value="1">ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="custom-select" style="width:80px">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="custom-select" style="width:80px">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="custom-select" style="width:80px">
-                                    <option selected value="1">আছে </option>
-                                    <option value="2">নাই</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -892,7 +862,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >সরবরাহ বা সাপ্লাই </span></th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="supply_source_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">মোটামুটি</option>
                                     <option value="3">খারাপ</option>
@@ -901,21 +871,16 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="supply_repairable_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:120px">
-                                    <option selected value="1">আর্সেনিকমুক্ত</option>
-                                    <option value="2">আর্সেনিকযুক্ত</option>
-                                    <option value="3">আর্সেনিক দূষণ এলাকা</option>
-                                    <option value="4">পরীক্ষা করা হয়নি</option>
-                                </select>
+                                <!-- for tubewell only-->
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="supply_source_project">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -924,17 +889,17 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="supply_ecoli_test_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td></td> <!-- for tubewell only-->
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"> <span >নলকূপ </span></th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="..." name="tubewell_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">মোটামুটি</option>
                                     <option value="3">খারাপ</option>
@@ -943,13 +908,13 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="tubewell _ repairable_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:120px">
+                                <select class="custom-select" style="width:120px" name="tubewell _ arsenic_test_yn">
                                     <option selected value="1">আর্সেনিকমুক্ত</option>
                                     <option value="2">আর্সেনিকযুক্ত</option>
                                     <option value="3">আর্সেনিক দূষণ এলাকা</option>
@@ -957,7 +922,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="tubewell _project">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -966,17 +931,17 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="tubewell _ecoli_test_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px" name="" name="tubewell_salt_test"></td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"> <span >ফিল্টার </span></th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="filter_source_condition" >
                                     <option selected value="1">ভালো</option>
                                     <option value="2">মোটামুটি</option>
                                     <option value="3">খারাপ</option>
@@ -985,21 +950,16 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="filter_repairable_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:120px">
-                                    <option selected value="1">আর্সেনিকমুক্ত</option>
-                                    <option value="2">আর্সেনিকযুক্ত</option>
-                                    <option value="3">আর্সেনিক দূষণ এলাকা</option>
-                                    <option value="4">পরীক্ষা করা হয়নি</option>
-                                </select>
+                                <!-- for tubewell only-->
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="filter_source_project">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -1008,17 +968,17 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="filter_ecoli_test_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><!-- for tubewell only--></td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"> <span >অন্যান্য </span></th>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="other_source_condition">
                                     <option selected value="1">ভালো</option>
                                     <option value="2">মোটামুটি</option>
                                     <option value="3">খারাপ</option>
@@ -1027,21 +987,16 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="other_repairable_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:120px">
-                                    <option selected value="1">আর্সেনিকমুক্ত</option>
-                                    <option value="2">আর্সেনিকযুক্ত</option>
-                                    <option value="3">আর্সেনিক দূষণ এলাকা</option>
-                                    <option value="4">পরীক্ষা করা হয়নি</option>
-                                </select>
+                                <!-- for tubewell only-->
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="other_source_project">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>
@@ -1050,12 +1005,12 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="other_ecoli_test_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><!-- for tubewell only--></td>
                         </tr>
                         </tbody>
                     </table>
@@ -1063,7 +1018,7 @@
             </div>
             <hr>
             <div class="table_third_heading4">
-                <span style="font-weight: bold; font-size: 18px"> ৭. বিদ্যালয়ের তথ্য প্রযুক্তি, মাল্টিমিডিয়া ও অন্যান্য তথ্য: </span>
+                <span style="font-weight: bold; font-size: 18px"> ৭. বিদ্যালয়ের তথ্য প্রযুক্তি, মাল্টিমিডিয়া ও অন্যান্য তথ্য: <span style="font-size: 15px; font-weight: normal"> ( শুধুমাত্র বিদ্যালয়ের ধরণ: ০১, ০৪, ২৬ এবং ৯৯ এর জন্য প্রযোজ্য) </span></span>
                 <div class="table_third_four">
                     <table class="table table-bordered">
                         <thead class="thead-dark">
@@ -1079,31 +1034,31 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >বিদ্যালয়ের জন্য কম্পিউটার / ডেস্কটপ </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="desktop_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px" name="desktop_amount"></td>
+                            <td><input type="number" style="width: 70px" name="desktop_other_source_amount"></td>
+                            <td><input type="number" style="width: 70px" name="desktop_damage_amount"></td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"> <span >বিদ্যালয়ের জন্য ল্যাপটপ </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="laptop_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
+                            <td><input type="number" style="width: 70px" name="laptop _amount"></td>
+                            <td><input type="number" style="width: 70px" name="laptop _other_source_amount"></td>
+                            <td><input type="number" style="width: 70px" name="laptop _damage_amount"></td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"> <span >ইন্টারনেট সংযোগের ধরণ (ব্রডব্যান্ড-১/ওয়াইফাই-২/মডেম-৩/ব্যবস্থা না থাকলে-৪ লিখুন) </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="internet_type">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1114,7 +1069,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="ict_known_teacher_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1126,7 +1081,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >ডেস্কটপ/ল্যাপটপ শিখন-শিখানো কাজে ব্যবহৃত হয় কি </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="desktop_use_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1138,7 +1093,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> ইন্টারনেট শিখন-শিখানো কাজে ব্যবহৃত হয় কি  <span ></span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="internet_use_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1150,7 +1105,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >বিদ্যালয়ের শ্রেণিকক্ষে মাল্টিমিডিয়া ব্যবহার হয় কি</span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="multimedia_use_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1162,7 +1117,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >মাল্টিমিডিয়া বেইসড ক্লাসরুম আছে কি </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="multimedia_use_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1174,7 +1129,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span > মাল্টিমিডিয়া ইন্টারএক্টিভ ক্লাসরুম আছে কি </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="multimedia_interactive_classroom_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1186,7 +1141,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >সাউন্ড সিস্টেম আছে কি </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="sound_system_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1198,7 +1153,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"> <span >শিখন-শিখানো কাজে ইলেকট্রিক ডিভাইস ব্যবহৃত হয় কি না </span></th>
                             <td>
-                                <select class="custom-select" style="width:80px">
+                                <select class="custom-select" style="width:80px" name="electric_device_padagogy_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
@@ -1211,16 +1166,18 @@
                     </table>
                 </div>
             </div>
-        </form>
+
     </div>
 
 
     <div class="pull-right">
-        <a href="pre_primary">
-            <button type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px">পরবর্তী পাতা
-            </button>
-        </a>
+
+        <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
+    <div style="clear: both">
+
+    </div>
+    </form>
     <div style="clear: both">
 
     </div>

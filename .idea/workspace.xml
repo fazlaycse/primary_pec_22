@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8675d66-f9f5-4757-87a9-b21a7a769c4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/primary_pec.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/primary_pec.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/app/Http/Controllers/InstituteSummariesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/Http/Controllers/InstituteSummariesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/database/migrations/2021_01_07_113909_create_general_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/database/migrations/2021_01_07_113909_create_general_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/class_five.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_five.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/class_four.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_four.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/class_six.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_six.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/class_three.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_three.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/resources/views/class_two.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_two.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/first_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/first_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/fourth_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/fourth_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/fourth_page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/pre_primary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/pre_primary.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/resources/views/second_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/second_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/second_page_old.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/second_page_old.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/resources/views/teacher_info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/teacher_info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/resources/views/third_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/third_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +158,7 @@
       <workItem from="1610636137496" duration="3324000" />
       <workItem from="1610685818402" duration="17053000" />
       <workItem from="1610729496495" duration="16511000" />
+      <workItem from="1610867859552" duration="2556000" />
     </task>
     <servers />
   </component>

@@ -37,7 +37,7 @@
     </div>
     <hr>
     <div class="topnav">
-        <a href="#" class="active">প্রথম পাতা</a>
+        <a href="#">প্রথম পাতা</a>
         <a href="#">দ্বিতীয় পাতা</a>
         <a href="#">তৃতীয় পাতা</a>
         <a href="#">চতুর্থ পাতা</a>
@@ -45,7 +45,7 @@
         <a href="#">প্রথম শ্রেণি</a>
         <a href="#">দ্বিতীয় শ্রেণি</a>
         <a href="#">তৃতীয় শ্রেণি</a>
-        <a href="#">চতুর্থ শ্রেণি</a>
+        <a href="#" class="active">চতুর্থ শ্রেণি</a>
         <a href="#">পঞ্চম শ্রেণি</a>
         <a href="#">ষষ্ঠ-অষ্টম শ্রেণি</a>
         <a href="#">শিক্ষক ও কর্মচারী</a>
@@ -56,7 +56,7 @@
             <form class="form-group">
                 <div class="student_info1">
                     <div class="table_heading">
-                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ৯. শিক্ষার্থী সংক্রান্ত: চতুর্থ শ্রেণি</h5></span>
+                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ১২. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">চতুর্থ শ্রেণি </span></h5></span>
                     </div>
 
                     <div class="row border" style="margin:0px">
@@ -239,7 +239,13 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুলরাবৃত্তি</th>
+                                        <th scope="row">২০১৯</th>
+                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">২০২০</th>
                                         <td><input type="number" style="width: 50px" name=""></td>
                                         <td><input type="number" style="width: 50px" name=""></td>
                                         <td><input type="number" style="width: 50px" name=""></td>
@@ -251,17 +257,17 @@
                         </div>
                     </div>
                 </div>
-            </form>
         </div>
     </div>
     <div class="pull-right">
-        <a href="class_five">
-            <button type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px">পরবর্তী পাতা
-            </button>
-        </a>
+
+        <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
     </div>
     <div style="clear: both">
 
+    </div>
+    </form>
+    <div style="clear: both">
     </div>
     <hr>
     <div class="footer">

@@ -142,26 +142,6 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row"><label for="">বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত করতে)
-                                    জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
-                            <td>
-                                <select class="custom-select" style="width:70px" name="sntz_facility_yn">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="">একই ক্যাম্পাসে/ভবনে একাধিক স্কুল পরিচালিত হয় কি না? </label>
-                            </th>
-                            <td>
-                                <select class="custom-select" style="width:70px" name="mltpl_inst_cmps_yn">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
-                                </select>
-                            </td>
-                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -215,14 +195,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="">প্রতিষ্ঠার সন </label></th>
-                            <td><input type="text" style="width: 90px" name="establishment_date"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="">জাতীয়করণের সন </label></th>
-                            <td><input type="text" style="width: 90px" name="nationalisation_date"></td>
-                        </tr>
-                        <tr>
                             <th scope="row"><label for="">সীমানা প্রাচীর আছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="boundary_wall_yn">
@@ -236,6 +208,16 @@
                                     আছে কি?</label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="disable_student_toilet_yn">
+                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="">বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত করতে)
+                                    জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
+                            <td>
+                                <select class="custom-select" style="width:70px" name="sntz_facility_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
