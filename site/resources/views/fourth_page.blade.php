@@ -530,7 +530,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px">
+                                <select class="custom-select" style="width:90px" name="toilet_project">
                                     <option selected value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩ </option>

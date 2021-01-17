@@ -32,8 +32,9 @@
     <hr>
     <div class="form_name">
         <div class="heading col-md-12">
-            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম <h4>
+            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
         </div>
+    </div>
     </div>
     <hr>
     <div class="topnav">
@@ -58,6 +59,8 @@
                     <div class="table_heading">
                         <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ৮. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">প্রাক-প্রাথমিক শ্রেণি</span></h5></span>
                     </div>
+
+
 
                     <div class="row border" style="margin:0px">
                         <div class="col-md-6 border justify-content-center align-self-center">
@@ -170,9 +173,9 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">বুদ্ধিবৃত্তিক</th>
-                                        <td><input type="number" style="width: 50px" name="intellectually_handicapped_boy"></td>
-                                        <td><input type="number" style="width: 50px" name="intellectually_handicapped_girl"></td>
-                                        <td><input type="number" style="width: 50px" name="intellectually_handicapped_total"></td>
+                                        <td><input type="number" style="width: 50px" name="intl_handicapped_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="intl_handicapped_total"></td>
+                                        <td><input type="number" style="width: 50px" name="intl_handicapped_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">অটিস্টিক</th>
@@ -212,7 +215,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুলরাবৃত্তি</th>
+                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুনরাবৃত্তি</th>
                                         <td><input type="number" style="width: 50px" name="repeater_boy"></td>
                                         <td><input type="number" style="width: 50px" name="repeater_girl"></td>
                                         <td><input type="number" style="width: 50px" name="repeater_total"></td>
@@ -257,10 +260,9 @@
                         </div>
                     </div>
                 </div>
-
+            </form>
         </div>
     </div>
-
     <div class="pull-right">
 
         <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
@@ -268,9 +270,8 @@
     <div style="clear: both">
 
     </div>
-    </form>
-    <div style="clear: both">
 
+    <div style="clear: both">
     </div>
     <hr>
     <div class="footer">
@@ -284,6 +285,9 @@
     </div>
     <hr>
 
+</div>
+</div>
+</div>
 </div>
 <script src="js/app.js" defer></script>
 </body>
