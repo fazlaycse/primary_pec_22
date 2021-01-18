@@ -2,6 +2,7 @@
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 <html>
+<! buildings, building_infos, Special_std_facilities, institute_sanitations, washblocks,water_facilities,ict_multimedias table->
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">

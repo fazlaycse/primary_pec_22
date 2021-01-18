@@ -2,6 +2,7 @@
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 <html>
+<! institutes table->
 <head>
 
     <link href="css/app.css" rel="stylesheet">
