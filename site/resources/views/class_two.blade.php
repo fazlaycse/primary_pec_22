@@ -85,7 +85,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">মারমা</th>
-                                        <td><input type="number" style="..." name="marma_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="marma_boy"></td>
                                         <td><input type="number" style="width: 50px" name="marma_girl"></td>
                                         <td><input type="number" style="width: 50px" name="marma_total"></td>
                                     </tr>
@@ -93,17 +93,17 @@
                                         <th scope="row">ত্রিপুরা</th>
                                         <td><input type="number" style="width: 50px" name="tripura_boy"></td>
                                         <td><input type="number" style="width: 50px" name="tripura_girl"></td>
-                                        <td><input type="number" style="..." name="tripura_total"></td>
+                                        <td><input type="number" style="width: 50px" name="tripura_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">গারো</th>
                                         <td><input type="number" style="width: 50px" name="garo_boy"></td>
                                         <td><input type="number" style="width: 50px" name="garo_girl"></td>
-                                        <td><input type="number" style="..." name="garo_total"></td>
+                                        <td><input type="number" style="width: 50px" name="garo_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">সাঁওতাল</th>
-                                        <td><input type="number" style="..." name="saotal_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="saotal_boy"></td>
                                         <td><input type="number" style="width: 50px" name="saotal_girl"></td>
                                         <td><input type="number" style="width: 50px" name="saotal_total"></td>
                                     </tr>
