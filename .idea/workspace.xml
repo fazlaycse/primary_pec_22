@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8675d66-f9f5-4757-87a9-b21a7a769c4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/app/Http/Controllers/CurriculumsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/Http/Controllers/CurriculumsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/app/Institute.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/Institute.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/resources/views/third_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/third_page.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/resources/views/first_page.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1226">
+            <state relative-caret-position="221">
               <caret line="70" column="148" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="148" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,66 +47,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/resources/views/second_page.blade.php">
+        <entry file="file://$PROJECT_DIR$/site/resources/views/third_page.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1856">
-              <caret line="177" column="7" lean-forward="true" selection-start-line="177" selection-start-column="7" selection-end-line="177" selection-end-column="7" />
+            <state relative-caret-position="115">
+              <caret line="63" column="70" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="90" column="29" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#41#69#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/resources/views/third_page.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2612">
-              <caret line="310" column="41" selection-start-line="310" selection-start-column="41" selection-end-line="310" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/resources/views/fourth_page.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/site/resources/views/class_one.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-253">
-              <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/app/Institute.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/app/Institute_sanitations.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/InstituteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="727">
+              <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -113,19 +89,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/ClassesController.php">
+        <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/CurriculumsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="170">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/app/Classes.php">
+        <entry file="file://$PROJECT_DIR$/site/app/Institute.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="19" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/InstituteSummariesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/BuildingsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/BuildingInfosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -141,6 +147,10 @@
       <find>first_page_save</find>
       <find>updateOrcreate</find>
       <find>emis</find>
+      <find>general_infos_add</find>
+      <find>method</find>
+      <find>redirec</find>
+      <find>general_infos_addthird_page_save</find>
     </findStrings>
     <dirStrings>
       <dir>F:\primary_pec</dir>
@@ -162,13 +172,15 @@
         <option value="$PROJECT_DIR$/site/resources/views/fourth_page.blade.php" />
         <option value="$PROJECT_DIR$/site/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/site/resources/views/second_page.blade.php" />
-        <option value="$PROJECT_DIR$/site/routes/web.php" />
         <option value="$PROJECT_DIR$/site/app/Http/Controllers/ClassesController.php" />
         <option value="$PROJECT_DIR$/site/resources/views/first_page.blade.php" />
-        <option value="$PROJECT_DIR$/site/app/Institute.php" />
         <option value="$PROJECT_DIR$/site/app/Http/Controllers/InstituteController.php" />
-        <option value="$PROJECT_DIR$/site/resources/views/third_page.blade.php" />
         <option value="$PROJECT_DIR$/site/resources/views/class_one.blade.php" />
+        <option value="$PROJECT_DIR$/site/app/Institute.php" />
+        <option value="$PROJECT_DIR$/site/resources/views/third_page.blade.php" />
+        <option value="$PROJECT_DIR$/site/app/Http/Controllers/CurriculumsController.php" />
+        <option value="$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php" />
+        <option value="$PROJECT_DIR$/site/routes/web.php" />
       </list>
     </option>
   </component>
@@ -414,12 +426,12 @@
       <workItem from="1610874737139" duration="534000" />
       <workItem from="1610875518774" duration="10054000" />
       <workItem from="1610943656075" duration="2642000" />
-      <workItem from="1610948632349" duration="10680000" />
+      <workItem from="1610948632349" duration="12019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13300000" />
+    <option name="totallyTimeSpent" value="14639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,7 +446,7 @@
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29331306" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2674772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -447,7 +459,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35515547" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31096563" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -612,23 +624,6 @@
     <entry file="file://$PROJECT_DIR$/site/app/Institute_summaries.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/BuildingInfosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/BuildingsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/database/migrations/2021_01_17_105357_add_toilet_project_to__washblocks_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153" />
@@ -665,27 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/InstituteSummariesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/app/Classes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -700,37 +674,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/InstituteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/app/Institute_sanitations.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/app/Institute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/resources/views/first_page.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1226">
-          <caret line="70" column="148" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="148" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/resources/views/second_page.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -745,10 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/resources/views/third_page.blade.php">
+    <entry file="file://$PROJECT_DIR$/site/resources/views/class_one.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2612">
-          <caret line="310" column="41" selection-start-line="310" selection-start-column="41" selection-end-line="310" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -759,10 +704,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/resources/views/class_one.blade.php">
+    <entry file="file://$PROJECT_DIR$/site/app/Institute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/InstituteSummariesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/BuildingsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/BuildingInfosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/resources/views/first_page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="70" column="148" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="148" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/resources/views/third_page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="63" column="70" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/InstituteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/CurriculumsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/app/Http/Controllers/GeneralInfosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#41#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="90" column="29" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="29" />
         </state>
       </provider>
     </entry>

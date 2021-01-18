@@ -61,7 +61,7 @@
                         <span style="font-weight: bold; font-size: 18px">  ২. ক) বিদ্যালয়ের সাধারণ তথ্যাবলি </span><br>
                     </div>
         </div>
-        <form class="form-group" method="POST" action="general_infos_add" enctype="multipart/form-data">
+        <form class="form-group" method="POST" action="third_page_save" enctype="multipart/form-data">
                 {{ csrf_field() }}
         <div class="general_info">
             <div class="row border" style="margin:0px">
