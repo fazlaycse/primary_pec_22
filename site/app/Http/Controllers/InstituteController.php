@@ -9,44 +9,51 @@ use Session;
 
 class InstituteController extends Controller
 {
-    public function index(){
-
-    }
-    public  function create(Request $request){
-//            var_dump($request->all());exit;
-//        var_dump($request->all());exit;
+    public function read(Request $request)
+    {
         if ($request->method() == 'POST') {
-            $table = new Institute();
-            $table->emis_code = $request->emis_code;
-            $table->inst_type = $request->inst_type;
-            $table->name_bangla = $request->name_bangla;
-            $table->name_english = $request->name_english;
-            $table->division_id = $request->division_id;
-            $table->district_id = $request->district_id;
-            $table->thana_id = $request->thana_id;
-            $table->union_id = $request->union_id;
-            $table->village_word = $request->village_word;
-            $table->cluster = $request->cluster;
+
             try {
-                $table->save(); // returns false
+                $instRow = Institute::where('emis_code', '=', $request->input('emis_code'))->firstOrFail();
+                $request->session()->put('institute_id', $instRow->id);
+                return view('first_page')->with(compact('instRow'));
+            } catch (\Exception $e) {
+                // do task when error
+                $instRow = new Institute();
+                $instRow->emis_code = $request->input('emis_code');
+                try {
+                    $instRow->save(); // returns false
+                    $request->session()->put('institute_id', $instRow->id);
+                    Session::flash('message', 'Data Updated Successfully!');
+                    return view('first_page')->with(compact('instRow'));
+                } catch (\Exception $e) {
+                    // do task when error
+//              echo $e->getMessage();   // insert query
+                    Session::flash('message', 'Something went wrong!');
+                    exit;
+                }
+            }
+        }
+    }
+
+    public function updateOrcreate(Request $request)
+    {
+        if ($request->method() == 'POST') {
+
+            try {
+                $updateOrcreateRow = Institute::updateOrCreate(['id' => $request->session()->get('institute_id')], $request->all());
                 Session::flash('message', 'Data Saved Successfully!');
                 return redirect('/second_page');
             } catch (\Exception $e) {
-                // do task when error
                 echo $e->getMessage();
-                exit();
+
+                // do task when error
+                /*echo $e->getMessage();
+                exit();*/
                 Session::flash('message', 'Something went wrong!');
                 return redirect('/first_page');
             }
         }
     }
-    public function read(){
 
-    }
-    public function update(){
-
-    }
-    public function delete(){
-
-    }
 }

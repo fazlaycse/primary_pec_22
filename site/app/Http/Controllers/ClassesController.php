@@ -55,7 +55,6 @@ class ClassesController extends Controller
                 // do task when error
 //              echo $e->getMessage();   // insert query
                 Session::flash('message', 'Something went wrong!');
-
             }
         }
         $getRow = Classes::where('id', $request->input('id'))->get();

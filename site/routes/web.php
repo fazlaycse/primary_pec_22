@@ -17,9 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/first_page', function () {
+/*Route::get('/first_page', function () {
     return view('first_page');
-});
+});*/
+
+/*first page by suzon*/
+Route::post('first_page', 'InstituteController@read');
+Route::get('first_page', 'InstituteController@read');
+
+/*save first page*/
+Route::post('first_page_save', 'InstituteController@updateOrcreate');
+Route::get('first_page_save', 'InstituteController@updateOrcreate');
+
+/*first page end*/
 Route::get('/second_page', function () {
     return view('second_page');
 });
