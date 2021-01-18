@@ -70,11 +70,17 @@ Route::post('classes/delete', 'ClassesController@delete');
 Route::get('classes/delete', 'ClassesController@delete');
 
 /*class controller*/
-
+/*institute controller by lemon*/
 Route::post('instituteadd', 'InstituteController@create');
 Route::get('instituteadd', 'InstituteController@create');
+/*InstituteSummariesController controller by lemon*/
 Route::post('institute_summaries_add', 'InstituteSummariesController@create');
 Route::get('institute_summaries_add', 'InstituteSummariesController@create');
+/*GeneralInfosController controller by lemon*/
 Route::post('general_infos_add', 'GeneralInfosController@create');
 Route::get('general_infos_add', 'GeneralInfosController@create');
+
+/*GeneralInfosController controller by lemon*/
+Route::post('buildings_add', 'BuildingsController@create');
+Route::get('buildings_add', 'BuildingsController@create');
 //Route::get('classes/delete', 'ClassesController@delete');
