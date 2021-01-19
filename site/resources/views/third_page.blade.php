@@ -65,6 +65,7 @@
         <form class="form-group" method="POST" action="third_page_save" enctype="multipart/form-data">
                 {{ csrf_field() }}
         <div class="general_info">
+            <input type="hidden" name="YEAR" value="2020"/>
             <div class="row border" style="margin:0px">
                 <div class="col-md-6 border justify-content-center align-self-center">
                     <table class="table academic">

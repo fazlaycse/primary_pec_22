@@ -13,9 +13,10 @@ class SecondPageController extends Controller
     {
         $columns = Schema::getColumnListing('Institute_summaries');
 
-        echo "<pre>";
-        print_r($columns);
-        exit();
+  /*    for($i=0;$i<sizeof($columns);$i++){
+          echo "'".strtolower($columns[$i])."',<br>";
+      }
+        exit();*/
 
         try {
             $instRow = Institute_summaries::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
@@ -47,6 +48,7 @@ class SecondPageController extends Controller
                 Session::flash('message', 'Data Saved Successfully!');
                 return redirect('/third_page');
             } catch (\Exception $e) {
+                echo 'saad';die;
                 echo $e->getMessage();exit;
 
                 // do task when error
