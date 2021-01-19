@@ -73,10 +73,10 @@
                             <tbody>
                             <tr>
                                 <th scope="row" style="width: 520px"><span>অনুমোদিত পদ </span></th>
-                                <td><input type="number" style="width: 70px" name=""></td>
-                                <td><input type="number" style="width: 70px" name=""></td>
-                                <td><input type="number" style="width: 70px" name=""></td>
-                                <td><input type="number" style="width: 70px" name=""></td>
+                                <td><input type="number" style="width: 70px" name="onu_head_teacher"></td>
+                                <td><input type="number" style="width: 70px" name="onu_ast_teacher"></td>
+                                <td><input type="number" style="width: 70px" name="onu_pprimary_teacher"></td>
+                                <td><input type="number" style="width: 70px" name="onu_sg"></td>
                                 <td><input type="number" style="width: 70px" name=""></td>
                             </tr>
                             <tr>
@@ -170,36 +170,36 @@
                             <tr>
                                 <td style="width: 10px">#</td>
                                 <td>
-                                    Name in Bangla : <input type="text" style="width: 120px;" placeholder="নাম"><br>
-                                    Name in English : <input type="text"  style="width: 120px;" placeholder="Name">
+                                    Name in Bangla : <input type="text" style="width: 120px;" placeholder="নাম" name="tname_bangla"><br>
+                                    Name in English : <input type="text"  style="width: 120px;" placeholder="Name" name="tname_english">
                                 </td>
-                                <td><button>Date</button></td>
-                                <td><select class="custom-select" style="width:55px">
+                                <td><input type="text" style="width: 70px; align-content: center" name="dob"></td>
+                                <td><select class="custom-select" style="width:55px" name="sex">
                                         <option selected value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select></td>
-                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
-                                <td><input type="text" style="width: 90px; align-content: center" name=""></td>
-                                <td><select class="custom-select" style="width:55px">
+                                <td><input type="text" style="width: 70px; align-content: center" name="ethinicity"></td>
+                                <td><input type="text" style="width: 90px; align-content: center" name="deisgnation"></td>
+                                <td><select class="custom-select" style="width:55px" name="inst_deisgnated">
                                         <option selected value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select></td>
-                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
-                                <td><select class="custom-select" style="width:95px">
+                                <td><input type="text" style="width: 70px; align-content: center" name="inst_present"></td>
+                                <td><select class="custom-select" style="width:95px" name="edu_degree">
                                         <option selected value="1">ডিগ্রী(পাশ)</option>
                                         <option value="2">স্নাতক(সম্মান)</option>
                                         <option value="3">স্নাতকোত্তর</option>
                                         <option value="4">উচ্চ মাধ্যমিক</option>
                                         <option value="5">মাধ্যমিক</option>
                                     </select></td>
-                                <td><button>Date</button></td>
-                                <td><select class="custom-select" style="width:55px">
+                                <td><button><input type="text" style="width: 70px; align-content: center" name="joining_dt"></button></td>
+                                <td><select class="custom-select" style="width:55px" name="class_six_eight">
                                         <option selected value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select></td>
-                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
-                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
-                                <td><input type="text" style="width: 70px; align-content: center" name=""></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name="short_training"></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name="long_training"></td>
+                                <td><input type="text" style="width: 70px; align-content: center" name="twelve_month_training"></td>
                             </tr>
                             </tbody>
                         </table>

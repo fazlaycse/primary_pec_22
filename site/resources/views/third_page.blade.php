@@ -2,6 +2,7 @@
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 <html>
+<! General_infos, Curriculums, Special_std_facilities table->
 <head>
 
     <link href="css/app.css" rel="stylesheet">
@@ -61,7 +62,7 @@
                         <span style="font-weight: bold; font-size: 18px">  ২. ক) বিদ্যালয়ের সাধারণ তথ্যাবলি </span><br>
                     </div>
         </div>
-        <form class="form-group" method="POST" action="general_infos_add" enctype="multipart/form-data">
+        <form class="form-group" method="POST" action="third_page_save" enctype="multipart/form-data">
                 {{ csrf_field() }}
         <div class="general_info">
             <div class="row border" style="margin:0px">
@@ -73,8 +74,8 @@
                                     কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="acdmic_function_yn">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option value="1" <?php if($instRow->acdmic_function_yn =='1'){echo "selected";} ?> >হ্যাঁ</option>
+                                    <option value="2" <?php if($instRow->acdmic_function_yn =='2'){echo "selected";} ?> >না</option>
                                 </select>
                             </td>
                         </tr>
@@ -82,7 +83,7 @@
                             <th scope="row"><label for="">বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -91,12 +92,12 @@
                             <th scope="row"><label for="">বিদ্যালয়ের গ্রেড </label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="school_grade">
-                                    <option selected value="1">এ</option>
-                                    <option value="2">বি</option>
-                                    <option value="3">সি</option>
-                                    <option value="4">ডি</option>
-                                    <option value="5">প্রযোজ্য নয়</option>
-                                    <option value="6">নির্ধারণ হয়নি</option>
+                                    <option value="A" <?php if($instRow->acdmic_function_yn =='A'){echo "selected";} ?> >এ</option>
+                                    <option value="B" <?php if($instRow->acdmic_function_yn =='B'){echo "selected";} ?> >বি</option>
+                                    <option value="C" <?php if($instRow->acdmic_function_yn =='C'){echo "selected";} ?> >সি</option>
+                                    <option value="D" <?php if($instRow->acdmic_function_yn =='D'){echo "selected";} ?>>ডি</option>
+                                    <option value="NA" <?php if($instRow->acdmic_function_yn =='NA'){echo "selected";} ?>>প্রযোজ্য নয়</option>
+                                    <option value="NS" <?php if($instRow->acdmic_function_yn =='NS'){echo "selected";} ?>>নির্ধারণ হয়নি</option>
                                 </select>
                             </td>
                         </tr>
@@ -104,7 +105,7 @@
                             <th scope="row"><label for="">নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="safe_water_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -114,7 +115,7 @@
                             </th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="blding_own_land_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -124,7 +125,7 @@
                                     কি?</label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="cycln_shelter_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -137,7 +138,7 @@
                             <th scope="row"><label for="">বিদ্যুৎ সংযোগ আছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="electricity_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -154,7 +155,7 @@
                             <th scope="row"><label for="academic_function_yn">শিখন মাধ্যম? </label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="learning_media">
-                                    <option selected value="1">বাংলা</option>
+                                    <option value="1">বাংলা</option>
                                     <option value="2">ইংরেজি ভার্সন</option>
                                     <option value="3">উভয়</option>
                                     <option value="4">ইংরেজি মিডিয়াম</option>
@@ -169,7 +170,7 @@
                             <th scope="row"><label for="">বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -178,7 +179,7 @@
                             <th scope="row"><label for="">বিদ্যালয়ে ওয়াশ ব্লক নির্মিত হয়েছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="wash_block">
-                                    <option selected value="1">নির্মিত</option>
+                                    <option value="1">নির্মিত</option>
                                     <option value="2">নির্মাণাধীন</option>
                                     <option value="3">না</option>
                                 </select>
@@ -189,7 +190,7 @@
                             </th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="shaheed_minar_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -198,7 +199,7 @@
                             <th scope="row"><label for="">সীমানা প্রাচীর আছে কি? </label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="boundary_wall_yn">
-                                    <option selected value="1">পাকা প্রাচীর</option>
+                                    <option value="1">পাকা প্রাচীর</option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
@@ -208,7 +209,7 @@
                                     আছে কি?</label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="disable_student_toilet_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -218,7 +219,7 @@
                                     জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="sntz_facility_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
@@ -251,48 +252,64 @@
                         <tr>
                             <td>
                                 <select class="custom-select" style="width:80px" name="preprimary_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_1_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_2_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_3_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_4_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_5_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_6_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_7_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_8_yn">
-                                    <option selected value="1">হ্যাঁ</option>
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
                             </td>
                         </tbody>
                     </table>
@@ -315,7 +332,7 @@
                                 <th scope="row"><label for="academic_function_yn">শারীরিক প্রতিবন্ধিদের জন্য র‍্যাম্প আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="ramp_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -324,7 +341,7 @@
                                 <th scope="row"><label for="">শারীরিক প্রতিবন্ধিদের গমনোপযোগী ওয়াশব্লক কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="spc_washblock_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -334,7 +351,7 @@
                                 <th scope="row"><label for="">শারীরিক প্রতিবন্ধিদের হুইল চেয়ার আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="wheel_chair_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -344,7 +361,7 @@
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="cratch_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -353,7 +370,7 @@
                                 <th scope="row"><label for=""> দৃষ্টি ফেন্সিং আছে কি না?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -362,7 +379,7 @@
                                 <th scope="row"><label for="">দৃষ্টি প্রতিবন্ধিদের কালার কন্ট্রাস্ট আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="clr_contrast_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -378,7 +395,7 @@
                                 <th scope="row"><label for="">দৃষ্টি প্রতিবন্ধিদের ডেইজি বুক আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="daisy_book_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -387,7 +404,7 @@
                                 <th scope="row"><label for="">দৃষ্টি প্রতিবন্ধিদের ব্রেইল বই আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="brail_book_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -396,7 +413,7 @@
                                 <th scope="row"><label for="">বাক প্রতিবন্ধিদের Sign Language Tutor আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="sign_lang_tutor_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -405,7 +422,7 @@
                                 <th scope="row"><label for="">বাক প্রতিবন্ধিদের Sign Language Manual আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="sign_lang_manual_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -414,7 +431,7 @@
                                 <th scope="row"><label for="">শ্রবণ প্রতিবন্ধিদের নীরব পরিবেশ আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="silent_envr_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
@@ -423,7 +440,7 @@
                                 <th scope="row"><label for="">শ্রবণ প্রতিবন্ধিদের Hearing Aid আছে কি না? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="hearing_aid_yn">
-                                        <option selected value="1">হ্যাঁ</option>
+                                        <option value="1">হ্যাঁ</option>
                                         <option value="2">না</option>
                                     </select>
                                 </td>
