@@ -7,7 +7,7 @@ use App\Institute;
 use Session;
 
 
-class InstituteController extends Controller
+class FirstPageController extends Controller
 {
     public function read(Request $request)
     {
