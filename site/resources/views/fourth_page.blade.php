@@ -2,7 +2,7 @@
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 <html>
-<! buildings, building_infos, Special_std_facilities, institute_sanitations, washblocks,water_facilities,ict_multimedias table->
+<! buildings, building_infos,institute_sanitations, washblocks,water_facilities,ict_multimedias table->
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -57,8 +57,9 @@
     <br>
     <div class="body_table" style="background-color: #b0d4f1;">
 
-        <form class="form-group" method="POST" action="buildings_add" enctype="multipart/form-data">
+        <form class="form-group" method="POST" action="fourth_page_save" enctype="multipart/form-data">
             {{ csrf_field() }}
+            <?php $instRow = $instRowObj->buildings;?>
             <div class="table_third_heading">
                 <span style="font-weight: bold; font-size: 17px"> ৩. বিদ্যালয়ের ভবনের তথ্য: </span> <span
                         style=" font-size: 15px">(শুধুমাত্র বিদ্যালয়ের ধরন: ০১, ০৪, ২৬ এবং ৯৯ এর জন্য প্রযোজ্য) </span>
@@ -79,19 +80,21 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building"></td>
-                            <td><input type="number" style="width: 70px" name="building_no"></td>
-                            <td><input type="number" style="width: 70px" name="storied_number"></td>
-                            <td><input type="number" style="width: 70px" name="estb_year"></td>
-                            <td><input type="number" style="width: 70px" name="bld_foundation"></td>
-                            <td><input type="number" style="width: 70px" name="room_number"></td>
+
+                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building" value="{{$instRow->number_of_building}}"></td>
+                            <?php $instRow = $instRowObj->building_infos;?>
+                            <td><input type="number" style="width: 70px" name="building_no" value="{{$instRow->building_no}}"></td>
+                            <td><input type="number" style="width: 70px" name="storied_number" value="{{$instRow->storied_number}}"></td>
+                            <td><input type="number" style="width: 70px" name="estb_year" value="{{$instRow->estb_year}}"></td>
+                            <td><input type="number" style="width: 70px" name="bld_foundation" value="{{$instRow->bld_foundation}}"></td>
+                            <td><input type="number" style="width: 70px" name="room_number" value="{{$instRow->room_number}}"></td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_condition">
-                                    <option  value="1">ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
+                                    <option  value="1" <?php if($instRow->bld_condition =='1'){echo "selected";} ?>>ভালো</option>
+                                    <option value="2" <?php if($instRow->bld_condition =='2'){echo "selected";} ?>>>নির্মাণাধীন</option>
+                                    <option value="3" <?php if($instRow->bld_condition =='3'){echo "selected";} ?>>>জরাজীর্ণ</option>
+                                    <option value="4" <?php if($instRow->bld_condition =='4'){echo "selected";} ?>>>ঝুকিপূর্ণ</option>
+                                    <option value="5" <?php if($instRow->bld_condition =='5'){echo "selected";} ?>>>পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>

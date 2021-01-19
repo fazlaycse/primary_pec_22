@@ -11,9 +11,9 @@ class SecondPageController extends Controller
 {
     public function read(Request $request)
     {
-        $columns = Schema::getColumnListing('Institute_summaries');
+       /* $columns = Schema::getColumnListing('Water_facilities');
 
-  /*    for($i=0;$i<sizeof($columns);$i++){
+      for($i=0;$i<sizeof($columns);$i++){
           echo "'".strtolower($columns[$i])."',<br>";
       }
         exit();*/
@@ -48,7 +48,6 @@ class SecondPageController extends Controller
                 Session::flash('message', 'Data Saved Successfully!');
                 return redirect('/third_page');
             } catch (\Exception $e) {
-                echo 'saad';die;
                 echo $e->getMessage();exit;
 
                 // do task when error

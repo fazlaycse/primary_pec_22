@@ -45,9 +45,15 @@ Route::post('third_page_save', 'ThirdPageController@updateOrcreate');
 Route::get('third_page_save', 'ThirdPageController@updateOrcreate');
 /*Third page end*/
 
-Route::get('/fourth_page', function () {
-    return view('fourth_page');
-});
+/*fourth page by lemon*/
+Route::post('fourth_page', 'FourthPageController@read');
+Route::get('fourth_page', 'FourthPageController@read');
+
+/*fourth Second page*/
+Route::post('fourth_page_save', 'FourthPageController@updateOrcreate');
+Route::get('fourth_page_save', 'FourthPageController@updateOrcreate');
+/*fourth page end*/
+
 Route::get('/pre_primary', function () {
     return view('pre_primary');
 });
