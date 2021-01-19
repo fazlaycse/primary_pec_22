@@ -84,10 +84,10 @@
                                 <tbody>
                                 <tr>
                                     <th scope="row">অনুমোদিত</th>
-                                    <td><input type="number" style="width: 50px" name="onu_head_teacher"></td>
-                                    <td><input type="number" style="width: 50px" name="onu_ast_teacher"></td>
-                                    <td><input type="number" style="width: 50px" name="onu_pprimary_teacher"></td>
-                                    <td><input type="number" style="width: 50px" name="onu_sg"></td>
+                                    <td><input type="number" style="width: 50px" name="onu_head_teacher" value="{{$instRow->onu_head_teacher}}"></td>
+                                    <td><input type="number" style="width: 50px" name="onu_ast_teacher" value="{{$instRow->onu_ast_teacher}}"></td>
+                                    <td><input type="number" style="width: 50px" name="onu_pprimary_teacher" value="{{$instRow->onu_pprimary_teacher}}"></td>
+                                    <td><input type="number" style="width: 50px" name="onu_sg" value="{{$instRow->onu_sg}}"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">সংযুক্তি(In)</th>
