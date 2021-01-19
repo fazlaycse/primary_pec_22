@@ -36,7 +36,7 @@
     <hr>
     <div class="form_name">
         <div class="heading col-md-12">
-            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম <h4>
+            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
         </div>
     </div>
     <hr>
@@ -944,85 +944,79 @@
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span>
-                            </th>
-                            <td>
+                            <th scope="row" style="width: 150px"><span>তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span></th>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="ict_known_teacher_yn">
                                     <option value="1" <?php if($instRow->ict_known_teacher_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->ict_known_teacher_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
+                            </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px">
                                 <span>ডেস্কটপ/ল্যাপটপ শিখন-শিখানো কাজে ব্যবহৃত হয় কি </span></th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="dsktp_use_yn">
                                     <option value="1" <?php if($instRow->dsktp_use_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->dsktp_use_yn =='2'){echo "selected";} ?>>না</option>
-                                </select>
+                                </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"> ইন্টারনেট শিখন-শিখানো কাজে ব্যবহৃত হয় কি <span></span>
                             </th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="internet_use_yn">
                                     <option  value="1" <?php if($instRow->internet_use_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->internet_use_yn =='2'){echo "selected";} ?>>না</option>
-                                </select>
+                                </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px">
                                 <span>বিদ্যালয়ের শ্রেণিকক্ষে মাল্টিমিডিয়া ব্যবহার হয় কি</span></th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_use_yn">
                                     <option value="1" <?php if($instRow->mltmdia_use_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->mltmdia_use_yn =='2'){echo "selected";} ?>>না</option>
-                                </select>
+                                </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"><span>মাল্টিমিডিয়া বেইসড ক্লাসরুম আছে কি </span></th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_class_yn">
                                     <option value="1" <?php if($instRow->mltmdia_class_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->mltmdia_class_yn =='2'){echo "selected";} ?>>না</option>
-                                </select>
+                                </select></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px">
                                 <span> মাল্টিমিডিয়া ইন্টারএক্টিভ ক্লাসরুম আছে কি </span></th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_intr_class_yn">
                                     <option value="1" <?php if($instRow->mltmdia_intr_class_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->mltmdia_intr_class_yn =='2'){echo "selected";} ?>>না</option>
-                                </select>
+                                </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"><span>সাউন্ড সিস্টেম আছে কি </span></th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="sound_system_yn">
                                     <option value="1" <?php if($instRow->sound_system_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->sound_system_yn =='2'){echo "selected";} ?>>না</option>
@@ -1030,20 +1024,18 @@
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"><span>শিখন-শিখানো কাজে ইলেকট্রিক ডিভাইস ব্যবহৃত হয় কি না </span>
                             </th>
-                            <td>
+                            <th>
                                 <select class="custom-select" style="width:80px" name="electr_device_pdg_yn">
                                     <option value="1" <?php if($instRow->electr_device_pdg_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->electr_device_pdg_yn =='2'){echo "selected";} ?>>না</option>
-                                </select>
+                                </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
-                            </td>
                         </tr>
                         </tbody>
                     </table>
@@ -1055,7 +1047,6 @@
                        value="Save and Go Forward">
             </div>
         </form>
-    </div>
     </div>
 
 
