@@ -64,8 +64,8 @@
         </div>
         <form class="form-group" method="POST" action="third_page_save" enctype="multipart/form-data">
                 {{ csrf_field() }}
+            <?php $instRow = $instRowObj->general_info;?>
         <div class="general_info">
-            <input type="hidden" name="YEAR" value="2020"/>
             <div class="row border" style="margin:0px">
                 <div class="col-md-6 border justify-content-center align-self-center">
                     <table class="table academic">
@@ -93,12 +93,12 @@
                             <th scope="row"><label for="">বিদ্যালয়ের গ্রেড </label></th>
                             <td>
                                 <select class="custom-select" style="width:70px" name="school_grade">
-                                    <option value="A" <?php if($instRow->acdmic_function_yn =='A'){echo "selected";} ?> >এ</option>
-                                    <option value="B" <?php if($instRow->acdmic_function_yn =='B'){echo "selected";} ?> >বি</option>
-                                    <option value="C" <?php if($instRow->acdmic_function_yn =='C'){echo "selected";} ?> >সি</option>
-                                    <option value="D" <?php if($instRow->acdmic_function_yn =='D'){echo "selected";} ?>>ডি</option>
-                                    <option value="NA" <?php if($instRow->acdmic_function_yn =='NA'){echo "selected";} ?>>প্রযোজ্য নয়</option>
-                                    <option value="NS" <?php if($instRow->acdmic_function_yn =='NS'){echo "selected";} ?>>নির্ধারণ হয়নি</option>
+                                    <option value="A" <?php if($instRow->school_grade =='A'){echo "selected";} ?> >এ</option>
+                                    <option value="B" <?php if($instRow->school_grade =='B'){echo "selected";} ?> >বি</option>
+                                    <option value="C" <?php if($instRow->school_grade =='C'){echo "selected";} ?> >সি</option>
+                                    <option value="D" <?php if($instRow->school_grade =='D'){echo "selected";} ?>>ডি</option>
+                                    <option value="NA" <?php if($instRow->school_grade =='NA'){echo "selected";} ?>>প্রযোজ্য নয়</option>
+                                    <option value="NS" <?php if($instRow->school_grade =='NS'){echo "selected";} ?>>নির্ধারণ হয়নি</option>
                                 </select>
                             </td>
                         </tr>
@@ -155,10 +155,10 @@
                             <th scope="row"><label for="academic_function_yn">শিখন মাধ্যম? </label></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="learning_media">
-                                    <option value="1" <?php if($instRow->electricity_yn =='1'){echo "selected";} ?>>বাংলা</option>
-                                    <option value="2" <?php if($instRow->electricity_yn =='2'){echo "selected";} ?>>ইংরেজি ভার্সন</option>
-                                    <option value="3" <?php if($instRow->electricity_yn =='3'){echo "selected";} ?>>উভয়</option>
-                                    <option value="4" <?php if($instRow->electricity_yn =='4'){echo "selected";} ?>>ইংরেজি মিডিয়াম</option>
+                                    <option value="1" <?php if($instRow->learning_media =='1'){echo "selected";} ?>>বাংলা</option>
+                                    <option value="2" <?php if($instRow->learning_media =='2'){echo "selected";} ?>>ইংরেজি ভার্সন</option>
+                                    <option value="3" <?php if($instRow->learning_media =='3'){echo "selected";} ?>>উভয়</option>
+                                    <option value="4" <?php if($instRow->learning_media =='4'){echo "selected";} ?>>ইংরেজি মিডিয়াম</option>
                                 </select>
                             </td>
                         </tr>
@@ -229,6 +229,7 @@
                 <br>
             </div>
         </div>
+            <?php $instRow = $instRowObj->curriculums; ?>
         <div class="Second_body">
             <div class="curriculum border" style="padding:10px; font-size:14px">
                 <span style="font-weight: bold; font-size: 18px"> ২. খ) বিদ্যালয়ের কোন কোন শ্রেণিতে পাঠদান করানো হয় (বর্ণিত শ্রেণি চালু থাকলে হ্যাঁ অথবা না লিখুন)</span>
@@ -315,6 +316,7 @@
                 </div>
             </div>
         </div>
+            <?php $instRow = $instRowObj->special_std_facilities; ?>
         <div class="third_body">
             <div class="institute_info border" style="padding:10px; font-size:14px">
                 <div class="table_heading">

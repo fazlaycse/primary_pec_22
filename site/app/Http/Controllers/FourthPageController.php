@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
-use App\General_infos;
-use App\Curriculums;
-use App\Special_std_facilities;
+use App\Buildings;
+use App\Building_infos;
+use App\Institute_sanitations;
+use App\Washblocks;
+use App\Water_facilities;
+use App\Ict_multimedias;
 use Session;
-use Illuminate\Support\Facades\Schema;
-class ThirdPageController extends Controller
+
+class FourthPageController extends Controller
 {
     public function read(Request $request)
     {
@@ -21,14 +23,50 @@ class ThirdPageController extends Controller
               exit();*/
 
         $instRow = [];
-
-        //deal with Geneal Infos Table
+        $buildingId='';
+        //deal with Buildings Table
         try {
-            $row = General_infos::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            $row = Buildings::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
             array_push($instRow, $row);
         } catch (\Exception $e) {
             // do task when error
-            $row = new General_infos();
+            $row = new Buildings();
+            //$row->year = 2020;
+            $row->institute_id = $request->session()->get('institute_id');
+            try {
+                $row->save(); // returns false
+                $buildingId=$row->id;
+                array_push($instRow, $row);
+            } catch (\Exception $e) {
+                echo $e;
+            }
+        }
+
+        //deal with Building_infos Table
+        try {
+            $row = Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            array_push($instRow, $row);
+        } catch (\Exception $e) {
+            // do task when error
+            $row = new Building_infos();
+            $row->year = 2020;
+            $row->building_id = $buildingId;
+            $row->institute_id = $request->session()->get('institute_id');
+            try {
+                $row->save(); // returns false
+                array_push($instRow, $row);
+            } catch (\Exception $e) {
+                echo $e;
+            }
+        }
+
+        //deal with Institute_sanitations  Table
+        try {
+            $row = Institute_sanitations::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            array_push($instRow, $row);
+        } catch (\Exception $e) {
+            // do task when error
+            $row = new Institute_sanitations();
             $row->year = 2020;
             $row->institute_id = $request->session()->get('institute_id');
             try {
@@ -39,15 +77,14 @@ class ThirdPageController extends Controller
             }
         }
 
-        //deal with Curriculums Infos Table
+        //deal with Washblocks  Table
         try {
-            $row = Curriculums::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            $row = Washblocks::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
             array_push($instRow, $row);
         } catch (\Exception $e) {
             // do task when error
-            $row = new Curriculums();
+            $row = new Washblocks();
             $row->year = 2020;
-
             $row->institute_id = $request->session()->get('institute_id');
             try {
                 $row->save(); // returns false
@@ -57,15 +94,14 @@ class ThirdPageController extends Controller
             }
         }
 
-        //deal with Special_std_facilities Infos Table
+        //deal with Water_facilities  Table
         try {
-            $row = Special_std_facilities::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            $row = Water_facilities::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
             array_push($instRow, $row);
         } catch (\Exception $e) {
             // do task when error
-            $row = new Special_std_facilities();
+            $row = new Water_facilities();
             $row->year = 2020;
-
             $row->institute_id = $request->session()->get('institute_id');
             try {
                 $row->save(); // returns false
@@ -74,12 +110,33 @@ class ThirdPageController extends Controller
                 echo $e;
             }
         }
+
+        //deal with Ict_multimedias  Table
+        try {
+            $row = Ict_multimedias::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            array_push($instRow, $row);
+        } catch (\Exception $e) {
+            // do task when error
+            $row = new Ict_multimedias();
+            $row->year = 2020;
+            $row->institute_id = $request->session()->get('institute_id');
+            try {
+                $row->save(); // returns false
+                array_push($instRow, $row);
+            } catch (\Exception $e) {
+                echo $e;
+            }
+        }
+
         $instRowObj = new \stdClass();
-        $instRowObj->general_info = $instRow[0];
-        $instRowObj->curriculums = $instRow[1];
-        $instRowObj->special_std_facilities = $instRow[2];
+        $instRowObj->buildings = $instRow[0];
+        $instRowObj->building_infos = $instRow[1];
+        $instRowObj->institute_sanitations = $instRow[2];
+        $instRowObj->washblocks = $instRow[3];
+        $instRowObj->water_facilities = $instRow[4];
+        $instRowObj->ict_multimedias = $instRow[5];
 
-        return view('third_page')->with('instRowObj',$instRowObj);
+        return view('fourth_page')->with('instRowObj',$instRowObj);
 
     }
 
