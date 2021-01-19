@@ -2,6 +2,7 @@
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 <html>
+<! General_infos, Curriculums, Special_std_facilities table->
 <head>
 
     <link href="css/app.css" rel="stylesheet">
@@ -61,7 +62,7 @@
                         <span style="font-weight: bold; font-size: 18px">  ২. ক) বিদ্যালয়ের সাধারণ তথ্যাবলি </span><br>
                     </div>
         </div>
-        <form class="form-group" method="POST" action="general_infos_add" enctype="multipart/form-data">
+        <form class="form-group" method="POST" action="third_page_save" enctype="multipart/form-data">
                 {{ csrf_field() }}
         <div class="general_info">
             <div class="row border" style="margin:0px">
@@ -253,46 +254,62 @@
                                 <select class="custom-select" style="width:80px" name="preprimary_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_1_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_2_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_3_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_4_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_5_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_6_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_7_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
+
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="class_8_yn">
                                     <option selected value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
+                                </select>
                             </td>
                         </tbody>
                     </table>

@@ -1,4 +1,5 @@
 <html>
+<! ethnic_students, building_infos, Special_students, classwise_students, repeater_students table->
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -59,6 +60,8 @@
                         <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ১১. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">তৃতীয় শ্রেণি</span></h5></span>
                     </div>
 
+
+
                     <div class="row border" style="margin:0px">
                         <div class="col-md-6 border justify-content-center align-self-center">
                             <div class="preethnic_number">
@@ -79,51 +82,51 @@
                                     <tbody>
                                     <tr>
                                         <th scope="row">চাকমা</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="cakma_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="cakma_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="cakma_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">মারমা</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="marma_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="marma_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="marma_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">ত্রিপুরা</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="tripura_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="tripura_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="tripura_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">গারো</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="garo_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="garo_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="garo_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">সাঁওতাল</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="saotal_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="saotal_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="saotal_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">মনিপুরি</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="monipuri_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="monipuri_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="monipuri_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">সাদরি (ওরাও)</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="sadri_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="sadri_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="sadri_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">অন্যান্য</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="other_ethnic_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="other_ethnic_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="other_ethnic_total"></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -146,45 +149,45 @@
                                     <tbody>
                                     <tr>
                                         <th scope="row">শারীরিক </th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="physical_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="physical_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="physical_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">ক্ষীণদৃষ্টি</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="myopia_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="myopia_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="myopia_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">ক্ষীণশ্রবণ</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="impaired_hearing_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="impaired_hearing_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="impaired_hearing_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">বাকপ্রতিবন্ধি</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="speech_impaired_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="speech_impaired_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="speech_impaired_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">বুদ্ধিবৃত্তিক</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="intellectually_handicapped_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="intellectually_handicapped_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="intellectually_handicapped_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">অটিস্টিক</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="autistic_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="autistic_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="autistic_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">অন্যান্য</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="other_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="other_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="other_total"></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -212,10 +215,10 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুলরাবৃত্তি</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুনরাবৃত্তি</th>
+                                        <td><input type="number" style="width: 50px" name="repeater_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="repeater_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="repeater_total"></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -240,15 +243,15 @@
                                     <tbody>
                                     <tr>
                                         <th scope="row">২০১৯</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="2019_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="2019_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="2019_total"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">২০২০</th>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
-                                        <td><input type="number" style="width: 50px" name=""></td>
+                                        <td><input type="number" style="width: 50px" name="2020_boy"></td>
+                                        <td><input type="number" style="width: 50px" name="2020_girl"></td>
+                                        <td><input type="number" style="width: 50px" name="2020_total"></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -257,8 +260,14 @@
                         </div>
                     </div>
                 </div>
+
         </div>
     </div>
+
+
+
+
+
 
     <div class="pull-right">
 

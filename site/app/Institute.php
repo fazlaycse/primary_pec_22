@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Institute extends Model
 {
     protected $fillable = [
+        'token',
         'emis_code',
         'inst_type',
         'name_bangla',
@@ -18,5 +19,4 @@ class Institute extends Model
         'village_word',
         'cluster'
     ];
-
 }

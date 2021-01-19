@@ -17,9 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/first_page', function () {
+/*Route::get('/first_page', function () {
     return view('first_page');
-});
+});*/
+
+/*first page by suzon*/
+Route::post('first_page', 'InstituteController@read');
+Route::get('first_page', 'InstituteController@read');
+
+/*save first page*/
+Route::post('first_page_save', 'InstituteController@updateOrcreate');
+Route::get('first_page_save', 'InstituteController@updateOrcreate');
+
+/*first page end*/
 Route::get('/second_page', function () {
     return view('second_page');
 });
@@ -70,11 +80,17 @@ Route::post('classes/delete', 'ClassesController@delete');
 Route::get('classes/delete', 'ClassesController@delete');
 
 /*class controller*/
-
+/*institute controller by lemon*/
 Route::post('instituteadd', 'InstituteController@create');
 Route::get('instituteadd', 'InstituteController@create');
+/*InstituteSummariesController controller by lemon*/
 Route::post('institute_summaries_add', 'InstituteSummariesController@create');
 Route::get('institute_summaries_add', 'InstituteSummariesController@create');
+/*GeneralInfosController controller by lemon*/
 Route::post('general_infos_add', 'GeneralInfosController@create');
 Route::get('general_infos_add', 'GeneralInfosController@create');
+
+/*GeneralInfosController controller by lemon*/
+Route::post('buildings_add', 'BuildingsController@create');
+Route::get('buildings_add', 'BuildingsController@create');
 //Route::get('classes/delete', 'ClassesController@delete');

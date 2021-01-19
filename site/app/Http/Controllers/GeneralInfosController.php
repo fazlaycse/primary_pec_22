@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 use App\General_infos;
 use App\Curriculums;
 use App\Special_std_facilities;
-use Carbon\Carbon;
 use Session;
+use App\Http\Controllers\CurriculumsController;
 class GeneralInfosController extends Controller
 {
-    public function index(){
-
+    public function index(Request $request){
+        return redirect()->action('CurriculumsController@index');
     }
     public  function create(Request $request){
         ini_set('post_max_size','2000000M');
