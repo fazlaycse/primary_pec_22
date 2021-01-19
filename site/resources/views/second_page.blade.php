@@ -58,7 +58,7 @@
     </div>
 
     <div class="first_body">
-        <form class="form-group" method="POST" action="institute_summaries_add">
+        <form class="form-group" method="POST" action="second_page_save">
             {{ csrf_field() }}
             <div class="institute_info border" style="padding:10px; font-size:14px">
 

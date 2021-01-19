@@ -13,29 +13,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Page View [done by: Ifti@1/6/2021]*/
+/*Page View [done by: Ifti@1/6/2021] update by: suzon@19/01/2021*/
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing_page');
 });
-/*Route::get('/first_page', function () {
-    return view('first_page');
-});*/
 
 /*first page by suzon*/
-Route::post('first_page', 'InstituteController@read');
-Route::get('first_page', 'InstituteController@read');
+Route::post('first_page', 'FirstPageController@read');
+Route::get('first_page', 'FirstPageController@read');
 
 /*save first page*/
-Route::post('first_page_save', 'InstituteController@updateOrcreate');
-Route::get('first_page_save', 'InstituteController@updateOrcreate');
-
+Route::post('first_page_save', 'FirstPageController@updateOrcreate');
+Route::get('first_page_save', 'FirstPageController@updateOrcreate');
 /*first page end*/
-Route::get('/second_page', function () {
-    return view('second_page');
-});
-Route::get('/third_page', function () {
-    return view('third_page');
-});
+
+/*Second page by suzon*/
+Route::post('second_page', 'SecondPageController@read');
+Route::get('second_page', 'SecondPageController@read');
+
+/*save Second page*/
+Route::post('second_page_save', 'SecondPageController@updateOrcreate');
+Route::get('second_page_save', 'SecondPageController@updateOrcreate');
+/*Second page end*/
+
+/*Third page by suzon*/
+Route::post('third_page', 'ThirdPageController@read');
+Route::get('third_page', 'ThirdPageController@read');
+
+/*Third Second page*/
+Route::post('third_page_save', 'ThirdPageController@updateOrcreate');
+Route::get('third_page_save', 'ThirdPageController@updateOrcreate');
+/*Third page end*/
+
 Route::get('/fourth_page', function () {
     return view('fourth_page');
 });
