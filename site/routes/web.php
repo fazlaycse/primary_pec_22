@@ -49,7 +49,7 @@ Route::get('third_page_save', 'ThirdPageController@updateOrcreate');
 Route::post('fourth_page', 'FourthPageController@read');
 Route::get('fourth_page', 'FourthPageController@read');
 
-/*fourth Second page*/
+/*fourth page Save*/
 Route::post('fourth_page_save', 'FourthPageController@updateOrcreate');
 Route::get('fourth_page_save', 'FourthPageController@updateOrcreate');
 /*fourth page end*/
@@ -75,9 +75,16 @@ Route::get('/class_five', function () {
 Route::get('/class_six', function () {
     return view('class_six');
 });
-Route::get('/teacher_info', function () {
-    return view('teacher_info');
-});
+
+/*Teacher Info page by Suzon*/
+Route::post('teacher_info', 'TeacherInfosController@read');
+Route::get('teacher_info', 'TeacherInfosController@read');
+
+/*Teacher Info page Save*/
+Route::post('teacher_info_save', 'TeacherInfosController@updateOrcreate');
+Route::get('teacher_info_save', 'TeacherInfosController@updateOrcreate');
+/*Teacher Info page end*/
+
 /*Page View:end*/
 
 /*class controller  [done by : suzon@1/6/2021*/

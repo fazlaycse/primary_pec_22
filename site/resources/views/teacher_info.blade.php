@@ -242,7 +242,10 @@
     <hr>
 
 </div>
-<script src="js/app.js" defer></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<script type="text/javascript">
+</script>
 </body>
 </html>
 
