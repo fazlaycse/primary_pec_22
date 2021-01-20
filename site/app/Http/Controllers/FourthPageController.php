@@ -27,6 +27,7 @@ class FourthPageController extends Controller
         //deal with Buildings Table
         try {
             $row = Buildings::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            $buildingId=$row->id;
             array_push($instRow, $row);
         } catch (\Exception $e) {
             // do task when error
@@ -44,7 +45,9 @@ class FourthPageController extends Controller
 
         //deal with Building_infos Table
         try {
+
             $row = Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            //print_r($row); exit;
             array_push($instRow, $row);
         } catch (\Exception $e) {
             // do task when error
@@ -127,7 +130,7 @@ class FourthPageController extends Controller
                 echo $e;
             }
         }
-
+        //echo $buildingId;die;
         $instRowObj = new \stdClass();
         $instRowObj->buildings = $instRow[0];
         $instRowObj->building_infos = $instRow[1];
@@ -135,7 +138,6 @@ class FourthPageController extends Controller
         $instRowObj->washblocks = $instRow[3];
         $instRowObj->water_facilities = $instRow[4];
         $instRowObj->ict_multimedias = $instRow[5];
-
         return view('fourth_page')->with('instRowObj',$instRowObj);
 
     }
@@ -143,45 +145,84 @@ class FourthPageController extends Controller
     public function updateOrcreate(Request $request)
     {
         if ($request->method() == 'POST') {
-
-//            var_dump($request->all());
+            //var_dump($request->all()); exit;
             try {
-                $updateOrcreateRow = General_infos::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+                $updateOrcreateRow = Buildings::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+                $buildingId=$updateOrcreateRow->id;
             } catch (\Exception $e) {
                 echo $e->getMessage();
 
                 // do task when error
                 /*echo $e->getMessage();
                 exit();*/
-                Session::flash('message', 'Something went wrong for General_infos Table!');
-                return redirect('/second_page');
+                Session::flash('message', 'Something went wrong for Buildings Table!');
+                return redirect('/third_page');
             }
 
             try {
-                $updateOrcreateRow = Curriculums::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+
+                $updateOrcreateRow = Building_infos::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
             } catch (\Exception $e) {
                 echo $e->getMessage();
 
                 // do task when error
                 /*echo $e->getMessage();
                 exit();*/
-                Session::flash('message', 'Something went wrong for Curriculums Table!');
-                return redirect('/second_page');
+                Session::flash('message', 'Something went wrong for Building_infos Table!');
+                return redirect('/third_page');
             }
 
             try {
-                $updateOrcreateRow = Special_std_facilities::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+                $updateOrcreateRow = Institute_sanitations::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
             } catch (\Exception $e) {
                 echo $e->getMessage();
 
                 // do task when error
                 /*echo $e->getMessage();
                 exit();*/
-                Session::flash('message', 'Something went wrong for Special_std_facilities Table!');
-                return redirect('/second_page');
+                Session::flash('message', 'Something went wrong for Institute_sanitations Table!');
+                return redirect('/third_page');
             }
+
+            try {
+                $updateOrcreateRow = Washblocks::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+                //print_r($request->all());die;
+            } catch (\Exception $e) {
+                echo $e->getMessage();
+
+                // do task when error
+                /*echo $e->getMessage();
+                exit();*/
+                Session::flash('message', 'Something went wrong for Washblocks Table!');
+                return redirect('/third_page');
+            }
+
+            try {
+                $updateOrcreateRow = Water_facilities::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+            } catch (\Exception $e) {
+                echo $e->getMessage();
+
+                // do task when error
+                /*echo $e->getMessage();
+                exit();*/
+                Session::flash('message', 'Something went wrong for Water_facilities Table!');
+                return redirect('/third_page');
+            }
+
+            try {
+                $updateOrcreateRow = Ict_multimedias::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+            } catch (\Exception $e) {
+                echo $e->getMessage();
+
+                // do task when error
+                /*echo $e->getMessage();
+                exit();*/
+                Session::flash('message', 'Something went wrong for Ict_multimedias Table!');
+                return redirect('/third_page');
+            }
+
             Session::flash('message', 'Data Saved Successfully!');
-            return redirect('/fourth_page');
+            return redirect('/pre_primary');
         }
     }
 }

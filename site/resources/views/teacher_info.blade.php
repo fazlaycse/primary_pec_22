@@ -1,3 +1,6 @@
+@if(Session::has('message'))
+    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
 <html>
 <head>
     <link href="css/app.css" rel="stylesheet">
@@ -51,83 +54,13 @@
         <a href="#" class="active">শিক্ষক ও কর্মচারী</a>
     </div>
     <br>
-    <form class="form-group">
+    <form class="form-group" method="POST" action="teacher_info_page_save" enctype="multipart/form-data">
+        {{ csrf_field() }}
+        <?php //$instRow = $instRow->teacher_infos;?>
         <div class="teacher_info border" style="background-color: #b0d4f1;">
-            <div class="teacher_number">
-                <span
-                    style="font-weight: bold; font-size: 18px"> ১৫. বিদ্যালয়ের শিক্ষক ও কর্মচারী সংক্রান্ত তথ্য: </span>
-                <br> <br>
-                <span style="font-size: 18px"> ক) বিদ্যালয়ের শিক্ষক ও কর্মচারীর সংখ্যাগত তথ্য: </span>
-                <div class="table_third_three">
-                    <table class="table table-bordered">
-                        <thead class="bg-primary">
-                        <tr>
-                            <th scope="col">ধরণ</th>
-                            <th scope="col">প্রধান শিক্ষক</th>
-                            <th scope="col">সহকারী শিক্ষক</th>
-                            <th scope="col">প্রাক-প্রাথমিক শিক্ষক</th>
-                            <th scope="col">দপ্তরি কাম প্রহরি</th>
-                            <th scope="col">মন্তব্য</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row" style="width: 520px"><span>অনুমোদিত পদ </span></th>
-                            <td><input type="number" style="width: 70px" name="onu_head_teacher"></td>
-                            <td><input type="number" style="width: 70px" name="onu_ast_teacher"></td>
-                            <td><input type="number" style="width: 70px" name="onu_pprimary_teacher"></td>
-                            <td><input type="number" style="width: 70px" name="onu_sg"></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="width: 520px"><span>সংযুক্ত (In)</span></th>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="width: 520px"><span>সংযুক্ত (Out)</span></th>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="width: 520px"><span>কর্মরত</span></th>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="width: 520px"><span>জানুয়ারি-ডিসেম্বর ২০১৯ পর্যন্ত কতজন শিক্ষক স্বেচ্ছায় অবসর/পিআরএল এ গিয়েছেন</span>
-                            </th>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="width: 520px"><span>জানুয়ারি-ডিসেম্বর ২০১৯ পর্যন্ত কতজন শিক্ষক মৃত্যুবরণ করেছেন/ইস্তফা দিয়েছেন</span>
-                            </th>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                            <td><input type="number" style="width: 70px" name=""></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             <hr>
             <div class="teacher_profile">
-                <span style="font-size: 18px"> খ) বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য: </span>
+                <span style="font-size: 18px"> বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য: </span>
                 <div class="table_third_three">
                     <table class="table table-bordered text-center">
                         <thead class="bg-primary">
@@ -171,42 +104,41 @@
                             <td style="width: 10px">#</td>
                             <td>
                                 Name in Bangla : <input type="text" style="width: 120px;" placeholder="নাম"
-                                                        name="tname_bangla"><br>
+                                                        name="tname_bangla" value="{{$instRow->tname_bangla}}"><br>
                                 Name in English : <input type="text" style="width: 120px;" placeholder="Name"
-                                                         name="tname_english">
+                                                         name="tname_english" value="{{$instRow->tname_english}}">
                             </td>
                             <td><input type="text" style="width: 70px; align-content: center" name="dob"></td>
                             <td><select class="custom-select" style="width:55px" name="sex">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option selected value="1" <?php if($instRow->sex =='1'){echo "selected";} ?>>হ্যাঁ</option>
+                                    <option value="2" <?php if($instRow->sex =='2'){echo "selected";} ?>>না</option>
                                 </select></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="ethinicity"></td>
-                            <td><input type="text" style="width: 90px; align-content: center" name="deisgnation"></td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="ethinicity" value="{{$instRow->ethinicity}}"></td>
+                            <td><input type="text" style="width: 90px; align-content: center" name="deisgnation" value="{{$instRow->deisgnation}}"></td>
                             <td><select class="custom-select" style="width:55px" name="inst_deisgnated">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option selected value="1" <?php if($instRow->inst_deisgnated =='1'){echo "selected";} ?>>হ্যাঁ</option>
+                                    <option value="2" <?php if($instRow->inst_deisgnated =='2'){echo "selected";} ?>>না</option>
                                 </select></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="inst_present"></td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="inst_present" value="{{$instRow->inst_present}}"></td>
                             <td><select class="custom-select" style="width:95px" name="edu_degree">
-                                    <option selected value="1">ডিগ্রী(পাশ)</option>
-                                    <option value="2">স্নাতক(সম্মান)</option>
-                                    <option value="3">স্নাতকোত্তর</option>
-                                    <option value="4">উচ্চ মাধ্যমিক</option>
-                                    <option value="5">মাধ্যমিক</option>
+                                    <option selected value="1" <?php if($instRow->edu_degree =='1'){echo "selected";} ?>>ডিগ্রী(পাশ)</option>
+                                    <option value="2"<?php if($instRow->edu_degree =='2'){echo "selected";} ?>>স্নাতক(সম্মান)</option>
+                                    <option value="3" <?php if($instRow->edu_degree =='3'){echo "selected";} ?>>স্নাতকোত্তর</option>
+                                    <option value="4" <?php if($instRow->edu_degree =='4'){echo "selected";} ?>>উচ্চ মাধ্যমিক</option>
+                                    <option value="5" <?php if($instRow->edu_degree =='5'){echo "selected";} ?>>মাধ্যমিক</option>
                                 </select></td>
                             <td>
-                                <button><input type="text" style="width: 70px; align-content: center" name="joining_dt">
-                                </button>
+                                <input type="text" style="width: 70px; align-content: center" name="joining_dt" value="{{$instRow->joining_dt}}">
                             </td>
                             <td><select class="custom-select" style="width:55px" name="class_six_eight">
-                                    <option selected value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option selected value="1" <?php if($instRow->class_six_eight =='1'){echo "selected";} ?>>হ্যাঁ</option>
+                                    <option value="2" <?php if($instRow->class_six_eight =='2'){echo "selected";} ?>>না</option>
                                 </select></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="short_training">
+                            <td><input type="text" style="width: 70px; align-content: center" name="short_training" value="{{$instRow->short_training}}">
                             </td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="long_training"></td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="long_training" value="{{$instRow->long_training}}"></td>
                             <td><input type="text" style="width: 70px; align-content: center"
-                                       name="twelve_month_training"></td>
+                                       name="twelve_month_training" value="{{$instRow->twelve_month_training}}"></td>
                         </tr>
                         </tbody>
                     </table>

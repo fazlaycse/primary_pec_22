@@ -92,25 +92,25 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_condition">
                                     <option  value="1" <?php if($instRow->bld_condition =='1'){echo "selected";} ?>>ভালো</option>
-                                    <option value="2" <?php if($instRow->bld_condition =='2'){echo "selected";} ?>>>নির্মাণাধীন</option>
-                                    <option value="3" <?php if($instRow->bld_condition =='3'){echo "selected";} ?>>>জরাজীর্ণ</option>
-                                    <option value="4" <?php if($instRow->bld_condition =='4'){echo "selected";} ?>>>ঝুকিপূর্ণ</option>
-                                    <option value="5" <?php if($instRow->bld_condition =='5'){echo "selected";} ?>>>পরিত্যক্ত</option>
+                                    <option value="2" <?php if($instRow->bld_condition =='2'){echo "selected";} ?>>নির্মাণাধীন</option>
+                                    <option value="3" <?php if($instRow->bld_condition =='3'){echo "selected";} ?>>জরাজীর্ণ</option>
+                                    <option value="4" <?php if($instRow->bld_condition =='4'){echo "selected";} ?>>ঝুকিপূর্ণ</option>
+                                    <option value="5" <?php if($instRow->bld_condition =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_projt_name">
-                                    <option  value="1"> পিডিপি-১</option>
-                                    <option value="2"> পিডিপি-২</option>
-                                    <option value="3"> পিডিপি-৩</option>
-                                    <option value="4">পিডিপি-৪</option>
-                                    <option value="5">অন্যান্য</option>
+                                    <option  value="1" <?php if($instRow->bld_projt_name =='1'){echo "selected";} ?>> পিডিপি-১</option>
+                                    <option value="2" <?php if($instRow->bld_projt_name =='2'){echo "selected";} ?>> পিডিপি-২</option>
+                                    <option value="3" <?php if($instRow->bld_projt_name =='3'){echo "selected";} ?>> পিডিপি-৩</option>
+                                    <option value="4" <?php if($instRow->bld_projt_name =='4'){echo "selected";} ?>>পিডিপি-৪</option>
+                                    <option value="5" <?php if($instRow->bld_projt_name =='5'){echo "selected";} ?>>অন্যান্য</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="bld_ramp_yn">
-                                    <option  value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option  value="1" <?php if($instRow->bld_ramp_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
+                                    <option value="2" <?php if($instRow->bld_ramp_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
                             </td>
                         </tr>
@@ -139,52 +139,53 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="col">১.</th>
+                            <?php $instRow = $instRowObj->institute_sanitations;?>
+                            <td><input type="number" style="width: 70px; align-content: center" name="toilet_no" value="{{$instRow->toilet_no}}"></td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="wsblk_user">
-                                    <option  value="1">বালক</option>
-                                    <option value="2">বালিকা</option>
-                                    <option value="3">বালক-বালিকা যৌথ</option>
-                                    <option value="4">সহ: শিক্ষক</option>
-                                    <option value="5">প্রধান শিক্ষক</option>
-                                    <option value="6">শিক্ষকদের যৌথ</option>
-                                    <option value="7">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                <select class="custom-select" style="width:90px" name="toilet_users">
+                                    <option  value="1" <?php if($instRow->toilet_users =='1'){echo "selected";}?> >বালক</option>
+                                    <option value="2" <?php if($instRow->toilet_users =='2'){echo "selected";}?>>বালিকা</option>
+                                    <option value="3" <?php if($instRow->toilet_users =='3'){echo "selected";}?>>বালক-বালিকা যৌথ</option>
+                                    <option value="4" <?php if($instRow->toilet_users =='4'){echo "selected";}?>>সহ: শিক্ষক</option>
+                                    <option value="5" <?php if($instRow->toilet_users =='5'){echo "selected";}?>>প্রধান শিক্ষক</option>
+                                    <option value="6" <?php if($instRow->toilet_users =='6'){echo "selected";}?>>শিক্ষকদের যৌথ</option>
+                                    <option value="7"<?php if($instRow->toilet_users =='7'){echo "selected";}?>>বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="wsblk_condition">
-                                    <option  value="1">ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
+                                <select class="custom-select" style="width:90px" name="toilet_curcond">
+                                    <option  value="1" <?php if($instRow->toilet_curcond =='1'){echo "selected";}?>>ভালো</option>
+                                    <option value="2"<?php if($instRow->toilet_curcond =='2'){echo "selected";} ?>>নির্মাণাধীন</option>
+                                    <option value="3"<?php if($instRow->toilet_curcond =='3'){echo "selected";} ?>>জরাজীর্ণ</option>
+                                    <option value="4"<?php if($instRow->toilet_curcond =='4'){echo "selected";} ?>>ঝুকিপূর্ণ</option>
+                                    <option value="5"<?php if($instRow->toilet_curcond =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
-                                    <option  value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                <select class="custom-select" style="width:80px" name="clean_mat_yn">
+                                    <option  value="1" > <?php if($instRow->clean_mat_yn =='1'){echo "selected";}?>হ্যাঁ</option>
+                                    <option value="2"  <?php if($instRow->clean_mat_yn =='2'){echo "selected";}?>>না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
-                                    <option  value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                <select class="custom-select" style="width:80px" name="hand_soap_yn">
+                                    <option  value="1" <?php if($instRow->hand_soap_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
+                                    <option value="2" <?php if($instRow->hand_soap_yn =='2'){echo "selected";}?>>না</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="toilet_water_yn">
-                                    <option  value="1">আছে</option>
-                                    <option value="2">নাই</option>
+                                    <option  value="1"<?php if($instRow->toi_water_yn =='1'){echo "selected";}?>>আছে</option>
+                                    <option value="2"<?php if($instRow->toi_water_yn =='2'){echo "selected";}?>>নাই</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_project">
-                                    <option value="1"> পিডিপি-১</option>
-                                    <option value="2"> পিডিপি-২</option>
-                                    <option value="3"> পিডিপি-৩</option>
-                                    <option value="4">পিডিপি-৪</option>
-                                    <option value="5">অন্যান্য</option>
+                                    <option value="1"<?php if($instRow->toi_project =='1'){echo "selected";}?>> পিডিপি-১</option>
+                                    <option value="2"<?php if($instRow->toi_project =='2'){echo "selected";}?>> পিডিপি-২</option>
+                                    <option value="3"<?php if($instRow->toi_project =='3'){echo "selected";}?>> পিডিপি-৩</option>
+                                    <option value="4"<?php if($instRow->toi_project =='4'){echo "selected";}?>>পিডিপি-৪</option>
+                                    <option value="5"<?php if($instRow->toi_project =='5'){echo "selected";}?>>অন্যান্য</option>
                                 </select>
                             </td>
                         </tr>
@@ -214,49 +215,49 @@
                         <tbody>
 
                         <tr>
-                            <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount">
-                            </td>
-                            <td><input type="number" style="width: 70px" name="wsblk_estb_year"></td>
+                            <?php $instRow = $instRowObj->washblocks;?>
+                            <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount" value="{{$instRow->wsblk_amount}}"></td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="w_es_year" value="{{$instRow->w_es_year}}"></td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="wsblk_user">
-                                    <option  value="1">বালক</option>
-                                    <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক</option>
-                                    <option value="4">মহিলা শিক্ষিকা</option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                    <option  value="1" <?php if($instRow->wsblk_user =='1'){echo "selected";}?>>বালক</option>
+                                    <option value="2"<?php if($instRow->wsblk_user =='2'){echo "selected";}?>>বালিকা</option>
+                                    <option value="3"<?php if($instRow->wsblk_user =='3'){echo "selected";}?>>পুরুষ শিক্ষক</option>
+                                    <option value="4"<?php if($instRow->wsblk_user =='4'){echo "selected";}?>>মহিলা শিক্ষিকা</option>
+                                    <option value="5"<?php if($instRow->wsblk_user =='5'){echo "selected";}?>>বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="..." name="wsblk_condition">
-                                    <option  value="1">ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
+                                    <option value="1"<?php if($instRow->wsblk_condition =='1'){echo "selected";}?>>ভালো</option>
+                                    <option value="2"<?php if($instRow->wsblk_condition =='2'){echo "selected";}?>>নির্মাণাধীন</option>
+                                    <option value="3"<?php if($instRow->wsblk_condition =='3'){echo "selected";}?>>জরাজীর্ণ</option>
+                                    <option value="4"<?php if($instRow->wsblk_condition =='4'){echo "selected";}?>>ঝুকিপূর্ণ</option>
+                                    <option value="5"<?php if($instRow->wsblk_condition =='5'){echo "selected";}?>>পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="wsblk_std_yn">
-                                    <option  value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option  value="1"<?php if($instRow->wsblk_std_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
+                                    <option value="2"<?php if($instRow->wsblk_std_yn =='2'){echo "selected";}?>>না</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
-                                    <option  value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option  value="1"<?php if($instRow->cleaning_agent_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
+                                    <option value="2"<?php if($instRow->cleaning_agent_yn =='2'){echo "selected";}?>>না</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="toilet_water_yn">
-                                    <option  value="1">আছে</option>
-                                    <option value="2">নাই</option>
+                                    <option  value="1"<?php if($instRow->toilet_water_yn =='1'){echo "selected";}?>>আছে</option>
+                                    <option value="2"<?php if($instRow->toilet_water_yn =='2'){echo "selected";}?>>নাই</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="hand_wash_yn">
-                                    <option  value="1">হ্যাঁ</option>
-                                    <option value="2">না</option>
+                                    <option  value="1"<?php if($instRow->hand_wash_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
+                                    <option value="2"<?php if($instRow->hand_wash_yn =='2'){echo "selected";}?>>না</option>
                                 </select>
                             </td>
                         </tr>
@@ -284,6 +285,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"><span>সরবরাহ বা সাপ্লাই </span></th>
                             <td>
+                                <?php $instRow = $instRowObj->water_facilities;?>
                                 <select class="custom-select" style="width:90px" name="supp_src_condition">
                                     <option value="1" <?php if($instRow->supp_src_condition =='1'){echo "selected";} ?>>ভালো</option>
                                     <option value="2" <?php if($instRow->supp_src_condition =='2'){echo "selected";} ?>>মোটামুটি</option>
@@ -358,7 +360,7 @@
                                     <option value="2" <?php if($instRow->tbwell_ecoli_test_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
                             </td>
-                            <td><input type="number" style="width: 70px" name="tbwell_salt_test" value=""{{$instRow->tbwell_salt_test}}""></td>
+                            <td><input type="number" style="width: 70px" name="tbwell_salt_test" value="{{$instRow->tbwell_salt_test}}"></td>
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px"><span>ফিল্টার </span></th>
@@ -458,6 +460,7 @@
                         <tr>
                             <th scope="row" style="width: 150px"><span>বিদ্যালয়ের জন্য কম্পিউটার / ডেস্কটপ </span></th>
                             <td>
+                                <?php $instRow = $instRowObj->ict_multimedias;?>
                                 <select class="custom-select" style="width:80px" name="desktop_yn">
                                     <option value="1" <?php if($instRow->desktop_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->desktop_yn =='2'){echo "selected";} ?>>না</option>

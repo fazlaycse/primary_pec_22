@@ -20,9 +20,9 @@ class CreateBuildingInfosTable extends Migration
             $table->integer('storied_number');
             $table->integer('storied_number_1');
             $table->integer('storied_number_2');
-            $table->date('estb_year');
-            $table->date('estb_year_1');
-            $table->date('estb_year_2');
+            $table->string('estb_year');
+            $table->string('estb_year_1');
+            $table->string('estb_year_2');
             $table->integer('bld_foundation');
             $table->integer('bld_foundation_1');
             $table->integer('bld_foundation_2');
