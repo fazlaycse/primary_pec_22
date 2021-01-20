@@ -9,7 +9,7 @@ class Washblocks extends Model
     protected $fillable=[
         'token',
         'wsblk_amount',
-        'wsblk_estb_year',
+        'w_es_year',
         'wsblk_user',
         'wsblk_condition',
         'wsblk_std_yn',

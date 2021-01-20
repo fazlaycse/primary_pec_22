@@ -54,31 +54,80 @@ Route::post('fourth_page_save', 'FourthPageController@updateOrcreate');
 Route::get('fourth_page_save', 'FourthPageController@updateOrcreate');
 /*fourth page end*/
 
-Route::get('/pre_primary', function () {
-    return view('pre_primary');
-});
-Route::get('/class_one', function () {
-    return view('class_one');
-});
-Route::get('/class_two', function () {
-    return view('class_two');
-});
-Route::get('/class_three', function () {
-    return view('class_three');
-});
-Route::get('/class_four', function () {
-    return view('class_four');
-});
-Route::get('/class_five', function () {
-    return view('class_five');
-});
-Route::get('/class_six', function () {
-    return view('class_six');
-});
-Route::get('/teacher_info', function () {
-    return view('teacher_info');
-});
-/*Page View:end*/
+/*pre_primary_page  by lemon*/
+Route::post('pre_primary', 'PrePrimaryController@read');
+Route::get('pre_primary', 'PrePrimaryController@read');
+
+/*pre_primary_page Second page*/
+Route::post('pre_primary_save', 'PrePrimaryController@updateOrcreate');
+Route::get('pre_primary_save', 'PrePrimaryController@updateOrcreate');
+/*pre_primary_page  end*/
+
+/*class_one  by lemon*/
+Route::post('class_one', 'ClassOneController@read');
+Route::get('class_one', 'ClassOneController@read');
+
+/*class_one Second page*/
+Route::post('class_one_save', 'ClassOneController@updateOrcreate');
+Route::get('class_one_save', 'ClassOneController@updateOrcreate');
+/*class_one  end*/
+
+
+/*class_two  by lemon*/
+Route::post('class_two', 'ClassTwoController@read');
+Route::get('class_two', 'ClassTwoController@read');
+
+/*class_two Second page*/
+Route::post('class_two_save', 'ClassTwoController@updateOrcreate');
+Route::get('class_two_save', 'ClassTwoController@updateOrcreate');
+/*class_two  end*/
+
+/*class_three  by lemon*/
+Route::post('class_three', 'ClassThreeController@read');
+Route::get('class_three', 'ClassThreeController@read');
+
+/*class_three Second page*/
+Route::post('class_three_save', 'ClassThreeController@updateOrcreate');
+Route::get('class_three_save', 'ClassThreeController@updateOrcreate');
+/*class_three  end*/
+
+/*class_four  by lemon*/
+Route::post('class_four', 'ClassFourController@read');
+Route::get('class_four', 'ClassFourController@read');
+
+/*class_four Second page*/
+Route::post('class_four_save', 'ClassFourController@updateOrcreate');
+Route::get('class_four_save', 'ClassFourController@updateOrcreate');
+/*class_four  end*/
+
+/*class_five  by lemon*/
+Route::post('class_five', 'ClassFiveController@read');
+Route::get('class_five', 'ClassFiveController@read');
+
+/*class_five Second page*/
+Route::post('class_five_save', 'ClassFiveController@updateOrcreate');
+Route::get('class_five_save', 'ClassFiveController@updateOrcreate');
+/*class_five  end*/
+
+/*class_six  by lemon*/
+Route::post('class_six', 'ClassSixController@read');
+Route::get('class_six', 'ClassSixController@read');
+
+/*class_six Second page*/
+Route::post('class_six_save', 'ClassSixController@updateOrcreate');
+Route::get('class_six_save', 'ClassSixController@updateOrcreate');
+/*class_six  end*/
+
+
+/*teacher_info page by lemon*/
+Route::post('teacher_info', 'TeacherInfosController@read');
+Route::get('teacher_info', 'TeacherInfosController@read');
+
+/*teacher_info Second page*/
+Route::post('teacher_info_page_save', 'TeacherInfosController@updateOrcreate');
+Route::get('teacher_info_page_save', 'TeacherInfosController@updateOrcreate');
+/*teacher_info page end*/
+
 
 /*class controller  [done by : suzon@1/6/2021*/
 Route::get('classes/', 'ClassesController@index');

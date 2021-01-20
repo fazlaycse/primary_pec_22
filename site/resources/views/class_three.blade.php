@@ -1,5 +1,5 @@
 <html>
-<! ethnic_students,  Special_students, classwise_students, repeater_students table->
+<! ethnic_students, Special_students, classwise_students, repeater_students table->
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -33,7 +33,7 @@
     <hr>
     <div class="form_name">
         <div class="heading col-md-12">
-            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
+            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম</h4>
         </div>
     </div>
     <hr>
@@ -45,7 +45,7 @@
         <a href="#">প্রাক-প্রাথমিক</a>
         <a href="#">প্রথম শ্রেণি</a>
         <a href="#">দ্বিতীয় শ্রেণি</a>
-        <a href="#"  class="active">তৃতীয় শ্রেণি</a>
+        <a href="#" class="active">তৃতীয় শ্রেণি</a>
         <a href="#">চতুর্থ শ্রেণি</a>
         <a href="#">পঞ্চম শ্রেণি</a>
         <a href="#">ষষ্ঠ-অষ্টম শ্রেণি</a>
@@ -54,13 +54,12 @@
     <br>
     <div class="first_body">
         <div class="student_info border" style="padding:10px; font-size:14px">
-            <form class="form-group" action="class_three_save" method="save">
+            <form action="class_three_save" method="post">
+                {{ csrf_field()}}
                 <div class="student_info1">
                     <div class="table_heading">
-                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ১১. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">তৃতীয় শ্রেণি</span></h5></span>
+                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ১১. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">তৃতীয় শ্রেণি </span></h5></span>
                     </div>
-
-
                     <div class="row border" style="margin:0px">
                         <div class="col-md-6 border justify-content-center align-self-center">
                             <div class="preethnic_number">
@@ -80,6 +79,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        <?php $instRow = $instRowObj->ethnic_students;?>
                                         <th scope="row">চাকমা</th>
                                         <td><input type="number" style="width: 50px" name="cakma_boy" value="{{$instRow->cakma_boy}}"></td>
                                         <td><input type="number" style="width: 50px" name="cakma_girl" value="{{$instRow->cakma_girl}}"></td>
@@ -147,6 +147,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        <?php $instRow = $instRowObj->special_students;?>
                                         <th scope="row">শারীরিক </th>
                                         <td><input type="number" style="width: 50px" name="physical_boy" value="{{$instRow->physical_boy}}"></td>
                                         <td><input type="number" style="width: 50px" name="physical_girl" value="{{$instRow->physical_girl}}"></td>
@@ -214,6 +215,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        <?php $instRow = $instRowObj->repeater_students;?>
                                         <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুনরাবৃত্তি</th>
                                         <td><input type="number" style="width: 50px" name="repeater_boy" value="{{$instRow->repeater_boy}}"></td>
                                         <td><input type="number" style="width: 50px" name="repeater_girl" value="{{$instRow->repeater_girl}}"></td>
@@ -233,7 +235,7 @@
                                             (২০১৯ সালের ডিসেম্বর ও <br> ২০২০ সালের ২৯ ফ্রেব্রুয়ারি পর্যন্ত ভর্তি/হাজিরা রেজিস্টার দেখে তথ্য দিন) </th>
                                     </tr>
                                     <tr>
-                                        <th scope="col">শিক্ষার্থীর ধরণ</th>
+                                        <th scope="col">সাল</th>
                                         <th scope="col">বালক</th>
                                         <th scope="col">বালিকা</th>
                                         <th scope="col">মোট</th>
@@ -241,6 +243,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        <?php $instRow = $instRowObj->classwise_students;?>
                                         <th scope="row">২০১৯</th>
                                         <td><input type="number" style="width: 50px" name="boy_y_first" value="{{$instRow->boy_y_first}}"></td>
                                         <td><input type="number" style="width: 50px" name="girl_y_first" value="{{$instRow->girl_y_first}}"></td>
@@ -259,37 +262,31 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="pull-right">
+
+                    <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
+
+                </div>
             </form>
         </div>
-    </div>
+        <div style="clear: both">
 
-
-
-    <div class="pull-right">
-
-        <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
-    </div>
-    <div style="clear: both">
-
-    </div>
-    </form>
-    <div style="clear: both">
-
-    </div>
-    <hr>
-    <div class="footer">
-        <div class="row footer">
-            <div class="col-md-12"
-                 style="text-align:center; padding:5px; font-family: 'Lucida Sans'; background-color: #a1cbef;">
-                <span> &copy; Powered by ICT Division, BANBEIS</span> <br>
-                <span> Ministry of Education</span>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="row footer">
+                <div class="col-md-12"
+                     style="text-align:center; padding:5px; font-family: 'Lucida Sans'; background-color: #a1cbef;">
+                    <span> &copy; Powered by ICT Division, BANBEIS</span> <br>
+                    <span> Ministry of Education</span>
+                </div>
             </div>
         </div>
-    </div>
-    <hr>
+        <hr>
 
-</div>
-<script src="js/app.js" defer></script>
+    </div>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
 
