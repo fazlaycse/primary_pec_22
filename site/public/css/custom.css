@@ -55,3 +55,7 @@
     background-color: #4CAF50;
     color: white;
 }
+
+.js-date{
+    width:90px !important;
+}

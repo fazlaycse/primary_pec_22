@@ -10,13 +10,6 @@ class TeacherInfosController extends Controller
 {
     public function read(Request $request)
     {
-        /* $columns = Schema::getColumnListing('Water_facilities');
-
-       for($i=0;$i<sizeof($columns);$i++){
-           echo "'".strtolower($columns[$i])."',<br>";
-       }
-         exit();*/
-
         try {
             $instRow = Teacher_infos::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
             return view('teacher_info')->with(compact('instRow'));
@@ -40,23 +33,22 @@ class TeacherInfosController extends Controller
 
     public function updateOrcreate(Request $request)
     {
+        $reqData = $request->all();
+
         if ($request->method() == 'POST') {
+            for ($i = 0; $i < sizeof($reqData); $i++) {
+                $reqData[$i]['institute_id'] = $request->session()->get('institute_id');
+                $reqData[$i]['year'] = 2010;
+            }
 
             try {
-                $request->year = 2020;
-                $updateOrcreateRow = Teacher_infos::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
-                Session::flash('message', 'Data Saved Successfully!');
-                //$request->session()->forget('institute_id');
-                return redirect('/');
+                Teacher_infos::where('institute_id', '=', $request->session()->get('institute_id'))->delete();
+                Teacher_infos::insert($reqData);
                 $request->session()->forget('institute_id');
+                return response('OK', 200);
             } catch (\Exception $e) {
-                echo $e->getMessage();
-                exit;
-                // do task when error
-                /*echo $e->getMessage();
-                exit();*/
-                Session::flash('message', 'Something went wrong!');
-                return redirect('/class_six');
+                return response(json(['error' =>  $e->getMessage()]), 401);
+
             }
         }
     }
