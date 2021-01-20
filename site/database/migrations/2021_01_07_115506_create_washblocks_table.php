@@ -16,7 +16,7 @@ class CreateWashblocksTable extends Migration
         Schema::create('washblocks', function (Blueprint $table) {
             $table->id();
             $table->integer('wsblk_amount');
-            $table->date('wsblk_estb_year');
+            $table->string('w_es_year');
             $table->integer('wsblk_user');
             $table->integer('wsblk_condition');
             $table->integer('wsblk_std_yn');
