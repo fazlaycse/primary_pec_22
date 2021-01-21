@@ -6,53 +6,38 @@
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <script>
+        window.buildings = '<?php echo $instRowObj->buildings; ?>';
+        window.building_infos = '<?php echo $instRowObj->building_infos; ?>';
+    </script>
 </head>
 <body>
 <div class="container kalpurus" id="app">
     {{--Include Header--}}
     @include('common.header');
     {{--Include Header End--}}
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="form_name">
-        <div class="heading col-md-12">
-            <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
-        </div>
-    </div>
-    <hr>
-    <div class="topnav">
-        <a href="#">প্রথম পাতা</a>
-        <a href="#">দ্বিতীয় পাতা</a>
-        <a href="#">তৃতীয় পাতা</a>
-        <a href="#" class="active">চতুর্থ পাতা</a>
-        <a href="#" >পঞ্চম পাতা</a>
-        <a href="#" >ষষ্ঠ পাতা</a>
-        <a href="#" >সপ্তম পাতা</a>
-        <a href="#">প্রাক-প্রাথমিক</a>
-        <a href="#">প্রথম শ্রেণি</a>
-        <a href="#">দ্বিতীয় শ্রেণি</a>
-        <a href="#">তৃতীয় শ্রেণি</a>
-        <a href="#">চতুর্থ শ্রেণি</a>
-        <a href="#">পঞ্চম শ্রেণি</a>
-        <a href="#">ষষ্ঠ-অষ্টম শ্রেণি</a>
-        <a href="#">শিক্ষক ও কর্মচারী</a>
-    </div>
-    <br>
+
     <div class="body_table" style="background-color: #b0d4f1;">
 
         <form class="form-group" method="POST" action="fourth_page_save" enctype="multipart/form-data">
             {{ csrf_field() }}
-            <?php $instRow = $instRowObj->buildings;?>
+            <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
+
             <div class="table_third_heading">
                 <span style="font-weight: bold; font-size: 17px"> ৩. বিদ্যালয়ের ভবনের তথ্য: </span> <span
                         style=" font-size: 15px">(শুধুমাত্র বিদ্যালয়ের ধরন: ০১, ০৪, ২৬ এবং ৯৯ এর জন্য প্রযোজ্য) </span>
                 <div class="table_third_one">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="navbar-brand">
+                            <label for="labelId">মোট ভবন সংখ্যা</label>
+                            <input id="labelId" type="number" style="width: 70px; align-content: center" name="number_of_building" v-model="buildings.number_of_building">
+                        </div>
+                    </nav>
+
                     <table class="table table-bordered" style="text-align: center">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col">মোট ভবন সংখ্যা</th>
+
                             <th scope="col">ভবনের নম্বর</th>
                             <th scope="col">ভবনটি কত তলা বিশিষ্ট</th>
                             <th scope="col">নির্মানের সাল</th>
@@ -65,40 +50,38 @@
                         </thead>
                         <tbody>
                         <tr>
-
-                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building" value="{{$instRow->number_of_building}}"></td>
-                            <?php $instRow = $instRowObj->building_infos;?>
-                            <td><input type="number" style="width: 70px" name="building_no" value="{{$instRow->building_no}}"></td>
-                            <td><input type="number" style="width: 70px" name="storied_number" value="{{$instRow->storied_number}}"></td>
-                            <td><input type="number" style="width: 70px" name="estb_year" value="{{$instRow->estb_year}}"></td>
-                            <td><input type="number" style="width: 70px" name="bld_foundation" value="{{$instRow->bld_foundation}}"></td>
-                            <td><input type="number" style="width: 70px" name="room_number" value="{{$instRow->room_number}}"></td>
+                            <td><input type="number" style="width: 70px" name="building_no" value=""></td>
+                            <td><input type="number" style="width: 70px" name="storied_number" value=""></td>
+                            <td><input type="number" style="width: 70px" name="estb_year" value=""></td>
+                            <td><input type="number" style="width: 70px" name="bld_foundation" value=""></td>
+                            <td><input type="number" style="width: 70px" name="room_number" value=""></td>
 
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_condition">
-                                    <option  value="1" <?php if($instRow->bld_condition =='1'){echo "selected";} ?>>ভালো</option>
-                                    <option value="2" <?php if($instRow->bld_condition =='2'){echo "selected";} ?>>নির্মাণাধীন</option>
-                                    <option value="3" <?php if($instRow->bld_condition =='3'){echo "selected";} ?>>জরাজীর্ণ</option>
-                                    <option value="4" <?php if($instRow->bld_condition =='4'){echo "selected";} ?>>ঝুকিপূর্ণ</option>
-                                    <option value="5" <?php if($instRow->bld_condition =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
+                                    <option  value="1">ভালো</option>
+                                    <option value="2" >নির্মাণাধীন</option>
+                                    <option value="3" >জরাজীর্ণ</option>
+                                    <option value="4" >ঝুকিপূর্ণ</option>
+                                    <option value="5" >পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_projt_name">
-                                    <option  value="1" <?php if($instRow->bld_projt_name =='1'){echo "selected";} ?>> পিডিপি-১</option>
-                                    <option value="2" <?php if($instRow->bld_projt_name =='2'){echo "selected";} ?>> পিডিপি-২</option>
-                                    <option value="3" <?php if($instRow->bld_projt_name =='3'){echo "selected";} ?>> পিডিপি-৩</option>
-                                    <option value="4" <?php if($instRow->bld_projt_name =='4'){echo "selected";} ?>>পিডিপি-৪</option>
-                                    <option value="5" <?php if($instRow->bld_projt_name =='5'){echo "selected";} ?>>অন্যান্য</option>
+                                    <option  value="1"> পিডিপি-১</option>
+                                    <option value="2" > পিডিপি-২</option>
+                                    <option value="3" > পিডিপি-৩</option>
+                                    <option value="4" >পিডিপি-৪</option>
+                                    <option value="5" >অন্যান্য</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="bld_ramp_yn">
-                                    <option  value="1" <?php if($instRow->bld_ramp_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->bld_ramp_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option  value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
+
 
                         </tbody>
                     </table>
@@ -113,21 +96,13 @@
             </div>
         </form>
     </div>
-
-
-    <div style="clear: both">
-
-    </div>
-
-    <div style="clear: both">
-
-    </div>
-
+    <div style="clear: both"></div>
     {{--Include Footer--}}
     @include('common.footer');
     {{--Include Footer End--}}
 
 </div>
-<script src="js/app.js" defer></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="js/fourthPage.js" type="text/javascript"></script>
 </body>
 </html>
