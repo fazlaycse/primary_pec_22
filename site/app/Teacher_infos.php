@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class teacher_infos extends Model
+class Teacher_infos extends Model
 {
     protected $fillable=[
         'token',

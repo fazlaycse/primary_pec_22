@@ -49,7 +49,7 @@ Route::get('third_page_save', 'ThirdPageController@updateOrcreate');
 Route::post('fourth_page', 'FourthPageController@read');
 Route::get('fourth_page', 'FourthPageController@read');
 
-/*fourth Second page*/
+/*fourth page Save*/
 Route::post('fourth_page_save', 'FourthPageController@updateOrcreate');
 Route::get('fourth_page_save', 'FourthPageController@updateOrcreate');
 /*fourth page end*/
@@ -127,7 +127,6 @@ Route::get('teacher_info', 'TeacherInfosController@read');
 Route::post('teacher_info_page_save', 'TeacherInfosController@updateOrcreate');
 Route::get('teacher_info_page_save', 'TeacherInfosController@updateOrcreate');
 /*teacher_info page end*/
-
 
 /*class controller  [done by : suzon@1/6/2021*/
 Route::get('classes/', 'ClassesController@index');

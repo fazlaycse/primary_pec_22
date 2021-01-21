@@ -5,6 +5,9 @@
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <script>
+        window.teacherData = '<?php echo $instRow; ?>';
+    </script>
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -20,7 +23,7 @@
                     <br>
                     <span> শিক্ষা মন্ত্রণালয়</span>
                     <br>
-                    <span> বাংলাদেশ শিক্ষা তথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) </span>
+                    <span>বাংলাদেশ শিক্ষা তথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) </span>
                     <br>
                     <span> ১ জহির রায়হান রোড (পলাশী-নীলক্ষেত), ঢাকা-১২০৫</span>
                     <br>
@@ -54,8 +57,9 @@
         <a href="#" class="active">শিক্ষক ও কর্মচারী</a>
     </div>
     <br>
-    <form class="form-group" method="POST" action="teacher_info_page_save" enctype="multipart/form-data">
+    <form class="form-group">
         {{ csrf_field() }}
+        <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
         <?php //$instRow = $instRow->teacher_infos;?>
         <div class="teacher_info border" style="background-color: #b0d4f1;">
             <hr>
@@ -100,49 +104,52 @@
                             <th scope="col">স্বল্প মেয়াদি</th>
                             <th scope="col">দীর্ঘ মেয়াদি</th>
                         </tr>
-                        <tr>
+                        <tr v-for="item in rowData">
                             <td style="width: 10px">#</td>
                             <td>
-                                Name in Bangla : <input type="text" style="width: 120px;" placeholder="নাম"
-                                                        name="tname_bangla" value="{{$instRow->tname_bangla}}"><br>
-                                Name in English : <input type="text" style="width: 120px;" placeholder="Name"
-                                                         name="tname_english" value="{{$instRow->tname_english}}">
+                               <input type="text" style="width: 120px;" placeholder="নাম"
+                                                        name="tname_bangla" v-model="item.tname_bangla"><br>
+                               <input type="text" style="width: 120px;" placeholder="Name"
+                                                         name="tname_english" v-model="item.tname_english">
                             </td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="dob"></td>
-                            <td><select class="custom-select" style="width:55px" name="sex">
-                                    <option selected value="1" <?php if($instRow->sex =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->sex =='2'){echo "selected";} ?>>না</option>
+                            <td>
+                                <the-mask :mask="['##-##-####']" type="text" style="width: auto; align-content: center" name="dob" v-model="item.dob" class="js-date" maxlength="10" />
+                            <td>
+                                <select class="custom-select" style="width:55px" name="sex" v-model="item.sex">
+                                    <option value="male" >Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="ethinicity" v-model="item.ethinicity"></td>
+                            <td><input type="text" style="width: 90px; align-content: center" name="deisgnation" v-model="item.deisgnation"></td>
+                            <td><select class="custom-select" style="width:55px" name="inst_deisgnated" v-model="item.inst_deisgnated">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
                                 </select></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="ethinicity" value="{{$instRow->ethinicity}}"></td>
-                            <td><input type="text" style="width: 90px; align-content: center" name="deisgnation" value="{{$instRow->deisgnation}}"></td>
-                            <td><select class="custom-select" style="width:55px" name="inst_deisgnated">
-                                    <option selected value="1" <?php if($instRow->inst_deisgnated =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->inst_deisgnated =='2'){echo "selected";} ?>>না</option>
-                                </select></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="inst_present" value="{{$instRow->inst_present}}"></td>
-                            <td><select class="custom-select" style="width:95px" name="edu_degree">
-                                    <option selected value="1" <?php if($instRow->edu_degree =='1'){echo "selected";} ?>>ডিগ্রী(পাশ)</option>
-                                    <option value="2"<?php if($instRow->edu_degree =='2'){echo "selected";} ?>>স্নাতক(সম্মান)</option>
-                                    <option value="3" <?php if($instRow->edu_degree =='3'){echo "selected";} ?>>স্নাতকোত্তর</option>
-                                    <option value="4" <?php if($instRow->edu_degree =='4'){echo "selected";} ?>>উচ্চ মাধ্যমিক</option>
-                                    <option value="5" <?php if($instRow->edu_degree =='5'){echo "selected";} ?>>মাধ্যমিক</option>
+                            <td><input type="text" style="width: 70px; align-content: center" name="inst_present" v-model="item.inst_present"></td>
+                            <td><select class="custom-select" style="width:95px" name="edu_degree" v-model="item.edu_degree">
+                                    <option value="1">ডিগ্রী(পাশ)</option>
+                                    <option value="2">স্নাতক(সম্মান)</option>
+                                    <option value="3">স্নাতকোত্তর</option>
+                                    <option value="4">উচ্চ মাধ্যমিক</option>
+                                    <option value="5">মাধ্যমিক</option>
                                 </select></td>
                             <td>
-                                <input type="text" style="width: 70px; align-content: center" name="joining_dt" value="{{$instRow->joining_dt}}">
+                                <the-mask :mask="['##-##-####']" type="text" class="js-date" style="width: 70px; align-content: center" name="joining_dt" v-model="item.joining_dt"/>
                             </td>
-                            <td><select class="custom-select" style="width:55px" name="class_six_eight">
-                                    <option selected value="1" <?php if($instRow->class_six_eight =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->class_six_eight =='2'){echo "selected";} ?>>না</option>
+                            <td><select class="custom-select" style="width:55px" name="class_six_eight" v-model="item.class_six_eight">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
                                 </select></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="short_training" value="{{$instRow->short_training}}">
+                            <td><input type="text" style="width: 70px; align-content: center" name="short_training" v-model="item.short_training">
                             </td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="long_training" value="{{$instRow->long_training}}"></td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="long_training" v-model="item.long_training"></td>
                             <td><input type="text" style="width: 70px; align-content: center"
-                                       name="twelve_month_training" value="{{$instRow->twelve_month_training}}"></td>
+                                       name="twelve_month_training" v-model="item.twelve_month_training"></td>
                         </tr>
                         </tbody>
                     </table>
-
+                    <input type="button" id="addRow" class="btn btn-success"  @click="addItem" value="Add Row"/>
                 </div>
             </div>
         </div>
@@ -150,7 +157,7 @@
         <div class="body_table">
             <div class="pull-right">
 
-                <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
+                <input @click="submitTeacherInfo" type="button" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
                        value="Save and Go Forward">
             </div>
             <div style="clear: both">
@@ -174,7 +181,8 @@
     <hr>
 
 </div>
-<script src="js/app.js" defer></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>
 
