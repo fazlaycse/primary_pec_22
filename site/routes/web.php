@@ -54,6 +54,33 @@ Route::post('fourth_page_save', 'FourthPageController@updateOrcreate');
 Route::get('fourth_page_save', 'FourthPageController@updateOrcreate');
 /*fourth page end*/
 
+/*fifth page by lemon*/
+Route::post('fifth_page', 'FifthPageController@read');
+Route::get('fifth_page', 'FifthPageController@read');
+
+/*fifth page Save*/
+Route::post('fifth_page_save', 'FifthPageController@updateOrcreate');
+Route::get('fifth_page_save', 'FifthPageController@updateOrcreate');
+/*fifth page end*/
+
+/*sixth page by lemon*/
+Route::post('sixth_page', 'SixthPageController@read');
+Route::get('sixth_page', 'SixthPageController@read');
+
+/*sixth page Save*/
+Route::post('sixth_page_save', 'SixthPageController@updateOrcreate');
+Route::get('sixth_page_save', 'SixthPageController@updateOrcreate');
+/*sixth page end*/
+
+/*seventh page by lemon*/
+Route::post('seventh_page', 'SeventhPageController@read');
+Route::get('seventh_page', 'SeventhPageController@read');
+
+/*seventh page Save*/
+Route::post('seventh_page_save', 'SeventhPageController@updateOrcreate');
+Route::get('seventh_page_save', 'SeventhPageController@updateOrcreate');
+/*seventh page end*/
+
 /*pre_primary_page  by lemon*/
 Route::post('pre_primary', 'PrePrimaryController@read');
 Route::get('pre_primary', 'PrePrimaryController@read');
@@ -157,3 +184,4 @@ Route::get('general_infos_add', 'GeneralInfosController@create');
 Route::post('buildings_add', 'BuildingsController@create');
 Route::get('buildings_add', 'BuildingsController@create');
 //Route::get('classes/delete', 'ClassesController@delete');
+
