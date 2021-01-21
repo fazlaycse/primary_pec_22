@@ -11,7 +11,7 @@ class TeacherInfosController extends Controller
     public function read(Request $request)
     {
         try {
-            $instRow = Teacher_infos::where('institute_id', '=', $request->session()->get('institute_id'))->firstOrFail();
+            $instRow = Teacher_infos::where('institute_id', '=', $request->session()->get('institute_id'))->get();
             return view('teacher_info')->with(compact('instRow'));
         } catch (\Exception $e) {
             // do task when error
@@ -45,10 +45,10 @@ class TeacherInfosController extends Controller
                 Teacher_infos::where('institute_id', '=', $request->session()->get('institute_id'))->delete();
                 Teacher_infos::insert($reqData);
                 $request->session()->forget('institute_id');
+                Session::flash('message', 'Data Submitted Successfully!');
                 return response('OK', 200);
             } catch (\Exception $e) {
                 return response(json_encode(['error' =>  $e->getMessage()]), 401);
-
             }
         }
     }
