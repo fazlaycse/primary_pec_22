@@ -11,7 +11,6 @@
 </head>
 <body>
 <div class="container kalpurus" id="app">
-
     {{--Include Header--}}
     @include('common.header');
     {{--Include Header End--}}

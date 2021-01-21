@@ -31,16 +31,17 @@
 <hr>
 
 <div class="topnav">
-    <a href="#" class="active">প্রথম পাতা</a>
-    <a href="#">দ্বিতীয় পাতা</a>
-    <a href="#">তৃতীয় পাতা</a>
-    <a href="#">চতুর্থ পাতা</a>
-    <a href="#">প্রাক-প্রাথমিক</a>
-    <a href="#">প্রথম শ্রেণি</a>
-    <a href="#">দ্বিতীয় শ্রেণি</a>
-    <a href="#">তৃতীয় শ্রেণি</a>
-    <a href="#">চতুর্থ শ্রেণি</a>
-    <a href="#">পঞ্চম শ্রেণি</a>
-    <a href="#">ষষ্ঠ-অষ্টম শ্রেণি</a>
-    <a href="#">শিক্ষক ও কর্মচারী</a>
+    <?php use Illuminate\Support\Facades\Request; $slug = Request::segment(count(Request::segments()));?>
+    <a href="#" <?php if($slug == 'first_page') echo 'class="active"' ?>>প্রথম পাতা</a>
+    <a href="#" <?php if($slug == 'second_page') echo 'class="active"' ?>>দ্বিতীয় পাতা</a>
+    <a href="#" <?php if($slug == 'third_page') echo 'class="active"' ?>>তৃতীয় পাতা</a>
+    <a href="#" <?php if($slug == 'fourth_page') echo 'class="active"' ?>>চতুর্থ পাতা</a>
+    <a href="#" <?php if($slug == 'pre_primary') echo 'class="active"' ?>>প্রাক-প্রাথমিক</a>
+    <a href="#" <?php if($slug == 'class_one') echo 'class="active"' ?>>প্রথম শ্রেণি</a>
+    <a href="#" <?php if($slug == 'class_two') echo 'class="active"' ?>>দ্বিতীয় শ্রেণি</a>
+    <a href="#" <?php if($slug == 'class_three') echo 'class="active"' ?>>তৃতীয় শ্রেণি</a>
+    <a href="#" <?php if($slug == 'class_four') echo 'class="active"' ?>>চতুর্থ শ্রেণি</a>
+    <a href="#" <?php if($slug == 'class_five') echo 'class="active"' ?>>পঞ্চম শ্রেণি</a>
+    <a href="#" <?php if($slug == 'class_six') echo 'class="active"' ?>>ষষ্ঠ-অষ্টম শ্রেণি</a>
+    <a href="#" <?php if($slug == 'teacher_info') echo 'class="active"' ?>>শিক্ষক ও কর্মচারী</a>
 </div>
