@@ -69,7 +69,6 @@ class FourthPageController extends Controller
             $row->number_of_building = $reqData['buildings_number'];
             try {
                 $row->save(); // returns false
-                array_push($instRow, $row);
             } catch (\Exception $e) {
                 return response(json_encode(['error' =>  $e->getMessage()]), 401);
             }
@@ -83,7 +82,6 @@ class FourthPageController extends Controller
             try {
                 Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->delete();
                 Building_infos::insert($reqData);
-                $request->session()->forget('institute_id');
                 Session::flash('message', 'Data Submitted Successfully!');
                 return response('OK', 200);
             } catch (\Exception $e) {
