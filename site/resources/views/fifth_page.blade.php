@@ -6,6 +6,10 @@
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <script>
+        window.institute_sanitations = '<?php echo $instRowObj ?>';
+        window.institute_id = "<?=$request->session()->get('institute_id')?>";
+    </script>
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -18,6 +22,8 @@
 
         <form class="form-group" method="POST" action="fifth_page_save" enctype="multipart/form-data">
             {{ csrf_field() }}
+            <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
+
             <hr>
             <div class="table_third_heading2new">
                 <span style="font-weight: bold; font-size: 17px"> ৪. বিদ্যালয়ের স্যানিটেশন ব্যবস্থা </span> <span
