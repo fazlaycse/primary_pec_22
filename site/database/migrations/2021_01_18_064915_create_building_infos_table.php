@@ -41,8 +41,6 @@ class CreateBuildingInfosTable extends Migration
             $table->integer('year');
             $table->integer('institute_id');
             $table->foreign('institute_id')->references('id')->on('institutes');
-            $table->integer('building_id');
-            $table->foreign('building_id')->references('id')->on('buildings');
             $table->timestamps();
         });
     }

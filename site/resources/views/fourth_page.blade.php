@@ -7,8 +7,8 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script>
-        window.buildings = '<?php echo $instRowObj->buildings; ?>';
-        window.building_infos = '<?php echo $instRowObj->building_infos; ?>';
+        window.buildings = '[]';
+        window.building_infos = '[]';
     </script>
 </head>
 <body>
@@ -30,7 +30,8 @@
                     <nav class="navbar navbar-light bg-light">
                         <div class="navbar-brand">
                             <label for="labelId">মোট ভবন সংখ্যা</label>
-                            <input id="labelId" type="number" style="width: 70px; align-content: center" name="number_of_building" v-model="buildings.number_of_building">
+                            <input id="labelId" type="number" style="width: 70px; align-content: center"
+                                   name="number_of_building" v-model="buildings.number_of_building">
                         </div>
                     </nav>
 
@@ -49,49 +50,57 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td><input type="number" style="width: 70px" name="building_no" value=""></td>
-                            <td><input type="number" style="width: 70px" name="storied_number" value=""></td>
-                            <td><input type="number" style="width: 70px" name="estb_year" value=""></td>
-                            <td><input type="number" style="width: 70px" name="bld_foundation" value=""></td>
-                            <td><input type="number" style="width: 70px" name="room_number" value=""></td>
+                        <tr v-for="item in rowData">
+                            <td><input type="number" style="width: 70px" name="building_no" v-model="item.building_no">
+                            </td>
+                            <td><input type="number" style="width: 70px" name="storied_number"
+                                       v-model="item.storied_number"></td>
+                            <td><input type="number" style="width: 70px" name="estb_year" v-model="item.estb_year"></td>
+                            <td><input type="number" style="width: 70px" name="bld_foundation"
+                                       v-model="item.bld_foundation"></td>
+                            <td><input type="number" style="width: 70px" name="room_number" v-model="item.room_number">
+                            </td>
 
                             <td>
-                                <select class="custom-select" style="width:90px" name="bld_condition">
-                                    <option  value="1">ভালো</option>
-                                    <option value="2" >নির্মাণাধীন</option>
-                                    <option value="3" >জরাজীর্ণ</option>
-                                    <option value="4" >ঝুকিপূর্ণ</option>
-                                    <option value="5" >পরিত্যক্ত</option>
+                                <select class="custom-select" style="width:90px" name="bld_condition"
+                                        v-model="item.bld_condition">
+                                    <option value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="bld_projt_name">
-                                    <option  value="1"> পিডিপি-১</option>
-                                    <option value="2" > পিডিপি-২</option>
-                                    <option value="3" > পিডিপি-৩</option>
-                                    <option value="4" >পিডিপি-৪</option>
-                                    <option value="5" >অন্যান্য</option>
+                                <select class="custom-select" style="width:90px" name="bld_projt_name"
+                                        v-model="item.bld_projt_name">
+                                    <option value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩</option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="bld_ramp_yn">
-                                    <option  value="1">হ্যাঁ</option>
+                                <select class="custom-select" style="width:80px" name="bld_ramp_yn"
+                                        v-model="item.bld_ramp_yn">
+                                    <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                         </tr>
-
-
                         </tbody>
                     </table>
+                    <input type="button" id="addRow" class="btn btn-success" @click="addItem" value="Add Row"/>
+
                 </div>
             </div>
             <hr>
 
             <div class="pull-right">
 
-                <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
+                <input @click="submitFourthPage" type="button" class="btn btn-primary btn-lg"
+                       style="text-align:right; margin-top:20px"
                        value="Save and Go Forward">
             </div>
         </form>

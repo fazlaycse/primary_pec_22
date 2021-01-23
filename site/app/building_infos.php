@@ -34,7 +34,6 @@ class building_infos extends Model
         'bld_ramp_yn_2',
         'year',
         'institute_id',
-        'building_id',
     ];
 
 }
