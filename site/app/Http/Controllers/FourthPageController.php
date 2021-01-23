@@ -35,7 +35,6 @@ class FourthPageController extends Controller
 
         //deal with Building_infos Table
         try {
-
             $row = Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->get();
             //print_r($row); exit;
             array_push($instRow, $row);
@@ -81,7 +80,7 @@ class FourthPageController extends Controller
 
             try {
                 Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->delete();
-                Building_infos::insert($reqData);
+                Building_infos::insert($reqData['building_infos']);
                 Session::flash('message', 'Data Submitted Successfully!');
                 return response('OK', 200);
             } catch (\Exception $e) {
