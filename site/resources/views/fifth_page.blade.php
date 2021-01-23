@@ -8,7 +8,6 @@
     <link href="css/custom.css" rel="stylesheet">
     <script>
         window.institute_sanitations = '<?php echo $instRowObj->data; ?>';
-        window.institute_id = '<?php echo $instRowObj->instId; ?>';
     </script>
 </head>
 <body>

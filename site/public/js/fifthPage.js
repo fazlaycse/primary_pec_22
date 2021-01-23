@@ -13,9 +13,7 @@ var sanitation_info_merged = function () {
                 'clean_mat_yn' : jsonParsed[i].clean_mat_yn,
                 'hand_soap_yn' : jsonParsed[i].hand_soap_yn,
                 'toi_water_yn' : jsonParsed[i].toi_water_yn,
-                'toi_project' : jsonParsed[i].toi_project,
-                'institute_id' : parseInt(jsonParsed[i].institute_id),
-                'year' : parseInt(jsonParsed[i].year),
+                'toi_project' : jsonParsed[i].toi_project
             }
         );
     }
@@ -32,14 +30,13 @@ var app = new Vue({
             // console.log(JSON.parse(teacherData));
             var my_object = {
                 'toilet_no' : '',
-                'toilet_users' : 1,
-                'toilet_curcond' : 1,
-                'clean_mat_yn' : 1,
-                'hand_soap_yn' : 1,
-                'toi_water_yn' : 1,
-                'toi_project' : 1,
-                'institute_id' : parseInt(institute_id),
-                'year' : parseInt(2020),
+                'toilet_users' : '',
+                'toilet_curcond' : '',
+                'clean_mat_yn' : '',
+                'hand_soap_yn' : '',
+                'toi_water_yn' : '',
+                'toi_project' : '',
+
             };
             this.rowData.push(my_object)
         },
