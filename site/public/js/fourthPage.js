@@ -8,7 +8,7 @@ var building_infos_merged = function () {
         tData.push(
             {
                 'building_no' : jsonParsed[i].building_no,
-                'storied_number' : jsonParsed[i].building_no,
+                'storied_number' : jsonParsed[i].storied_number,
                 'estb_year' : jsonParsed[i].estb_year,
                 'bld_foundation' : jsonParsed[i].bld_foundation,
                 'room_number' : jsonParsed[i].room_number,

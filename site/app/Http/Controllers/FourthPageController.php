@@ -11,10 +11,7 @@ class FourthPageController extends Controller
 {
     public function read(Request $request)
     {
-        $instRowObj = new \stdClass();
-        $instRowObj->buildings = [];
-        $instRowObj->building_infos = [];
-        return view('fourth_page')->with('instRowObj',$instRowObj);
+
 
         $instRow = [];
         //deal with Buildings Table
@@ -34,13 +31,12 @@ class FourthPageController extends Controller
         }
 
         //deal with Building_infos Table
-        try {
-            $row = Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->get();
-            //print_r($row); exit;
-            array_push($instRow, $row);
-        } catch (\Exception $e) {
-            // do task when error
+        $row = Building_infos::where('institute_id', '=', $request->session()->get('institute_id'))->get();
+        //print_r($row); exit;
+        $rowCount = $row->count();
+        if ($rowCount == 0) {
             $row = new Building_infos();
+            $row->building_no = 0;
             $row->year = 2020;
             $row->institute_id = $request->session()->get('institute_id');
             try {
@@ -49,10 +45,16 @@ class FourthPageController extends Controller
             } catch (\Exception $e) {
                 echo $e;
             }
+        } else {
+            array_push($instRow, $row);
         }
 
+        // do task when error
 
-
+        $instRowObj = new \stdClass();
+        $instRowObj->buildings = $instRow[0];
+        $instRowObj->building_infos = $instRow[1];
+        return view('fourth_page')->with('instRowObj', $instRowObj);
 
     }
 
@@ -69,7 +71,7 @@ class FourthPageController extends Controller
             try {
                 $row->save(); // returns false
             } catch (\Exception $e) {
-                return response(json_encode(['error' =>  $e->getMessage()]), 401);
+                return response(json_encode(['error' => $e->getMessage()]), 401);
             }
 
 
@@ -84,7 +86,7 @@ class FourthPageController extends Controller
                 Session::flash('message', 'Data Submitted Successfully!');
                 return response('OK', 200);
             } catch (\Exception $e) {
-                return response(json_encode(['error' =>  $e->getMessage()]), 401);
+                return response(json_encode(['error' => $e->getMessage()]), 401);
             }
         }
     }
