@@ -22,7 +22,7 @@ class FifthPageController extends Controller
             $instRowObj = new \stdClass();
             $instRowObj->data = $row;
             $instRowObj->instId = $request->session()->get('institute_id');
-            return view('fifth_page')->with('instRowObj', $row);
+            return view('fifth_page')->with('instRowObj', $instRowObj);
         } catch (\Exception $e) {
             echo "Error occurred: ". $e ;exit;
         }
@@ -31,9 +31,13 @@ class FifthPageController extends Controller
     public function updateOrcreate(Request $request)
     {
         if ($request->method() == 'POST') {
-
+   /* var_dump($request->all());
+            return response(json_encode(['error' => $e->getMessage()]), 401);
+            exit;*/
             try {
-                $updateOrcreateRow = Institute_sanitations::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
+                Institute_sanitations::where('institute_id', '=', $request->session()->get('institute_id'))->delete();
+                Institute_sanitations::insert($request->all());
+                Session::flash('message', 'Data Submitted Successfully!');
                 return response('OK', 200);
             } catch (\Exception $e) {
                 return response(json_encode(['error' => $e->getMessage()]), 401);

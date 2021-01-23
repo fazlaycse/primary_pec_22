@@ -43,8 +43,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <?php $instRow = $instRowObj->institute_sanitations;?>
+                        <tr v-for="i in rowData">
                             <td><input type="number" style="width: 70px; align-content: center" name="toilet_no" v-model="i.toilet_no"></td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_users" v-model="i.toilet_users">
@@ -67,25 +66,25 @@
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="clean_mat_yn" v-model="clean_mat_yn">
+                                <select class="custom-select" style="width:80px" name="clean_mat_yn" v-model="i.clean_mat_yn">
                                     <option  value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="hand_soap_yn" v-model="hand_soap_yn">
+                                <select class="custom-select" style="width:80px" name="hand_soap_yn" v-model="i.hand_soap_yn">
                                     <option  value="1" >হ্যাঁ</option>
                                     <option value="2" >না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="toilet_water_yn" v-model="toilet_water_yn">
+                                <select class="custom-select" style="width:80px" name="toi_water_yn" v-model="i.toi_water_yn">
                                     <option  value="1">আছে</option>
                                     <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="toilet_project" v-model="toilet_project">
+                                <select class="custom-select" style="width:90px" name="toi_project" v-model="i.toi_project">
                                     <option value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩</option>
@@ -121,5 +120,6 @@
 
 </div>
 <script src="js/app.js" defer></script>
+<script src="js/fifthPage.js" defer></script>
 </body>
 </html>
