@@ -7,8 +7,8 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script>
-        window.institute_sanitations = '<?php echo $instRowObj ?>';
-        window.institute_id = "<?=$request->session()->get('institute_id')?>";
+        window.institute_sanitations = '<?php echo $instRowObj->data; ?>';
+        window.institute_id = '<?php echo $instRowObj->instId; ?>';
     </script>
 </head>
 <body>
@@ -20,7 +20,7 @@
 
     <div class="body_table" style="background-color: #b0d4f1;">
 
-        <form class="form-group" method="POST" action="fifth_page_save" enctype="multipart/form-data">
+        <form class="form-group" enctype="multipart/form-data">
             {{ csrf_field() }}
             <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
 
@@ -45,57 +45,59 @@
                         <tbody>
                         <tr>
                             <?php $instRow = $instRowObj->institute_sanitations;?>
-                            <td><input type="number" style="width: 70px; align-content: center" name="toilet_no" value="{{$instRow->toilet_no}}"></td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="toilet_no" v-model="i.toilet_no"></td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="toilet_users">
-                                    <option  value="1" <?php if($instRow->toilet_users =='1'){echo "selected";}?> >বালক</option>
-                                    <option value="2" <?php if($instRow->toilet_users =='2'){echo "selected";}?>>বালিকা</option>
-                                    <option value="3" <?php if($instRow->toilet_users =='3'){echo "selected";}?>>বালক-বালিকা যৌথ</option>
-                                    <option value="4" <?php if($instRow->toilet_users =='4'){echo "selected";}?>>সহ: শিক্ষক</option>
-                                    <option value="5" <?php if($instRow->toilet_users =='5'){echo "selected";}?>>প্রধান শিক্ষক</option>
-                                    <option value="6" <?php if($instRow->toilet_users =='6'){echo "selected";}?>>শিক্ষকদের যৌথ</option>
-                                    <option value="7"<?php if($instRow->toilet_users =='7'){echo "selected";}?>>বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                <select class="custom-select" style="width:90px" name="toilet_users" v-model="i.toilet_users">
+                                    <option  value="1" >বালক</option>
+                                    <option value="2" >বালিকা</option>
+                                    <option value="3" >বালক-বালিকা যৌথ</option>
+                                    <option value="4" >সহ: শিক্ষক</option>
+                                    <option value="5" >প্রধান শিক্ষক</option>
+                                    <option value="6" >শিক্ষকদের যৌথ</option>
+                                    <option value="7" >বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="toilet_curcond">
-                                    <option  value="1" <?php if($instRow->toilet_curcond =='1'){echo "selected";}?>>ভালো</option>
-                                    <option value="2"<?php if($instRow->toilet_curcond =='2'){echo "selected";} ?>>নির্মাণাধীন</option>
-                                    <option value="3"<?php if($instRow->toilet_curcond =='3'){echo "selected";} ?>>জরাজীর্ণ</option>
-                                    <option value="4"<?php if($instRow->toilet_curcond =='4'){echo "selected";} ?>>ঝুকিপূর্ণ</option>
-                                    <option value="5"<?php if($instRow->toilet_curcond =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
+                                <select class="custom-select" style="width:90px" name="toilet_curcond" v-model="i.toilet_curcond">
+                                    <option  value="1" >ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="clean_mat_yn">
-                                    <option  value="1" > <?php if($instRow->clean_mat_yn =='1'){echo "selected";}?>হ্যাঁ</option>
-                                    <option value="2"  <?php if($instRow->clean_mat_yn =='2'){echo "selected";}?>>না</option>
+                                <select class="custom-select" style="width:80px" name="clean_mat_yn" v-model="clean_mat_yn">
+                                    <option  value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="hand_soap_yn">
-                                    <option  value="1" <?php if($instRow->hand_soap_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->hand_soap_yn =='2'){echo "selected";}?>>না</option>
+                                <select class="custom-select" style="width:80px" name="hand_soap_yn" v-model="hand_soap_yn">
+                                    <option  value="1" >হ্যাঁ</option>
+                                    <option value="2" >না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
-                                    <option  value="1"<?php if($instRow->toi_water_yn =='1'){echo "selected";}?>>আছে</option>
-                                    <option value="2"<?php if($instRow->toi_water_yn =='2'){echo "selected";}?>>নাই</option>
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn" v-model="toilet_water_yn">
+                                    <option  value="1">আছে</option>
+                                    <option value="2">নাই</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="toilet_project">
-                                    <option value="1"<?php if($instRow->toi_project =='1'){echo "selected";}?>> পিডিপি-১</option>
-                                    <option value="2"<?php if($instRow->toi_project =='2'){echo "selected";}?>> পিডিপি-২</option>
-                                    <option value="3"<?php if($instRow->toi_project =='3'){echo "selected";}?>> পিডিপি-৩</option>
-                                    <option value="4"<?php if($instRow->toi_project =='4'){echo "selected";}?>>পিডিপি-৪</option>
-                                    <option value="5"<?php if($instRow->toi_project =='5'){echo "selected";}?>>অন্যান্য</option>
+                                <select class="custom-select" style="width:90px" name="toilet_project" v-model="toilet_project">
+                                    <option value="1"> পিডিপি-১</option>
+                                    <option value="2"> পিডিপি-২</option>
+                                    <option value="3"> পিডিপি-৩</option>
+                                    <option value="4">পিডিপি-৪</option>
+                                    <option value="5">অন্যান্য</option>
                                 </select>
                             </td>
                         </tr>
                         </tbody>
                     </table>
+                    <input type="button" id="addRow" class="btn btn-success" @click="addItem" value="Add Row"/>
+
                 </div>
             </div>
             <hr>
@@ -103,20 +105,15 @@
 
             <div class="pull-right">
 
-                <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
+                <input @click="submitFifthPage" type="button" class="btn btn-primary btn-lg"
+                       style="text-align:right; margin-top:20px"
                        value="Save and Go Forward">
             </div>
         </form>
     </div>
 
+    <div style="clear: both"></div>
 
-    <div style="clear: both">
-
-    </div>
-
-    <div style="clear: both">
-
-    </div>
 
     {{--Include Footer--}}
     @include('common.footer');

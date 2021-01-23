@@ -19,7 +19,7 @@
 
     <div class="body_table" style="background-color: #b0d4f1;">
 
-        <form class="form-group" method="POST" action="fourth_page_save" enctype="multipart/form-data">
+        <form class="form-group" enctype="multipart/form-data">
             {{ csrf_field() }}
             <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
 

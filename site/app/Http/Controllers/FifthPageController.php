@@ -19,6 +19,9 @@ class FifthPageController extends Controller
         //deal with Institute_sanitations  Table
         try {
             $row = Institute_sanitations::where('institute_id', '=', $request->session()->get('institute_id'))->get();
+            $instRowObj = new \stdClass();
+            $instRowObj->data = $row;
+            $instRowObj->instId = $request->session()->get('institute_id');
             return view('fifth_page')->with('instRowObj', $row);
         } catch (\Exception $e) {
             echo "Error occurred: ". $e ;exit;

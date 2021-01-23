@@ -25,8 +25,7 @@ sanitation_info_merged();
 var app = new Vue({
     el: '#app',
     data: {
-        rowData: tData, //the declared array
-        buildings:JSON.parse(buildings)
+        rowData: tData
     },
     methods: {
         addItem() {
@@ -44,11 +43,11 @@ var app = new Vue({
             };
             this.rowData.push(my_object)
         },
-        submitFourthPage(e) {
+        submitFifthPage(e) {
             e.preventDefault();
             let currentObj = this;
             Vue.http.headers.common['X-CSRF-TOKEN'] = $('#token').val();
-            this.$http.post('fourth_page_save', this.rowData)
+            this.$http.post('fifth_page_save', this.rowData)
                 .then(function (response) {
                     window.location.href = '/sixth_page';
                 })
