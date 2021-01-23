@@ -7,8 +7,8 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script>
-        window.buildings = '[]';
-        window.building_infos = '[]';
+        window.buildings = '<?php echo $instRowObj->buildings; ?>';
+        window.building_infos = '<?php echo $instRowObj->building_infos; ?>';
     </script>
 </head>
 <body>
