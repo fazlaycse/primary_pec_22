@@ -7,57 +7,170 @@
     <link href="css/app.css" rel="stylesheet">
     <style>
         .customSize{border:1px solid black;padding: 5px;height: 150px;width: 250px;}
+
+        @media only screen and (max-width: 440px) {
+            /* styles for narrow screens */
+            .top_slider img {
+                height: 350px; width: 100px;
+            }
+        }
+
     </style>
 
 </head>
-<body class="" style="background:skyblue">
-{{--<div class="row">
-    <div class="col-12 text-center" style="font-size: 1.2em;">
-        <span> গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</span>
-        <br>
-        <span> শিক্ষা মন্ত্রণালয়</span>
-        <br>
-        <span> বাংলাদেশ শিক্ষা তথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) </span>
-        <br>
-        <span> ১ জহির রায়হান রোড (পলাশী-নীলক্ষেত), ঢাকা-১২০৫</span>
-        <br>
-        <span> www.banbeis.gov.bd</span>
-        <br>
-        <span> e-mail: info@banbeis.gov.bd</span>
+<body>
+<div class="container kalpurus" style="background-color: #ebf6f9">
+    <div class="top_slider">
+        <img src="img/header 01.jpg" class="img-responsive" style="width:1105px; height: 100px; margin-top: 10px">
+    </div>
+    <!-- top menu begins -->
+    <div class="topmenu container">
+        <nav class="row"  style="padding: 10px;">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ban_info">ব্যানবেইস পরিচিতি</button> &nbsp;
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#uitrce_info">UITRCE</button>
+            <div id="ban_info" class="collapse text-justify mt-2">
+                বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) দেশের শিক্ষা ব্যবস্থাপনায় শিক্ষাতথ্য ও পরিসংখ্যান সংগ্রহ, সংরক্ষণ, বিতরণ ও প্রচারের
+                একমাত্র সরকারি সংস্থা। ১৯৭৬-৭৭ অর্থ বৎসরে শিক্ষা মন্ত্রণালয়ের সংযুক্ত দপ্তর হিসাবে সংস্থাটি কাজ শুরু করে।
+                পরবর্তীতে সংস্থাটি শিক্ষাক্ষেত্রে ধারাবাহিক উন্নয়নের সাথে সম্পৃক্ত হয়ে শিক্ষাতথ্য বিনির্মাণ ও সরবরাহ করে জাতীয় ও আন্তজার্তিক সংস্থাসমূহের
+                কাছে সমাদৃত হয়েছে। বর্তমানে প্রতিষ্ঠানটি শিক্ষাতথ্য ও পরিসংখ্যান কার্যক্রম ছাড়াও শিক্ষা সেক্টরে আই.সি.টি. প্রশিক্ষন ও
+                আই.সি.টি. শিক্ষার প্রসারে ব্যাপক ভূমিকা রাখছে।
+            </div>
+            <div id="uitrce_info" class="collapse text-justify mt-2">
+                Establishment of Upazila ICT Training and Resource Centre for Education (UITRCE) selected 125 Upazila
+                in Bangladesh and approved by ECNEC. Project Cost : Total: 4037.78 Million Taka. GOB: 1366.28 Million Taka.
+                P.Aid: 2671.50 Million Taka (USD 39 Million). Financing of the Project : Soft Loan (0.01% interest)
+                from Korea Economic Development Cooperation Fund (EDCF) through Korea Exim Bank.
+            </div>
+        </nav>
     </div>
 
-</div>--}}
-<div class="container" style="border:1px solid black;">
-    <form class="form-group" method="post" action="first_page">
-        {{ csrf_field() }}
-        Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code"/>
-        <input type="submit" value="Submit and go the form"/>
-    </form>
+    <!-- topmenu ends -->
 
-    {{--<nav class="navbar navbar-light bg-light">
-        <h2>BANBEIS</h2>
-    </nav>
+    <!-- slide begins -->
+    <div class="slider">
 
-    <div class="row" style="height: 100px;border:1px solid black;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/Banner_2 (1).jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 style="font-weight: bold;">বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস)</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Banner_01 (3).jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 style="font-weight: bold;">বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস)</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Educatipon GIS.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Publication.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/E serve525852.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/UITRCE Training (1).jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- slider ends here  -->
+    <!-- PEC heading -->
+    <hr>
+
+    <div class="pec" style="text-align:center; background-color:#80b1b3; padding: 5px 5px 5px 5px;">
+        <h4> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
+    </div>
+    <div class="container">
 
     </div>
-    <div class="row" style="padding: 5px;">
-        <div class="col-md-3">
-            <div class="customSize"></div>
+    <hr>
+    <!-- pec heading ends -->
+
+    <!-- pec registration -->
+    <div class="registration">
+        <div class="heading">
+            <h5 class="font-weight-bold" style="text-align: center">বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২০ এর পিইসি তথ্য সংগ্রহ ফরম পূরণের জন্য
+                EMIS কোড দিয়ে "Submit and go to the form" এ ক্লিক করুন</h5>
         </div>
-        <div class="col-md-3">
-            <div class="customSize"></div>
+    </div>
+    <hr>
+    <!-- pec registration ends -->
+    <!--    login and submit-->
+    <div class="login text-center mt-3 mb-3"  style="background-color: skyblue; padding-top: 15px; padding-bottom: 10px" >
+        <form class="form-group" method="post" action="first_page">
+            {{ csrf_field() }}
+            Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code"/>
+            <input type="submit" value="Submit and go the form"/>
+        </form>
+    </div>
+    <!--    login and submit ends-->
+    <hr>
+    <!-- footer starts -->
+    <div class="footer">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+                <h5>গুরুত্বপূর্ণ লিংকসমূহ</h5>
+                <ul class="foonav">
+                    <li><a href="http://banbeis.gov.bd/" target="_blank">BANBEIS</a></li>
+                    <li><a href="http://www.moedu.gov.bd/" target="_blank">Ministry of Education</a></li>
+                    <li><a href="http://www.educationboard.gov.bd/" target="_blank">Education Boards Bangladesh</a></li>
+                    <li><a href="http://www.dshe.gov.bd/" target="_blank">Directorate of Secondary and Higher
+                            Education</a></li>
+                    <li><a href="http://www.mopme.gov.bd/" target="_blank">Ministry of Primary and Mass Education</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h5>যোগাযোগ</h5>
+                <div class="text">
+                    <ul class="foonav">
+                        <li>
+                            <a href="#">
+                                BANBEIS, 1 Sonargaon Road ( Palashi-Nilkhet),
+                                Dhaka - 1205<br>
+                                Email: info@banbeis.gov.bd<br>
+                                Web Site: www.banbeis.gov.bd
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="text">
+                    <ul class="foonav">
+                        <li>
+                            <a href="#">© Developed by ICT DIVISION, BANBEIS. <br>Ministry of Education. <br>All rights
+                                reserved.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="col-md-3">
-            <div class="customSize"></div>
-        </div>
-        <div class="col-md-3">
-            <div class="customSize"></div>
-        </div>
-    </div>--}}
+
+
+    </div>
+
+    <!-- footer ends -->
 </div>
 
-
-<script src="js/app.js" defer></script>
+<script src="js/app.js"></script>
 </body>
 </html>
