@@ -51341,6 +51341,9 @@ Vue.component('examplecomponent', __webpack_require__(/*! ./components/ExampleCo
 
 Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
 Vue.use(VueResource);
+$(document).ready(function () {
+  $(".alert").delay(5000).slideUp(300);
+});
 
 /***/ }),
 

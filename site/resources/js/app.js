@@ -7,6 +7,7 @@
 require('./bootstrap');
 window.Vue = require('vue');
 import VueTheMask from 'vue-the-mask'
+
 var VueResource = require('vue-resource');
 
 /**
@@ -29,3 +30,7 @@ Vue.component('examplecomponent', require('./components/ExampleComponent.vue').d
  */
 Vue.use(VueTheMask)
 Vue.use(VueResource);
+$(document).ready(function () {
+    $(".alert").delay(5000).slideUp(300);
+});
+

@@ -60,7 +60,7 @@ var app = new Vue({
             Vue.http.headers.common['X-CSRF-TOKEN'] = $('#token').val();
             this.$http.post('teacher_info_page_save', this.rowData)
                 .then(function (response) {
-                    window.location.href = '/';
+                    window.location.href = '/thanking_page';
                 })
                 .catch(function (error) {
                     console.log(error)

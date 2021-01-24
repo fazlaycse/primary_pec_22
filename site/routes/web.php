@@ -187,3 +187,8 @@ Route::post('buildings_add', 'BuildingsController@create');
 Route::get('buildings_add', 'BuildingsController@create');
 //Route::get('classes/delete', 'ClassesController@delete');
 
+
+/*Thanking page*/
+Route::get('/thanking_page', function () {
+    return view('thanking_page');
+});
