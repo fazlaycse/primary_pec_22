@@ -121,7 +121,7 @@
                     EMIS কোড দিয়ে "Submit and go to the form" এ ক্লিক করুন</h5>
                 <form class="form-group" method="post" action="first_page">
                     {{ csrf_field() }}
-                    Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code"/>
+                    Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code" required/>
                     <input type="submit" value="Submit and go the form"/>
                 </form>
             </div>
