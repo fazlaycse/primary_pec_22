@@ -9,3 +9,9 @@
     </div>
 </div>
 <hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".alert").delay(5000).slideUp(300);
+    });
+
+</script>
