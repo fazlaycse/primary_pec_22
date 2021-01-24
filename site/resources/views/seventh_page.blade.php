@@ -10,7 +10,7 @@
 <body>
 <div class="container kalpurus" id="app">
     {{--Include Header--}}
-    @include('common.header');
+    @include('common.header')
     {{--Include Header End--}}
     <div class="body_table" style="background-color: #b0d4f1;">
 

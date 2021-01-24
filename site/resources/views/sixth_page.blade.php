@@ -2,21 +2,26 @@
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 <html>
-<!  washblocks->
+<! washblocks->
 <head>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <script type="text/javascript">
+        window.washbolocks = '<?php echo $instRowObj->data; ?>';
+    </script>
 </head>
 <body>
 <div class="container kalpurus" id="app">
     {{--Include Header--}}
-    @include('common.header');
+    @include('common.header')
     {{--Include Header End--}}
 
     <div class="body_table" style="background-color: #b0d4f1;">
 
         <form class="form-group" method="POST" action="sixth_page_save" enctype="multipart/form-data">
             {{ csrf_field() }}
+            <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
+
             <hr>
             <div class="table_third_heading2">
                 <span style="font-weight: bold; font-size: 18px"> ৫. বিদ্যালয়ের ওয়াশব্লক ব্যবস্থা <span
@@ -38,55 +43,64 @@
                         </thead>
                         <tbody>
 
-                        <tr>
-                            <?php $instRow = $instRowObj->washblocks;?>
-                            <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount" value="{{$instRow->wsblk_amount}}"></td>
-                            <td><input type="text" style="width: 70px; align-content: center" name="w_es_year" value="{{$instRow->w_es_year}}"></td>
+                        <tr v-for="i in rowData">
+                            <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount"
+                                       v-model="i.wsblk_amount"></td>
+                            <td><input type="text" style="width: 70px; align-content: center" name="w_es_year"
+                                       v-model="i.w_es_year"></td>
                             <td>
-                                <select class="custom-select" style="width:90px" name="wsblk_user">
-                                    <option  value="1" <?php if($instRow->wsblk_user =='1'){echo "selected";}?>>বালক</option>
-                                    <option value="2"<?php if($instRow->wsblk_user =='2'){echo "selected";}?>>বালিকা</option>
-                                    <option value="3"<?php if($instRow->wsblk_user =='3'){echo "selected";}?>>পুরুষ শিক্ষক</option>
-                                    <option value="4"<?php if($instRow->wsblk_user =='4'){echo "selected";}?>>মহিলা শিক্ষিকা</option>
-                                    <option value="5"<?php if($instRow->wsblk_user =='5'){echo "selected";}?>>বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                <select class="custom-select" style="width:90px" name="wsblk_user"
+                                        v-model="i.wsblk_user">
+                                    <option value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="3">পুরুষ শিক্ষক</option>
+                                    <option value="4">মহিলা শিক্ষিকা</option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="..." name="wsblk_condition">
-                                    <option value="1"<?php if($instRow->wsblk_condition =='1'){echo "selected";}?>>ভালো</option>
-                                    <option value="2"<?php if($instRow->wsblk_condition =='2'){echo "selected";}?>>নির্মাণাধীন</option>
-                                    <option value="3"<?php if($instRow->wsblk_condition =='3'){echo "selected";}?>>জরাজীর্ণ</option>
-                                    <option value="4"<?php if($instRow->wsblk_condition =='4'){echo "selected";}?>>ঝুকিপূর্ণ</option>
-                                    <option value="5"<?php if($instRow->wsblk_condition =='5'){echo "selected";}?>>পরিত্যক্ত</option>
+                                <select class="custom-select" style="..." name="wsblk_condition"
+                                        v-model="i.wsblk_condition">
+                                    <option value="1">ভালো</option>
+                                    <option value="2">নির্মাণাধীন</option>
+                                    <option value="3">জরাজীর্ণ</option>
+                                    <option value="4">ঝুকিপূর্ণ</option>
+                                    <option value="5">পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="wsblk_std_yn">
-                                    <option  value="1"<?php if($instRow->wsblk_std_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
-                                    <option value="2"<?php if($instRow->wsblk_std_yn =='2'){echo "selected";}?>>না</option>
+                                <select class="custom-select" style="width:80px" name="wsblk_std_yn" v-model="i.wsblk_std_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn">
-                                    <option  value="1"<?php if($instRow->cleaning_agent_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
-                                    <option value="2"<?php if($instRow->cleaning_agent_yn =='2'){echo "selected";}?>>না</option>
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn" v-model="i.cleaning_agent_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="toilet_water_yn">
-                                    <option  value="1"<?php if($instRow->toilet_water_yn =='1'){echo "selected";}?>>আছে</option>
-                                    <option value="2"<?php if($instRow->toilet_water_yn =='2'){echo "selected";}?>>নাই</option>
+                                <select class="custom-select" style="width:80px" name="toilet_water_yn" v-model="i.toilet_water_yn">
+                                    <option value="1">আছে
+                                    </option>
+                                    <option value="2">নাই
+                                    </option>
                                 </select>
                             </td>
                             <td>
-                                <select class="custom-select" style="width:80px" name="hand_wash_yn">
-                                    <option  value="1"<?php if($instRow->hand_wash_yn =='1'){echo "selected";}?>>হ্যাঁ</option>
-                                    <option value="2"<?php if($instRow->hand_wash_yn =='2'){echo "selected";}?>>না</option>
+                                <select class="custom-select" style="width:80px" name="hand_wash_yn" v-model="i.hand_wash_yn">
+                                    <option value="1">হ্যাঁ
+                                    </option>
+                                    <option value="2">না
+                                    </option>
                                 </select>
                             </td>
                         </tr>
                         </tbody>
                     </table>
+                    <input type="button" id="addRow" class="btn btn-success" @click="addItem" value="Add Row"/>
+
                 </div>
             </div>
             <hr>
@@ -94,7 +108,8 @@
 
             <div class="pull-right">
 
-                <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
+                <input @click="submitSixthPage" type="button" class="btn btn-primary btn-lg"
+                       style="text-align:right; margin-top:20px"
                        value="Save and Go Forward">
             </div>
         </form>
@@ -115,5 +130,6 @@
 
 </div>
 <script src="js/app.js" defer></script>
+<script src="js/sixthPage.js" defer></script>
 </body>
 </html>

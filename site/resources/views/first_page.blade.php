@@ -12,7 +12,7 @@
 <body>
 <div class="container kalpurus" id="app">
     {{--Include Header--}}
-    @include('common.header');
+    @include('common.header')
     {{--Include Header End--}}
 
     <div class="first_body">

@@ -6,7 +6,7 @@
 </head>
 <div class="container kalpurus" id="app">
     {{--Include Header--}}
-    @include('common.header');
+    @include('common.header')
     {{--Include Header End--}}
 
     <form action="pre_primary_save" method="post">

@@ -22,7 +22,7 @@
 <body>
 <div class="container kalpurus" id="app">
     {{--Include Header--}}
-    @include('common.header');
+    @include('common.header')
     {{--Include Header End--}}
 
     <form class="form-group">

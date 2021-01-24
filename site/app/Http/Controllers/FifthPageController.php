@@ -48,7 +48,6 @@ class FifthPageController extends Controller
                 Session::flash('message', 'Data Submitted Successfully!');
                 return response('OK', 200);
             } catch (\Exception $e) {
-                var_dump($e);
                 return response(json_encode(['error' => $e->getMessage()]), 401);
             }
 
