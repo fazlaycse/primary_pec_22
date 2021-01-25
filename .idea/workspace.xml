@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8675d66-f9f5-4757-87a9-b21a7a769c4c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/primary-pec.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/primary-pec.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_five.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_five.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_four.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_four.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_one.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_six.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_six.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_three.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_three.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/class_two.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/class_two.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/resources/views/fourth_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/fourth_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/resources/views/pre_primary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/resources/views/pre_primary.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +207,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/laragon/www/todo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -239,7 +234,8 @@
       <workItem from="1610867276943" duration="2620000" />
       <workItem from="1610874737139" duration="534000" />
       <workItem from="1610875518774" duration="10054000" />
-      <workItem from="1610943656075" duration="2642000" />
+      <workItem from="1610943656075" duration="6136000" />
+      <workItem from="1611218605828" duration="1101000" />
     </task>
     <servers />
   </component>
@@ -293,6 +289,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

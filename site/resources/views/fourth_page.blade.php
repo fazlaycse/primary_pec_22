@@ -104,7 +104,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building"></td>
                             <td><input type="number" style="width: 70px" name="building_no"></td>
                             <td><input type="number" style="width: 70px" name="storied_number"></td>
                             <td><input type="number" style="width: 70px" name="estb_year"></td>
@@ -136,7 +135,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building"></td>
                             <td><input type="number" style="width: 70px" name="building_no"></td>
                             <td><input type="number" style="width: 70px" name="storied_number"></td>
                             <td><input type="number" style="width: 70px" name="estb_year"></td>
