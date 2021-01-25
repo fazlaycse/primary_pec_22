@@ -50,7 +50,7 @@
                         </tr>
                         </thead>
                         <tbody>
-<<<<<<< HEAD
+
                         <tr>
                             <td rowspan="3"><input type="number" style="width: 70px; align-content: center" name="number_of_building"></td>
                             <td><input type="number" style="width: 70px" name="building_no"></td>
@@ -106,10 +106,10 @@
                                     <option value="4">পিডিপি-৪</option>
                                     <option value="5">অন্যান্য</option>
                                 </select>
-=======
+
                         <tr v-for="item in rowData">
                             <td><input type="number" style="width: 70px" name="building_no" v-model="item.building_no">
->>>>>>> a8cdfaac38ae75341e151ef21f053d1d96966c14
+
                             </td>
                             <td><input type="number" style="width: 70px" name="storied_number"
                                        v-model="item.storied_number"></td>
@@ -118,7 +118,7 @@
                                        v-model="item.bld_foundation"></td>
                             <td><input type="number" style="width: 70px" name="room_number" v-model="item.room_number">
                             </td>
-<<<<<<< HEAD
+
                         </tr>
                         <tr>
                             <td><input type="number" style="width: 70px" name="building_no"></td>
@@ -126,9 +126,7 @@
                             <td><input type="number" style="width: 70px" name="estb_year"></td>
                             <td><input type="number" style="width: 70px" name="bld_foundation"></td>
                             <td><input type="number" style="width: 70px" name="room_number"></td>
-=======
 
->>>>>>> a8cdfaac38ae75341e151ef21f053d1d96966c14
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_condition"
                                         v-model="item.bld_condition">

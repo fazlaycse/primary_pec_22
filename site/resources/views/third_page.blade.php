@@ -149,11 +149,15 @@
                                     <select class="custom-select" style="width:70px" name="electricity_yn">
                                         <option value="1" <?php if ($instRow->electricity_yn == '1') {
                                             echo "selected";
-                                        } ?>>হ্যাঁ
+                                        } ?>>আছে
                                         </option>
                                         <option value="2" <?php if ($instRow->electricity_yn == '2') {
                                             echo "selected";
-                                        } ?>>না
+                                        } ?>>সোলার
+                                        </option>
+                                        <option value="2" <?php if ($instRow->electricity_yn == '3') {
+                                            echo "selected";
+                                        } ?>>নাই
                                         </option>
                                     </select>
                                 </td>

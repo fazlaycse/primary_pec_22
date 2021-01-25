@@ -33,7 +33,7 @@
                             <table class="table teacher" style="text-align: center">
                                 <thead class="thead-light">
                                 <tr>
-                                    <th scope="col">ধরণ</th>
+                                    <th scope="col">ধরন</th>
                                     <th scope="col">প্রধান শিক্ষক</th>
                                     <th scope="col">সহকারী শিক্ষক</th>
                                     <th scope="col">প্রাক-প্রাথমিক শিক্ষক</th>

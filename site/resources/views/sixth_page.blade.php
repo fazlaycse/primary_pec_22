@@ -51,21 +51,20 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name="wsblk_user"
                                         v-model="i.wsblk_user">
-                                    <option value="1">বালক</option>
-                                    <option value="2">বালিকা</option>
-                                    <option value="3">পুরুষ শিক্ষক</option>
-                                    <option value="4">মহিলা শিক্ষিকা</option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                    <option value="1">বালক(১)</option>
+                                    <option value="2">বালিকা(২)</option>
+                                    <option value="3">পুরুষ শিক্ষক(৩)</option>
+                                    <option value="4">মহিলা শিক্ষিকা(৪)</option>
+                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী(৫)</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="..." name="wsblk_condition"
                                         v-model="i.wsblk_condition">
-                                    <option value="1">ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
+                                    <option value="1">ভালো(১)</option>
+                                    <option value="2">নির্মাণাধীন(২)</option>
+                                    <option value="3">জরাজীর্ণ,মেরামত প্রয়োজন(৩)</option>
+                                    <option value="5">পরিত্যক্ত(৪)</option>
                                 </select>
                             </td>
                             <td>

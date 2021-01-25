@@ -37,11 +37,11 @@
                             <td>
                                 <?php $instRow = $instRowObj->water_facilities;?>
                                 <select class="custom-select" style="width:90px" name="supp_src_condition">
-                                    <option value="1" <?php if($instRow->supp_src_condition =='1'){echo "selected";} ?>>ভালো</option>
-                                    <option value="2" <?php if($instRow->supp_src_condition =='2'){echo "selected";} ?>>মোটামুটি</option>
-                                    <option value="3" <?php if($instRow->supp_src_condition =='3'){echo "selected";} ?>>খারাপ</option>
-                                    <option value="4" <?php if($instRow->supp_src_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান</option>
-                                    <option value="5" <?php if($instRow->supp_src_condition =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
+                                    <option value="1" <?php if($instRow->supp_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
+                                    <option value="2" <?php if($instRow->supp_src_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
+                                    <option value="3" <?php if($instRow->supp_src_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
+                                    <option value="4" <?php if($instRow->supp_src_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান(৪)</option>
+                                    <option value="5" <?php if($instRow->supp_src_condition =='5'){echo "selected";} ?>>পরিত্যক্ত(৫)</option>
                                 </select>
                             </td>
                             <td>
@@ -55,7 +55,6 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="supp_src_project">
-                                    <option value="1" <?php if($instRow->supp_src_project =='1'){echo "selected";} ?>> পিডিপি-১</option>
                                     <option value="2" <?php if($instRow->supp_src_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->supp_src_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->supp_src_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -74,11 +73,11 @@
                             <th scope="row" style="width: 150px"><span>নলকূপ </span></th>
                             <td>
                                 <select class="custom-select" style="..." name="tbwell_condition">
-                                    <option value="1" <?php if($instRow->tbwell_condition =='1'){echo "selected";} ?>>ভালো</option>
-                                    <option value="2" <?php if($instRow->tbwell_condition =='2'){echo "selected";} ?>>মোটামুটি</option>
-                                    <option value="3" <?php if($instRow->tbwell_condition =='3'){echo "selected";} ?>>খারাপ</option>
-                                    <option value="4" <?php if($instRow->tbwell_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান</option>
-                                    <option value="5" <?php if($instRow->tbwell_condition =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
+                                    <option value="1" <?php if($instRow->tbwell_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
+                                    <option value="2" <?php if($instRow->tbwell_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
+                                    <option value="3" <?php if($instRow->tbwell_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
+                                    <option value="4" <?php if($instRow->tbwell_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান(৪)</option>
+                                    <option value="5" <?php if($instRow->tbwell_condition =='5'){echo "selected";} ?>>পরিত্যক্ত(৫)</option>
                                 </select>
                             </td>
                             <td>
@@ -89,15 +88,13 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:120px" name="tbwell_ars_test_yn">
-                                    <option value="1" <?php if($instRow->tbwell_ars_test_yn =='1'){echo "selected";} ?>>আর্সেনিকমুক্ত</option>
-                                    <option value="2" <?php if($instRow->tbwell_ars_test_yn =='2'){echo "selected";} ?>>আর্সেনিকযুক্ত</option>
-                                    <option value="3" <?php if($instRow->tbwell_ars_test_yn =='3'){echo "selected";} ?>>আর্সেনিক দূষণ এলাকা</option>
-                                    <option value="4" <?php if($instRow->tbwell_ars_test_yn =='4'){echo "selected";} ?>>পরীক্ষা করা হয়নি</option>
+                                    <option value="1" <?php if($instRow->tbwell_ars_test_yn =='1'){echo "selected";} ?>>আর্সেনিকমুক্ত(১)</option>
+                                    <option value="2" <?php if($instRow->tbwell_ars_test_yn =='2'){echo "selected";} ?>>আর্সেনিকযুক্ত(২)</option>
+                                    <option value="3" <?php if($instRow->tbwell_ars_test_yn =='3'){echo "selected";} ?>>আর্সেনিক দূষণ এলাকা অথবা পরীক্ষা করা হয়নি(৩)</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="tbwell_project">
-                                    <option value="1" <?php if($instRow->tbwell_project =='1'){echo "selected";} ?>> পিডিপি-১</option>
                                     <option value="2" <?php if($instRow->tbwell_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->tbwell_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->tbwell_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -116,11 +113,11 @@
                             <th scope="row" style="width: 150px"><span>ফিল্টার </span></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="filter_src_condition">
-                                    <option value="1" <?php if($instRow->filter_src_condition =='1'){echo "selected";} ?>>ভালো</option>
-                                    <option value="2" <?php if($instRow->filter_src_condition =='2'){echo "selected";} ?>>মোটামুটি</option>
-                                    <option value="3" <?php if($instRow->filter_src_condition =='3'){echo "selected";} ?>>খারাপ</option>
-                                    <option value="4" <?php if($instRow->filter_src_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান</option>
-                                    <option value="5" <?php if($instRow->filter_src_condition =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
+                                    <option value="1" <?php if($instRow->filter_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
+                                    <option value="2" <?php if($instRow->filter_src_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
+                                    <option value="3" <?php if($instRow->filter_src_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
+                                    <option value="4" <?php if($instRow->filter_src_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান(৪)</option>
+                                    <option value="5" <?php if($instRow->filter_src_condition =='5'){echo "selected";} ?>>পরিত্যক্ত(৪)</option>
                                 </select>
                             </td>
                             <td>
@@ -134,7 +131,6 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="filter_src_project">
-                                    <option value="1" <?php if($instRow->filter_src_project =='1'){echo "selected";} ?>> পিডিপি-১</option>
                                     <option value="2" <?php if($instRow->filter_src_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->filter_src_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->filter_src_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -153,11 +149,11 @@
                             <th scope="row" style="width: 150px"><span>অন্যান্য </span></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="other_src_condition">
-                                    <option value="1" <?php if($instRow->other_src_condition =='1'){echo "selected";} ?>>ভালো</option>
-                                    <option value="2" <?php if($instRow->other_src_condition =='2'){echo "selected";} ?>>মোটামুটি</option>
-                                    <option value="3" <?php if($instRow->other_src_condition =='3'){echo "selected";} ?>>খারাপ</option>
-                                    <option value="4" <?php if($instRow->other_src_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান</option>
-                                    <option value="5" <?php if($instRow->other_src_condition =='5'){echo "selected";} ?>>পরিত্যক্ত</option>
+                                    <option value="1" <?php if($instRow->other_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
+                                    <option value="2" <?php if($instRow->other_src_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
+                                    <option value="3" <?php if($instRow->other_src_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
+                                    <option value="4" <?php if($instRow->other_src_condition =='4'){echo "selected";} ?>>খনন/নির্মাণ চলমান(৪)</option>
+                                    <option value="5" <?php if($instRow->other_src_condition =='5'){echo "selected";} ?>>পরিত্যক্ত(৫)</option>
                                 </select>
                             </td>
                             <td>
@@ -171,7 +167,6 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="other_src_project">
-                                    <option value="1" <?php if($instRow->other_src_project =='1'){echo "selected";} ?>> পিডিপি-১</option>
                                     <option value="2" <?php if($instRow->other_src_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->other_src_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->other_src_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -213,8 +208,8 @@
                             <td>
                                 <?php $instRow = $instRowObj->ict_multimedias;?>
                                 <select class="custom-select" style="width:80px" name="desktop_yn">
-                                    <option value="1" <?php if($instRow->desktop_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->desktop_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->desktop_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->desktop_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
                             </td>
                             <td><input type="number" style="width: 70px" name="desktop_amount" value="{{ $instRow->desktop_amount}}"></td>
@@ -225,8 +220,8 @@
                             <th scope="row" style="width: 150px"><span>বিদ্যালয়ের জন্য ল্যাপটপ </span></th>
                             <td>
                                 <select class="custom-select" style="width:80px" name="laptop_yn">
-                                    <option  value="1" <?php if($instRow->laptop_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->laptop_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option  value="1" <?php if($instRow->laptop_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->laptop_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
                             </td>
                             <td><input type="number" style="width: 70px" name="lptop_amount" value="{{ $instRow->lptop_amount}}"></td>
@@ -238,8 +233,8 @@
                             </th>
                             <td>
                                 <select class="custom-select" style="width:80px" name="internet_type">
-                                    <option value="1" <?php if($instRow->internet_type =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->internet_type =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -249,8 +244,8 @@
                             <th scope="row" style="width: 150px"><span>তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="ict_known_teacher_yn">
-                                    <option value="1" <?php if($instRow->ict_known_teacher_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->ict_known_teacher_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->ict_known_teacher_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->ict_known_teacher_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
                             </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -262,8 +257,8 @@
                                 <span>ডেস্কটপ/ল্যাপটপ শিখন-শিখানো কাজে ব্যবহৃত হয় কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="dsktp_use_yn">
-                                    <option value="1" <?php if($instRow->dsktp_use_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->dsktp_use_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->dsktp_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->dsktp_use_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -274,8 +269,8 @@
                             </th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="internet_use_yn">
-                                    <option  value="1" <?php if($instRow->internet_use_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->internet_use_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option  value="1" <?php if($instRow->internet_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->internet_use_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -286,8 +281,8 @@
                                 <span>বিদ্যালয়ের শ্রেণিকক্ষে মাল্টিমিডিয়া ব্যবহার হয় কি</span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_use_yn">
-                                    <option value="1" <?php if($instRow->mltmdia_use_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->mltmdia_use_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->mltmdia_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->mltmdia_use_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -297,8 +292,8 @@
                             <th scope="row" style="width: 150px"><span>মাল্টিমিডিয়া বেইসড ক্লাসরুম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_class_yn">
-                                    <option value="1" <?php if($instRow->mltmdia_class_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->mltmdia_class_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->mltmdia_class_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->mltmdia_class_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -309,8 +304,8 @@
                                 <span> মাল্টিমিডিয়া ইন্টারএক্টিভ ক্লাসরুম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_intr_class_yn">
-                                    <option value="1" <?php if($instRow->mltmdia_intr_class_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->mltmdia_intr_class_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->mltmdia_intr_class_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->mltmdia_intr_class_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -320,8 +315,8 @@
                             <th scope="row" style="width: 150px"><span>সাউন্ড সিস্টেম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="sound_system_yn">
-                                    <option value="1" <?php if($instRow->sound_system_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->sound_system_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->sound_system_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->sound_system_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
@@ -332,8 +327,8 @@
                             </th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="electr_device_pdg_yn">
-                                    <option value="1" <?php if($instRow->electr_device_pdg_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
-                                    <option value="2" <?php if($instRow->electr_device_pdg_yn =='2'){echo "selected";} ?>>না</option>
+                                    <option value="1" <?php if($instRow->electr_device_pdg_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
+                                    <option value="2" <?php if($instRow->electr_device_pdg_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
