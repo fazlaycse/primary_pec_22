@@ -12,6 +12,9 @@ class FirstPageController extends Controller
     public function read(Request $request)
     {
         if ($request->method() == 'POST') {
+            $request->validate([
+                'emis_code' => 'required|min:9|max:9'
+            ]);
 
             try {
                 $instRow = Institute::where('emis_code', '=', $request->input('emis_code'))->firstOrFail();

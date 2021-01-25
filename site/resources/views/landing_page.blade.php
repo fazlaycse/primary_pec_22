@@ -121,11 +121,21 @@
                     EMIS কোড দিয়ে "Submit and go to the form" এ ক্লিক করুন</h5>
                 <form class="form-group" method="post" action="first_page">
                     {{ csrf_field() }}
-                    Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code" required/>
-                    <input type="submit" value="Submit and go the form"/>
+
+                    Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code" maxlength="9" style="width:80px;" required/>
+                    <input class="" type="submit" value="Submit"/>
                 </form>
             </div>
-
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <h3>Error List:</h3>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
         </div>
     </div>
 <br>
@@ -150,7 +160,7 @@
                 <h5><b>যোগাযোগ</b></h5>
                 <div class="text">
                     <span class="foonav">
-                                BANBEIS, 1 Sonargaon Road ( Palashi-Nilkhet),
+                                BANBEIS, 1 Zahir Raihan Road ( Palashi-Nilkhet),
                                 <br>Dhaka - 1205<br>
                                 Email: info@banbeis.gov.bd<br>
                                 Web Site: www.banbeis.gov.bd

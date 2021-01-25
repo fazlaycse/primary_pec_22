@@ -7,6 +7,10 @@
 
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <script>
+        window.thana_id = '{{$instRow->thana_id}}';
+        window.union_id = '{{$instRow->union_id}}';
+    </script>
 
 </head>
 <body>
@@ -24,22 +28,22 @@
                     <span style="font-weight: bold; font-size: 15px"> ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:</span>
                 </div>
                 <div class="row">
-                    <div class="col-6 form-group form-inline">
+                    <div class="col-3 form-group form-inline">
                         <label for="school_code" class="label-text">বিদ্যালয়ের EMIS কোড:</label> &nbsp;
-                        <input type="text" style="width:auto" class="form-control" name="emis_code" id="school_code"
+                        <input type="text" style="width:80px;" class="form-control" name="emis_code" id="school_code"
                                value="{{$instRow->emis_code}}" readonly>
                     </div>
-                    <div class="col-4 form-group form-inline">
+                    <div class="col-2 form-group form-inline">
                         <label class="label-text" for="school_type">বিদ্যালয়ের ধরণ:</label> &nbsp;
-                        <input type="text" style="width:auto" class="form-control" name="inst_type" id="school_type"
-                               value="{{$instRow->inst_type}}">
+                        <input type="text" style="width:50px" class="form-control" name="inst_type" id="school_type"
+                               value="{{$instRow->inst_type}}" maxlength="2">
                     </div>
                 </div>
                 <div class="row border" style="margin:0px">
-                    <div class="col-md-1 border text-center">
-                        <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের নাম (গেজেট অনুযায়ী):</span>
+                    <div class="col-md-2 border text-center">
+                        <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের নাম <br>(গেজেট অনুযায়ী):</span>
                     </div>
-                    <div class="col-11 border">
+                    <div class="col-md-10 border">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="bangla_name" style="width:80px">বাংলায়: </label> &nbsp;
                             <input type="text" style="width:450px" class="form-control" name="name_bangla"
@@ -61,8 +65,12 @@
                     <div class="col-6 border">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="thana" style="width:120px">উপজেলা/থানা: </label> &nbsp;
-                            <input type="text" style="width:250px" class="form-control" name="thana_id" id="thana"
-                                   value="{{$instRow->thana_id}}">
+                            <select v-model="selected_thana" style="width:250px" class="form-control"  name="thana_id" id="thana"
+                            @change="changeThanaId">
+                                <option v-for="option in options_thana" v-bind:value="option.value">
+                                    @{{ option.text }}
+                                </option>
+                            </select>
                         </div>
                         <div class="row form-group form-inline"
                              style="border-top: 1px solid darkgrey; padding-top: 5px;">
@@ -74,8 +82,11 @@
                     <div class="col-6 border">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="union" style="width:150px"> ইউনিয়ন/পৌরসভা: </label> &nbsp;
-                            <input type="text" style="width:250px" class="form-control" name="union_id" id="union"
-                                   value="{{$instRow->union_id}}">
+                            <select v-model="selected_union" style="width:250px" class="form-control"  name="union_id" id="union">
+                                <option v-for="(option, index) in options_union" v-bind:value="index">
+                                    @{{ option }}
+                                </option>
+                            </select>
                         </div>
                         <div class="row form-group form-inline"
                              style="border-top: 1px solid darkgrey; padding-top: 5px;">
@@ -107,5 +118,7 @@
 
 
 <script src="js/app.js" type="text/javascript" defer></script>
+<script src="js/firstPage.js" defer></script>
+
 </body>
 </html>
