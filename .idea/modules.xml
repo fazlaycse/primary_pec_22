@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/primary-pec.iml" filepath="$PROJECT_DIR$/.idea/primary-pec.iml" />
-      <module fileurl="file://C:/laragon/www/todo/.idea/todo.iml" filepath="C:/laragon/www/todo/.idea/todo.iml" />
-    </modules>
-  </component>
-</project>

@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "vue-axios": "^3.2.2",
+        "vue-resource": "^1.5.1",
         "vue-router": "^3.4.9"
     }
 }
