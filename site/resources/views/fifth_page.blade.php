@@ -46,22 +46,22 @@
                             <td><input type="number" style="width: 70px; align-content: center" name="toilet_no" v-model="i.toilet_no"></td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_users" v-model="i.toilet_users">
-                                    <option  value="1" >বালক</option>
-                                    <option value="2" >বালিকা</option>
-                                    <option value="3" >বালক-বালিকা যৌথ</option>
-                                    <option value="4" >সহ: শিক্ষক</option>
-                                    <option value="5" >প্রধান শিক্ষক</option>
-                                    <option value="6" >শিক্ষকদের যৌথ</option>
-                                    <option value="7" >বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                    <option  value="1" >বালক(১)</option>
+                                    <option value="2" >বালিকা(২)</option>
+                                    <option value="3" >বালক-বালিকা যৌথ(৩)</option>
+                                    <option value="4" >সহ: শিক্ষক(৪)</option>
+                                    <option value="5" >প্রধান শিক্ষক(৫)</option>
+                                    <option value="6" >শিক্ষকদের যৌথ(৬)</option>
+                                    <option value="7" >বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী(৭)</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_curcond" v-model="i.toilet_curcond">
-                                    <option  value="1" >ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
+                                    <option  value="1" >ভালো(১)</option>
+                                    <option value="2">নির্মাণাধীন(২)</option>
+                                    <option value="3">জরাজীর্ণ,মেরামত প্রয়োজন(৩)</option>
+                                    <option value="4">ঝুকিপূর্ণ,জরুরি মেরামত প্রয়োজন(৪)</option>
+                                    <option value="5">পরিত্যক্ত(৫)</option>
                                 </select>
                             </td>
                             <td>
@@ -84,7 +84,6 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toi_project" v-model="i.toi_project">
-                                    <option value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩</option>
                                     <option value="4">পিডিপি-৪</option>

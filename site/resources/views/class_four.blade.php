@@ -89,7 +89,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="col-md-6 border justify-content-center align-self-center">
+                        <div class="col-md-6 border ">
                             <div class="prespecial_number">
                                 <table class="table table-bordered">
                                     <thead class="thead-dark">
@@ -154,7 +154,7 @@
                     </div>
                     <br>
                     <div class="row border" style="margin:0px">
-                        <div class="col-md-6 border justify-content-center align-self-center">
+                        <div class="col-md-6 border ">
                             <div class="prerepeater_student">
                                 <table class="table table-bordered">
                                     <thead class="thead-dark">

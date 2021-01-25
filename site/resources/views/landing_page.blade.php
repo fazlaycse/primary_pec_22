@@ -51,12 +51,7 @@
                     আই.সি.টি. শিক্ষার প্রসারে ব্যাপক ভূমিকা রাখছে।
                 </div>
                 <div id="uitrce_info" class="collapse text-justify mt-2 text-white">
-                    Establishment of Upazila ICT Training and Resource Centre for Education (UITRCE) selected 125
-                    Upazila
-                    in Bangladesh and approved by ECNEC. Project Cost : Total: 4037.78 Million Taka. GOB: 1366.28
-                    Million Taka.
-                    P.Aid: 2671.50 Million Taka (USD 39 Million). Financing of the Project : Soft Loan (0.01% interest)
-                    from Korea Economic Development Cooperation Fund (EDCF) through Korea Exim Bank.
+
                 </div>
             </nav>
         </div>
@@ -83,12 +78,12 @@
                     <div class="carousel-item">
                         <img class="d-block w-100" src="img/Educatipon GIS.jpg" alt="Third slide">
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/Publication.jpg" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/E serve525852.jpg" alt="Third slide">
-                    </div>
+{{--                    <div class="carousel-item">--}}
+{{--                        <img class="d-block w-100" src="img/Publication.jpg" alt="Third slide">--}}
+{{--                    </div>--}}
+{{--                    <div class="carousel-item">--}}
+{{--                        <img class="d-block w-100" src="img/E serve525852.jpg" alt="Third slide">--}}
+{{--                    </div>--}}
                     <div class="carousel-item">
                         <img class="d-block w-100" src="img/UITRCE Training (1).jpg" alt="Third slide">
                     </div>
@@ -121,9 +116,9 @@
                     EMIS কোড দিয়ে "Submit and go to the form" এ ক্লিক করুন</h5>
                 <form class="form-group" method="post" action="first_page">
                     {{ csrf_field() }}
-
                     Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code" maxlength="9" style="width:80px;" required/>
                     <input class="" type="submit" value="Submit"/>
+
                 </form>
             </div>
             @if ($errors->any())
@@ -173,8 +168,8 @@
                 <div class="text">
                     <span class="foonav">
 
-                           © Developed by ICT DIVISION, BANBEIS. <br>Ministry of Education. <br>All rights
-                                reserved.
+                           <b>© Developed by ICT DIVISION, BANBEIS. <br>Ministry of Education. <br>All rights
+                               reserved.</b>
 
                     </span>
                 </div>

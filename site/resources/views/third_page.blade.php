@@ -8,6 +8,7 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
+
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -30,7 +31,7 @@
                         <table class="table academic">
                             <tbody>
                             <tr>
-                                <th scope="row"><label for="academic_function_yn">বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে
+                                <th scope="row"><label for="academic_function_yn">১. বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে
                                         কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="acdmic_function_yn">
@@ -46,7 +47,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label></th>
+                                <th scope="row"><label for="">২. বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
                                         <option value="1" <?php if ($instRow->pprimary_exist_yn == '1') {
@@ -61,7 +62,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়ের গ্রেড </label></th>
+                                <th scope="row"><label for="">৩. বিদ্যালয়ের গ্রেড </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="school_grade">
                                         <option value="A" <?php if ($instRow->school_grade == 'A') {
@@ -92,7 +93,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
+                                <th scope="row"><label for="">৪. নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="safe_water_yn">
                                         <option value="1" <?php if ($instRow->safe_water_yn == '1') {
@@ -107,7 +108,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়ের ভবন সমূহ নিজস্ব সম্পত্তিতে প্রতিষ্ঠিত? </label>
+                                <th scope="row"><label for="">৫. বিদ্যালয়ের ভবন সমূহ নিজস্ব সম্পত্তিতে প্রতিষ্ঠিত? </label>
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="blding_own_land_yn">
@@ -123,7 +124,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়টি আশ্রয়কেন্দ্র কাম বিদ্যালয় হিসেবে নির্মিত
+                                <th scope="row"><label for="">৬. বিদ্যালয়টি আশ্রয়কেন্দ্র কাম বিদ্যালয় হিসেবে নির্মিত
                                         কি?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="cycln_shelter_yn">
@@ -139,21 +140,25 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">রেজিস্ট্রেশন/ নিবন্ধনের সন </label></th>
+                                <th scope="row"><label for="">৭. রেজিস্ট্রেশন/ নিবন্ধনের সন </label></th>
                                 <td><input type="text" style="width: 70px" name="reg_year"
                                            value="{{$instRow->reg_year}}"></td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যুৎ সংযোগ আছে কি? </label></th>
+                                <th scope="row"><label for="">৮. বিদ্যুৎ সংযোগ আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="electricity_yn">
                                         <option value="1" <?php if ($instRow->electricity_yn == '1') {
                                             echo "selected";
-                                        } ?>>হ্যাঁ
+                                        } ?>>আছে
                                         </option>
                                         <option value="2" <?php if ($instRow->electricity_yn == '2') {
                                             echo "selected";
-                                        } ?>>না
+                                        } ?>>সোলার
+                                        </option>
+                                        <option value="2" <?php if ($instRow->electricity_yn == '3') {
+                                            echo "selected";
+                                        } ?>>নাই
                                         </option>
                                     </select>
                                 </td>
@@ -161,13 +166,11 @@
                             </tbody>
                         </table>
                     </div>
-
-
                     <div class="col-6 border justify-content-center align-self-center">
                         <table class="table academic">
                             <tbody>
                             <tr>
-                                <th scope="row"><label for="academic_function_yn">শিখন মাধ্যম? </label></th>
+                                <th scope="row"><label for="academic_function_yn">৯. শিখন মাধ্যম? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="learning_media">
                                         <option value="1" <?php if ($instRow->learning_media == '1') {
@@ -190,12 +193,12 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">শিফট সংখ্যা? </label></th>
+                                <th scope="row"><label for="">১০. শিফট সংখ্যা? </label></th>
                                 <td><input type="number" style="width: 90px" name="shift_number"
                                            value="{{$instRow->shift_number}}"></td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label></th>
+                                <th scope="row"><label for="">১১. বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="toilet_yn">
                                         <option value="1" <?php if ($instRow->toilet_yn == '1') {
@@ -210,7 +213,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়ে ওয়াশ ব্লক নির্মিত হয়েছে কি? </label></th>
+                                <th scope="row"><label for="">১২. বিদ্যালয়ে ওয়াশ ব্লক নির্মিত হয়েছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="wash_block">
                                         <option value="1" <?php if ($instRow->wash_block == '1') {
@@ -229,7 +232,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">শহীদ মিনার আছে কি? </label>
+                                <th scope="row"><label for="">১৩. শহীদ মিনার আছে কি? </label>
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="shaheed_minar_yn">
@@ -245,7 +248,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">সীমানা প্রাচীর আছে কি? </label></th>
+                                <th scope="row"><label for="">১৪. সীমানা প্রাচীর আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="boundary_wall_yn">
                                         <option value="1" <?php if ($instRow->boundary_wall_yn == '1') {
@@ -260,7 +263,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">প্রতিবন্ধি ও অটিস্টিক শিশুদের জন্য র‍্যাম্পসহ উপযুক্ত
+                                <th scope="row"><label for="">১৫. প্রতিবন্ধি ও অটিস্টিক শিশুদের জন্য র‍্যাম্পসহ উপযুক্ত
                                         টয়লেট
                                         আছে কি?</label></th>
                                 <td>
@@ -277,7 +280,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত করতে)
+                                <th scope="row"><label for="">১৬. বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত করতে)
                                         জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="sntz_facility_yn">
@@ -453,7 +456,7 @@
                             <table class="table special">
                                 <tbody>
                                 <tr>
-                                    <th scope="row"><label for="academic_function_yn">শারীরিক প্রতিবন্ধিদের জন্য
+                                    <th scope="row"><label for="academic_function_yn">১. শারীরিক প্রতিবন্ধিদের জন্য
                                             র‍্যাম্প আছে কি না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="ramp_yn">
@@ -469,7 +472,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">শারীরিক প্রতিবন্ধিদের গমনোপযোগী ওয়াশব্লক কি
+                                    <th scope="row"><label for="">২. শারীরিক প্রতিবন্ধিদের গমনোপযোগী ওয়াশব্লক কি
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="spc_washblock_yn">
@@ -486,7 +489,7 @@
                                 </tr>
 
                                 <tr>
-                                    <th scope="row"><label for="">শারীরিক প্রতিবন্ধিদের হুইল চেয়ার আছে কি না? </label>
+                                    <th scope="row"><label for="">৩. শারীরিক প্রতিবন্ধিদের হুইল চেয়ার আছে কি না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="wheel_chair_yn">
@@ -502,7 +505,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">শারীরিক প্রতিবন্ধিদের ক্রাচ আছে কি না? </label>
+                                    <th scope="row"><label for="">৪. শারীরিক প্রতিবন্ধিদের ক্রাচ আছে কি না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="cratch_yn">
@@ -518,7 +521,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for=""> দৃষ্টি ফেন্সিং আছে কি না?</label></th>
+                                    <th scope="row"><label for="">৫. দৃষ্টি ফেন্সিং আছে কি না?</label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="vision_fencing">
                                             <option value="1" <?php if ($instRow->vision_fencing == '1') {
@@ -533,7 +536,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">দৃষ্টি প্রতিবন্ধিদের কালার কন্ট্রাস্ট আছে কি
+                                    <th scope="row"><label for="">৬. দৃষ্টি প্রতিবন্ধিদের কালার কন্ট্রাস্ট আছে কি
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="clr_contrast_yn">
@@ -556,7 +559,7 @@
                             <table class="table academic">
                                 <tbody>
                                 <tr>
-                                    <th scope="row"><label for="">দৃষ্টি প্রতিবন্ধিদের ডেইজি বুক আছে কি না? </label>
+                                    <th scope="row"><label for="">৭. দৃষ্টি প্রতিবন্ধিদের ডেইজি বুক আছে কি না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="daisy_book_yn">
@@ -572,7 +575,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">দৃষ্টি প্রতিবন্ধিদের ব্রেইল বই আছে কি না? </label>
+                                    <th scope="row"><label for="">৮. দৃষ্টি প্রতিবন্ধিদের ব্রেইল বই আছে কি না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="brail_book_yn">
@@ -588,7 +591,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">বাক প্রতিবন্ধিদের Sign Language Tutor আছে কি
+                                    <th scope="row"><label for="">৯. বাক প্রতিবন্ধিদের Sign Language Tutor আছে কি
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="sign_lang_tutor_yn">
@@ -604,7 +607,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">বাক প্রতিবন্ধিদের Sign Language Manual আছে কি
+                                    <th scope="row"><label for="">১০. বাক প্রতিবন্ধিদের Sign Language Manual আছে কি
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="sign_lang_manual_yn">
@@ -620,7 +623,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">শ্রবণ প্রতিবন্ধিদের নীরব পরিবেশ আছে কি না? </label>
+                                    <th scope="row"><label for="">১১. শ্রবণ প্রতিবন্ধিদের নীরব পরিবেশ আছে কি না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="silent_envr_yn">
@@ -636,7 +639,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">শ্রবণ প্রতিবন্ধিদের Hearing Aid আছে কি না? </label>
+                                    <th scope="row"><label for="">১২. শ্রবণ প্রতিবন্ধিদের Hearing Aid আছে কি না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="hearing_aid_yn">

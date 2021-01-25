@@ -10,6 +10,7 @@
         window.buildings = '<?php echo $instRowObj->buildings; ?>';
         window.building_infos = '<?php echo $instRowObj->building_infos; ?>';
     </script>
+
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -25,7 +26,7 @@
 
             <div class="table_third_heading">
                 <span style="font-weight: bold; font-size: 17px"> ৩. বিদ্যালয়ের ভবনের তথ্য: </span> <span
-                        style=" font-size: 15px">(শুধুমাত্র বিদ্যালয়ের ধরন: ০১, ০৪, ২৬ এবং ৯৯ এর জন্য প্রযোজ্য) </span>
+                    style=" font-size: 15px">(শুধুমাত্র বিদ্যালয়ের ধরন: ০১, ০৪, ২৬ এবং ৯৯ এর জন্য প্রযোজ্য) </span>
                 <div class="table_third_one">
                     <nav class="navbar navbar-light bg-light">
                         <div class="navbar-brand">
@@ -64,17 +65,16 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_condition"
                                         v-model="item.bld_condition">
-                                    <option value="1">ভালো</option>
-                                    <option value="2">নির্মাণাধীন</option>
-                                    <option value="3">জরাজীর্ণ</option>
-                                    <option value="4">ঝুকিপূর্ণ</option>
-                                    <option value="5">পরিত্যক্ত</option>
+                                    <option value="1">ভালো(১)</option>
+                                    <option value="2">নির্মাণাধীন(২)</option>
+                                    <option value="3">জরাজীর্ণ(৩)</option>
+                                    <option value="4">ঝুকিপূর্ণ(৪)</option>
+                                    <option value="5">পরিত্যক্ত(৫)</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_projt_name"
                                         v-model="item.bld_projt_name">
-                                    <option value="1"> পিডিপি-১</option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩</option>
                                     <option value="4">পিডিপি-৪</option>
