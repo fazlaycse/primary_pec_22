@@ -7,7 +7,11 @@
 
     <link href="css/app.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
+<style type="text/css">
+    .table-bordered th,td{
+        border: 1px solid #6c757d !important;
+    }
+</style>
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -28,9 +32,9 @@
                     <div class="col-md-1 border justify-content-center align-self-center">
                         <span style="font-weight: bold; font-size: 16px">বিদ্যালয়ের শিক্ষক সংখ্যা </span>
                     </div>
-                    <div class="col-6 border">
+                    <div class="col-6 border" style="">
                         <div class="teacher_number">
-                            <table class="table teacher" style="text-align: center">
+                            <table class="table table-bordered" style="text-align: center">
                                 <thead class="thead-light">
                                 <tr>
                                     <th scope="col">ধরন</th>
@@ -94,7 +98,7 @@
                     </div>
                     <div class="col-4 border justify-content-center align-self-center">
                         <div class="building_number">
-                            <table class="table teacher">
+                            <table class="table table-bordered">
                                 <thead class="thead-light">
                                 <tr>
                                     <th scope="col">ভবন সংখ্যা</th>

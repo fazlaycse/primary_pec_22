@@ -10,8 +10,7 @@
     </script>
     <style>
         th, td {
-            padding: 0 !important;
-            margin: 0 !important;
+
             width:auto !important;
         }
         select{
@@ -35,25 +34,23 @@
                 <span style="font-size: 18px"> বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য: </span>
                 <div class="table_third_three">
                     <table class="table table-bordered text-center">
-                        <thead class="bg-primary">
+                        <tbody style="background-color: skyblue">
+
                         <tr>
-                            <th rowspan="3" scope="col">ক্রমিক নম্বর</th>
-                            <th rowspan="3" scope="col">শিক্ষকের নাম (বাংলা ও ইংরেজি)</th>
-                            <th rowspan="2" scope="col">জন্ম তারিখ(১)</th>
-                            <th rowspan="2" scope="col">লিঙ্গ(২)</th>
-                            <th rowspan="2" scope="col">উপজাতি/ক্ষুদ্র নৃ-গোষ্ঠী(৩)</th>
-                            <th rowspan="2" scope="col">পদ(৪)</th>
-                            <th rowspan="2" scope="col">এ বিদ্যালয়ে পদায়িত(৫)</th>
-                            <th rowspan="2" scope="col">এ বিদ্যালয়ে উপস্থিতি(৬)</th>
-                            <th rowspan="2" scope="col">শিক্ষকতা যোগ্যতা-সর্বোচ্চ(৭)</th>
-                            <th rowspan="2" scope="col">চাকরিতে যোগদানের তারিখ(৮)</th>
-                            <th rowspan="2" scope="col">৬ষ্ঠ-৮ম শ্রেণির ক্লাস(৯)</th>
-                            <th colspan="2" rowspan="2" scope="col">পেশাগত যোগ্যতা(১০)
-                            </th>
-                            <th rowspan="2" scope="col">বিগত ১২ মাসের প্রশিক্ষণ</th>
+                            <td rowspan="2" scope="col">ক্রমিক নম্বর</td>
+                            <td rowspan="2" scope="col">শিক্ষকের নাম (বাংলা ও ইংরেজি)</td>
+                            <td rowspan="1" scope="col">জন্ম তারিখ(১)</td>
+                            <td rowspan="1" scope="col">লিঙ্গ(২)</td>
+                            <td rowspan="1" scope="col">উপজাতি/ক্ষুদ্র নৃ-গোষ্ঠী(৩)</td>
+                            <td rowspan="1" scope="col">পদ(৪)</td>
+                            <td rowspan="1" scope="col">এ বিদ্যালয়ে পদায়িত(৫)</td>
+                            <td rowspan="1" scope="col">এ বিদ্যালয়ে উপস্থিতি(৬)</td>
+                            <td rowspan="1" scope="col">শিক্ষকতা যোগ্যতা-সর্বোচ্চ(৭)</td>
+                            <td rowspan="1" scope="col">চাকরিতে যোগদানের তারিখ(৮)</td>
+                            <td rowspan="1" scope="col">৬ষ্ঠ-৮ম শ্রেণির ক্লাস(৯)</td>
+                            <td colspan="2" rowspan="1" scope="col">পেশাগত যোগ্যতা(১০)</td>
+                            <td rowspan="1" scope="col">বিগত ১২ মাসের প্রশিক্ষণ</td>
                         </tr>
-                        </thead>
-                        <thead class="bg-primary">
                         <tr>
                             <td></td>
                             <td></td>
@@ -70,15 +67,12 @@
                             <td>দীর্ঘ মেয়াদি</td>
                             <td></td>
                         </tr>
-                        </thead>
-
-                        <tbody style="background-color: skyblue">
 
                         <tr v-for="(item, index) in rowData">
                             <td style="width: 10px">@{{index+1}}</td>
                             <td>
                                 <input type="text" style="width: 200px;" placeholder="নাম"
-                                       name="tname_bangla" v-model="item.tname_bangla"><br>
+                                       name="tname_bangla" v-model="item.tname_bangla"><br><br>
                                 <input type="text" style="width: 200px;" placeholder="Name"
                                        name="tname_english" v-model="item.tname_english">
                             </td>

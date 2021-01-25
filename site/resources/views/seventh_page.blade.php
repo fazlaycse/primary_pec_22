@@ -33,7 +33,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>সরবরাহ বা সাপ্লাই </span></th>
+                            <th scope="row" style="width: 150px"><span>১. সরবরাহ বা সাপ্লাই </span></th>
                             <td>
                                 <?php $instRow = $instRowObj->water_facilities;?>
                                 <select class="custom-select" style="width:90px" name="supp_src_condition">
@@ -70,7 +70,7 @@
                             <td></td> <!-- for tubewell only-->
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>নলকূপ </span></th>
+                            <th scope="row" style="width: 150px"><span>২. নলকূপ </span></th>
                             <td>
                                 <select class="custom-select" style="..." name="tbwell_condition">
                                     <option value="1" <?php if($instRow->tbwell_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
@@ -110,7 +110,7 @@
                             <td><input type="number" style="width: 70px" name="tbwell_salt_test" value="{{$instRow->tbwell_salt_test}}"></td>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>ফিল্টার </span></th>
+                            <th scope="row" style="width: 150px"><span>৩. ফিল্টার </span></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="filter_src_condition">
                                     <option value="1" <?php if($instRow->filter_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
@@ -146,7 +146,7 @@
                             <td><!-- for tubewell only--></td>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>অন্যান্য </span></th>
+                            <th scope="row" style="width: 150px"><span>৪. অন্যান্য </span></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="other_src_condition">
                                     <option value="1" <?php if($instRow->other_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
@@ -196,15 +196,15 @@
                         <tr>
                             <th scope="col" style="width:550px"></th>
                             <th scope="col">আছে কি না?</th>
-                            <th scope="col">মোট প্রাপ্ত সংখ্যা লিখুন</th>
-                            <th scope="col" style="width:200px">প্রাশিঅ ব্যতীত অন্যান্য উৎস থেকে প্রাপ্ত সংখ্যা লিখুন
+                            <th scope="col">মোট প্রাপ্ত সংখ্যা </th>
+                            <th scope="col" style="width:200px">প্রাশিঅ ব্যতীত অন্যান্য উৎস থেকে প্রাপ্ত সংখ্যা
                             </th>
-                            <th scope="col"> অচল থাকলে (সংখ্যা লিখুন)</th>
+                            <th scope="col"> অচল থাকলে সংখ্যা</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>বিদ্যালয়ের জন্য কম্পিউটার / ডেস্কটপ </span></th>
+                            <th scope="row" style="width: 150px"><span>১. বিদ্যালয়ের জন্য কম্পিউটার / ডেস্কটপ </span></th>
                             <td>
                                 <?php $instRow = $instRowObj->ict_multimedias;?>
                                 <select class="custom-select" style="width:80px" name="desktop_yn">
@@ -217,7 +217,7 @@
                             <td><input type="number" style="width: 70px" name="dsktp_dmg_amnt" value="{{ $instRow->dsktp_dmg_amnt}}"></td>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>বিদ্যালয়ের জন্য ল্যাপটপ </span></th>
+                            <th scope="row" style="width: 150px"><span>২. বিদ্যালয়ের জন্য ল্যাপটপ </span></th>
                             <td>
                                 <select class="custom-select" style="width:80px" name="laptop_yn">
                                     <option  value="1" <?php if($instRow->laptop_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -229,19 +229,21 @@
                             <td><input type="number" style="width: 70px" name="lptop_dmg_amnt" value="{{ $instRow->lptop_dmg_amnt}}"></td>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>ইন্টারনেট সংযোগের ধরণ (ব্রডব্যান্ড-১/ওয়াইফাই-২/মডেম-৩/ব্যবস্থা না থাকলে-৪ লিখুন) </span>
+                            <th scope="row" style="width: 150px"><span>৩. ইন্টারনেট সংযোগের ধরন </span>
                             </th>
                             <td>
                                 <select class="custom-select" style="width:80px" name="internet_type">
-                                    <option value="1" <?php if($instRow->internet_type =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
-                                    <option value="2" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>না(২)</option>
+                                    <option value="1" <?php if($instRow->internet_type =='1'){echo "selected";} ?>>ব্রডব্যান্ড(১)</option>
+                                    <option value="2" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>ওয়াইফাই(২)</option>
+                                    <option value="3" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>মডেম(৩)</option>
+                                    <option value="4" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>ব্যবস্থা নেই(৪)</option>
                                 </select>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span></th>
+                            <th scope="row" style="width: 150px"><span>৪. তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="ict_known_teacher_yn">
                                     <option value="1" <?php if($instRow->ict_known_teacher_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -254,7 +256,7 @@
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px">
-                                <span>ডেস্কটপ/ল্যাপটপ শিখন-শিখানো কাজে ব্যবহৃত হয় কি </span></th>
+                                <span>৫. ডেস্কটপ/ল্যাপটপ শিখন-শিখানো কাজে ব্যবহৃত হয় কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="dsktp_use_yn">
                                     <option value="1" <?php if($instRow->dsktp_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -265,7 +267,7 @@
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"> ইন্টারনেট শিখন-শিখানো কাজে ব্যবহৃত হয় কি <span></span>
+                            <th scope="row" style="width: 150px">৬. ইন্টারনেট শিখন-শিখানো কাজে ব্যবহৃত হয় কি <span></span>
                             </th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="internet_use_yn">
@@ -278,7 +280,7 @@
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px">
-                                <span>বিদ্যালয়ের শ্রেণিকক্ষে মাল্টিমিডিয়া ব্যবহার হয় কি</span></th>
+                                <span>৭. বিদ্যালয়ের শ্রেণিকক্ষে মাল্টিমিডিয়া ব্যবহার হয় কি</span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_use_yn">
                                     <option value="1" <?php if($instRow->mltmdia_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -289,7 +291,7 @@
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>মাল্টিমিডিয়া বেইসড ক্লাসরুম আছে কি </span></th>
+                            <th scope="row" style="width: 150px"><span>৮. মাল্টিমিডিয়া বেইসড ক্লাসরুম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_class_yn">
                                     <option value="1" <?php if($instRow->mltmdia_class_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -301,7 +303,7 @@
                         </tr>
                         <tr>
                             <th scope="row" style="width: 150px">
-                                <span> মাল্টিমিডিয়া ইন্টারএক্টিভ ক্লাসরুম আছে কি </span></th>
+                                <span>৯. মাল্টিমিডিয়া ইন্টারএক্টিভ ক্লাসরুম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_intr_class_yn">
                                     <option value="1" <?php if($instRow->mltmdia_intr_class_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -312,7 +314,7 @@
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>সাউন্ড সিস্টেম আছে কি </span></th>
+                            <th scope="row" style="width: 150px"><span>১০. সাউন্ড সিস্টেম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="sound_system_yn">
                                     <option value="1" <?php if($instRow->sound_system_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
@@ -323,7 +325,7 @@
                             <th scope="row"><span>প্রযোজ্য নয় </span></th>
                         </tr>
                         <tr>
-                            <th scope="row" style="width: 150px"><span>শিখন-শিখানো কাজে ইলেকট্রিক ডিভাইস ব্যবহৃত হয় কি না </span>
+                            <th scope="row" style="width: 150px"><span>১১. শিখন-শিখানো কাজে ইলেকট্রিক ডিভাইস ব্যবহৃত হয় কি না </span>
                             </th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="electr_device_pdg_yn">
