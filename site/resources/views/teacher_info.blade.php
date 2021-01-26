@@ -165,29 +165,29 @@
                             <td class="mltipl-select">
                                 <div class="container select-box-align">
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1">বিষয়ভিত্তিক(১)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(১)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_2">আইসিটি(২)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_2" true-value="yes" false-value="no">আইসিটি(২)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3">প্রাক-প্রাথমিক(৩)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">প্রাক-প্রাথমিক(৩)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_4">মাকিং
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_4" true-value="yes" false-value="no">মাকিং
                                             স্কীম(৪)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_5">কাব
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_5" true-value="yes" false-value="no">কাব
                                             প্রশিক্ষণ(৫)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_6">অন্যান্য(৬)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_6" true-value="yes" false-value="no">অন্যান্য(৬)
                                         </div>
                                     </div>
                                 </div>
@@ -195,27 +195,27 @@
                             <td class="mltipl-select">
                                 <div class="container select-box-align">
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_1">সিইনএড(১)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_1" true-value="yes" false-value="no">সিইনএড(১)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_2">ডিপিএড(২)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_2" true-value="yes" false-value="no">ডিপিএড(২)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_3">পিইনএড(৩)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_3" true-value="yes" false-value="no">পিইনএড(৩)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_4">বিএড(৪)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_4" true-value="yes" false-value="no">বিএড(৪)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_5">এমএড(৫)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_5" true-value="yes" false-value="no">এমএড(৫)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_6">অন্যান্য(৬)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_6" true-value="yes" false-value="no">অন্যান্য(৬)
                                         </div>
                                     </div>
                                 </div>
@@ -223,29 +223,29 @@
                             <td class="mltipl-select">
                                 <div class="container select-box-align">
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_1">বিষয়ভিত্তিক(১)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(১)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_2">আইসিটি(২)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_2" true-value="yes" false-value="no">আইসিটি(২)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_3">প্রাক-প্রাথমিক(৩)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_3" true-value="yes" false-value="no">প্রাক-প্রাথমিক(৩)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_4">মাকিং
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_4" true-value="yes" false-value="no">মাকিং
                                             স্কীম(৪)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_5">কাব
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_5" true-value="yes" false-value="no">কাব
                                             প্রশিক্ষণ(৫)
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_6">অন্যান্য(৬)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_6" true-value="yes" false-value="no">অন্যান্য(৬)
                                         </div>
                                     </div>
                                 </div>

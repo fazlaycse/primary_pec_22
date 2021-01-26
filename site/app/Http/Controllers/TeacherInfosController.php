@@ -34,7 +34,7 @@ class TeacherInfosController extends Controller
     public function updateOrcreate(Request $request)
     {
         $reqData = $request->all();
-
+//        var_dump($reqData);exit;
         if ($request->method() == 'POST') {
             for ($i = 0; $i < sizeof($reqData); $i++) {
                 $reqData[$i]['institute_id'] = $request->session()->get('institute_id');

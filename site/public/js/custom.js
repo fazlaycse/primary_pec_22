@@ -61,24 +61,24 @@ var app = new Vue({
                 edu_degree: '',
                 joining_dt: '',
                 class_six_eight: '',
-                short_tr_1: '',
-                short_tr_2: '',
-                short_tr_3: '',
-                short_tr_4: '',
-                short_tr_5: '',
-                short_tr_6: '',
-                long_tr_1: '',
-                long_tr_2: '',
-                long_tr_3: '',
-                long_tr_4: '',
-                long_tr_5: '',
-                long_tr_6: '',
-                tlv_mon_tr_1: '',
-                tlv_mon_tr_2: '',
-                tlv_mon_tr_3: '',
-                tlv_mon_tr_4: '',
-                tlv_mon_tr_5: '',
-                tlv_mon_tr_6: '',
+                short_tr_1: 'no',
+                short_tr_2: 'no',
+                short_tr_3: 'no',
+                short_tr_4: 'no',
+                short_tr_5: 'no',
+                short_tr_6: 'no',
+                long_tr_1: 'no',
+                long_tr_2: 'no',
+                long_tr_3: 'no',
+                long_tr_4: 'no',
+                long_tr_5: 'no',
+                long_tr_6: 'no',
+                tlv_mon_tr_1: 'no',
+                tlv_mon_tr_2: 'no',
+                tlv_mon_tr_3: 'no',
+                tlv_mon_tr_4: 'no',
+                tlv_mon_tr_5: 'no',
+                tlv_mon_tr_6: 'no',
             };
             console.log(this.rowData);
             this.rowData.push(my_object)
@@ -90,16 +90,11 @@ var app = new Vue({
             Vue.http.headers.common['X-CSRF-TOKEN'] = $('#token').val();
             this.$http.post('teacher_info_page_save', this.rowData)
                 .then(function (response) {
-                    // window.location.href = '/thanking_page';
+                    window.location.href = '/thanking_page';
                 })
                 .catch(function (error) {
                     console.log(error)
                 });
-        },
-        toogle(val){
-             if(val==1){
-             return true;
-             }else return false;
         }
     }
 });
