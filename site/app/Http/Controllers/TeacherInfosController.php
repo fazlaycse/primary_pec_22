@@ -38,7 +38,7 @@ class TeacherInfosController extends Controller
         if ($request->method() == 'POST') {
             for ($i = 0; $i < sizeof($reqData); $i++) {
                 $reqData[$i]['institute_id'] = $request->session()->get('institute_id');
-                $reqData[$i]['year'] = 2010;
+                $reqData[$i]['year'] = 2020;
             }
 
             try {

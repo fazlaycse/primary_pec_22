@@ -69,6 +69,7 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_condition"
                                         v-model="item.bld_condition">
+                                    <option value="0"> -- </option>
                                     <option value="1">ভালো(১)</option>
                                     <option value="2">নির্মাণাধীন(২)</option>
                                     <option value="3">জরাজীর্ণ(৩)</option>
@@ -79,6 +80,7 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name="bld_projt_name"
                                         v-model="item.bld_projt_name">
+                                    <option value="1"> -- </option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩</option>
                                     <option value="4">পিডিপি-৪</option>
@@ -88,6 +90,7 @@
                             <td>
                                 <select class="custom-select" style="width:80px" name="bld_ramp_yn"
                                         v-model="item.bld_ramp_yn">
+                                    <option value="0"> -- </option>
                                     <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select>

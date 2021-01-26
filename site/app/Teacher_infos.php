@@ -21,7 +21,7 @@ class Teacher_infos extends Model
         'class_six_eight',
         //'short_training',
         //'long_training',
-        'twelve_month_training',
+//        'twelve_month_training',
         'year',
         'institute_id',
         'short_tr_1',
@@ -42,6 +42,8 @@ class Teacher_infos extends Model
         'tlv_mon_tr_4',
         'tlv_mon_tr_5',
         'tlv_mon_tr_6',
+        'created_at',
+        'updated_at'
 
     ];
 }

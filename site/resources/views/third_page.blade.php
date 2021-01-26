@@ -33,6 +33,7 @@
                             <tr>
                                 <th scope=""><label for="academic_function_yn">১. বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে কি? </label></th><td>
                                     <select class="custom-select" style="width:70px" name="acdmic_function_yn">
+                                        <option></option>
                                         <option value="1" <?php if ($instRow->acdmic_function_yn == '1') {echo "selected";} ?> >হ্যাঁ</option>
                                         <option value="2" <?php if ($instRow->acdmic_function_yn == '2') {echo "selected";} ?> >না</option>
                                     </select>
@@ -43,6 +44,7 @@
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
+                                        <option></option>
                                         <option value="1" <?php if ($instRow->pprimary_exist_yn == '1') {echo "selected";} ?>>হ্যাঁ</option>
                                         <option value="2" <?php if ($instRow->pprimary_exist_yn == '2') {echo "selected";} ?>>না</option>
                                     </select>
@@ -52,6 +54,8 @@
                                 <th scope="row"><label for="">৩. বিদ্যালয়ের গ্রেড </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="school_grade">
+                                        <option></option>
+
                                         <option value="A" <?php if ($instRow->school_grade == 'A') {
                                             echo "selected";
                                         } ?> >এ
@@ -83,6 +87,8 @@
                                 <th scope="row"><label for="">৪. নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="safe_water_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->safe_water_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -100,6 +106,8 @@
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="blding_own_land_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->blding_own_land_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -116,6 +124,8 @@
                                         কি?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="cycln_shelter_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->cycln_shelter_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -136,6 +146,8 @@
                                 <th scope="row"><label for="">৮. বিদ্যুৎ সংযোগ আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="electricity_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->electricity_yn == '1') {
                                             echo "selected";
                                         } ?>>আছে
@@ -161,6 +173,8 @@
                                 <th scope="row"><label for="academic_function_yn">৯. শিখন মাধ্যম? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="learning_media">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->learning_media == '1') {
                                             echo "selected";
                                         } ?>>বাংলা
@@ -190,6 +204,8 @@
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="toilet_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->toilet_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -205,6 +221,8 @@
                                 <th scope="row"><label for="">১২. বিদ্যালয়ে ওয়াশ ব্লক নির্মিত হয়েছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="wash_block">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->wash_block == '1') {
                                             echo "selected";
                                         } ?>>নির্মিত
@@ -225,6 +243,8 @@
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="shaheed_minar_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->shaheed_minar_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -240,6 +260,8 @@
                                 <th scope="row"><label for="">১৪. সীমানা প্রাচীর আছে কি? </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="boundary_wall_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->boundary_wall_yn == '1') {
                                             echo "selected";
                                         } ?>>পাকা প্রাচীর
@@ -257,6 +279,8 @@
                                         আছে কি?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="disable_student_toilet_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->disable_student_toilet_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -274,6 +298,8 @@
                                         জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="sntz_facility_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->sntz_facility_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -314,6 +340,8 @@
                             <tr>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="preprimary_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->preprimary_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -326,6 +354,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_1_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_1_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -339,6 +369,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_2_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_2_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -352,6 +384,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_3_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_3_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -365,6 +399,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_4_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_4_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -378,6 +414,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_5_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_5_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -391,6 +429,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_6_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_6_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -404,6 +444,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_7_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_7_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -417,6 +459,8 @@
                                 </td>
                                 <td>
                                     <select class="custom-select" style="width:80px" name="class_8_yn">
+                                        <option></option>
+
                                         <option value="1" <?php if ($instRow->class_8_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
@@ -450,6 +494,8 @@
                                             র‍্যাম্প আছে কি না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="ramp_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->ramp_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -466,6 +512,8 @@
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="spc_washblock_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->spc_washblock_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -484,6 +532,8 @@
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="wheel_chair_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->wheel_chair_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -500,6 +550,8 @@
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="cratch_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->cratch_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -515,6 +567,8 @@
                                     <th scope="row"><label for="">৫. দৃষ্টি ফেন্সিং আছে কি না?</label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="vision_fencing">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->vision_fencing == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -531,6 +585,8 @@
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="clr_contrast_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->clr_contrast_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -554,6 +610,8 @@
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="daisy_book_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->daisy_book_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -570,6 +628,8 @@
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="brail_book_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->brail_book_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -586,6 +646,8 @@
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="sign_lang_tutor_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->sign_lang_tutor_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -602,6 +664,8 @@
                                             না? </label></th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="sign_lang_manual_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->sign_lang_manual_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -619,6 +683,8 @@
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="silent_envr_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->silent_envr_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ
@@ -636,6 +702,8 @@
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="hearing_aid_yn">
+                                            <option></option>
+
                                             <option value="1" <?php if ($instRow->hearing_aid_yn == '1') {
                                                 echo "selected";
                                             } ?>>হ্যাঁ

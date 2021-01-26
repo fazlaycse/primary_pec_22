@@ -37,6 +37,7 @@
                             <td>
                                 <?php $instRow = $instRowObj->water_facilities;?>
                                 <select class="custom-select" style="width:90px" name="supp_src_condition">
+                                    <option></option>
                                     <option value="1" <?php if($instRow->supp_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
                                     <option value="2" <?php if($instRow->supp_src_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
                                     <option value="3" <?php if($instRow->supp_src_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
@@ -46,6 +47,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="supp_rpable_yn">
+                                    <option></option>
+
                                     <option  value="1" <?php if($instRow->supp_rpable_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->supp_rpable_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
@@ -55,6 +58,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="supp_src_project">
+                                    <option></option>
+
                                     <option value="2" <?php if($instRow->supp_src_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->supp_src_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->supp_src_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -63,6 +68,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="supp_ecoli_test_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->supp_ecoli_test_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->supp_ecoli_test_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
@@ -73,6 +80,8 @@
                             <th scope="row" style="width: 150px"><span>২. নলকূপ </span></th>
                             <td>
                                 <select class="custom-select" style="..." name="tbwell_condition">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->tbwell_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
                                     <option value="2" <?php if($instRow->tbwell_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
                                     <option value="3" <?php if($instRow->tbwell_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
@@ -82,12 +91,16 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="tbwell_rpable_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->tbwell_rpable_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->tbwell_rpable_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:120px" name="tbwell_ars_test_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->tbwell_ars_test_yn =='1'){echo "selected";} ?>>আর্সেনিকমুক্ত(১)</option>
                                     <option value="2" <?php if($instRow->tbwell_ars_test_yn =='2'){echo "selected";} ?>>আর্সেনিকযুক্ত(২)</option>
                                     <option value="3" <?php if($instRow->tbwell_ars_test_yn =='3'){echo "selected";} ?>>আর্সেনিক দূষণ এলাকা অথবা পরীক্ষা করা হয়নি(৩)</option>
@@ -95,6 +108,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="tbwell_project">
+                                    <option></option>
+
                                     <option value="2" <?php if($instRow->tbwell_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->tbwell_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->tbwell_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -103,6 +118,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="tbwell_ecoli_test_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->tbwell_ecoli_test_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->tbwell_ecoli_test_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
@@ -113,6 +130,8 @@
                             <th scope="row" style="width: 150px"><span>৩. ফিল্টার </span></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="filter_src_condition">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->filter_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
                                     <option value="2" <?php if($instRow->filter_src_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
                                     <option value="3" <?php if($instRow->filter_src_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
@@ -122,6 +141,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="filter_rpable_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->filter_rpable_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->filter_rpable_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
@@ -131,6 +152,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="filter_src_project">
+                                    <option></option>
+
                                     <option value="2" <?php if($instRow->filter_src_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->filter_src_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->filter_src_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -139,6 +162,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="filter_ecoli_test_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->filter_ecoli_test_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->filter_ecoli_test_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
@@ -149,6 +174,8 @@
                             <th scope="row" style="width: 150px"><span>৪. অন্যান্য </span></th>
                             <td>
                                 <select class="custom-select" style="width:90px" name="other_src_condition">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->other_src_condition =='1'){echo "selected";} ?>>ভালো(১)</option>
                                     <option value="2" <?php if($instRow->other_src_condition =='2'){echo "selected";} ?>>মোটামুটি(২)</option>
                                     <option value="3" <?php if($instRow->other_src_condition =='3'){echo "selected";} ?>>খারাপ(৩)</option>
@@ -158,6 +185,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="other_rpable_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->other_rpable_yn =='5'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->other_rpable_yn =='5'){echo "selected";} ?>>না</option>
                                 </select>
@@ -167,6 +196,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="other_src_project">
+                                    <option></option>
+
                                     <option value="2" <?php if($instRow->other_src_project =='2'){echo "selected";} ?>> পিডিপি-২</option>
                                     <option value="3" <?php if($instRow->other_src_project =='3'){echo "selected";} ?>> পিডিপি-৩</option>
                                     <option value="4" <?php if($instRow->other_src_project =='4'){echo "selected";} ?>>পিডিপি-৪</option>
@@ -175,6 +206,8 @@
                             </td>
                             <td>
                                 <select class="custom-select" style="width:80px" name="other_ecoli_test_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->other_ecoli_test_yn =='1'){echo "selected";} ?>>হ্যাঁ</option>
                                     <option value="2" <?php if($instRow->other_ecoli_test_yn =='2'){echo "selected";} ?>>না</option>
                                 </select>
@@ -208,6 +241,8 @@
                             <td>
                                 <?php $instRow = $instRowObj->ict_multimedias;?>
                                 <select class="custom-select" style="width:80px" name="desktop_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->desktop_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->desktop_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
@@ -220,6 +255,8 @@
                             <th scope="row" style="width: 150px"><span>২. বিদ্যালয়ের জন্য ল্যাপটপ </span></th>
                             <td>
                                 <select class="custom-select" style="width:80px" name="laptop_yn">
+                                    <option></option>
+
                                     <option  value="1" <?php if($instRow->laptop_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->laptop_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
@@ -233,6 +270,8 @@
                             </th>
                             <td>
                                 <select class="custom-select" style="width:80px" name="internet_type">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->internet_type =='1'){echo "selected";} ?>>ব্রডব্যান্ড(১)</option>
                                     <option value="2" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>ওয়াইফাই(২)</option>
                                     <option value="3" <?php if($instRow->internet_type =='2'){echo "selected";} ?>>মডেম(৩)</option>
@@ -246,6 +285,8 @@
                             <th scope="row" style="width: 150px"><span>৪. তথ্যপ্রযুক্তি ব্যবহারে সক্ষম শিখক আছে কি</span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="ict_known_teacher_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->ict_known_teacher_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->ict_known_teacher_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
@@ -259,6 +300,8 @@
                                 <span>৫. ডেস্কটপ/ল্যাপটপ শিখন-শিখানো কাজে ব্যবহৃত হয় কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="dsktp_use_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->dsktp_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->dsktp_use_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
@@ -271,6 +314,8 @@
                             </th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="internet_use_yn">
+                                    <option></option>
+
                                     <option  value="1" <?php if($instRow->internet_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->internet_use_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
@@ -283,6 +328,8 @@
                                 <span>৭. বিদ্যালয়ের শ্রেণিকক্ষে মাল্টিমিডিয়া ব্যবহার হয় কি</span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_use_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->mltmdia_use_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->mltmdia_use_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
@@ -294,6 +341,8 @@
                             <th scope="row" style="width: 150px"><span>৮. মাল্টিমিডিয়া বেইসড ক্লাসরুম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_class_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->mltmdia_class_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->mltmdia_class_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select></th>
@@ -306,6 +355,8 @@
                                 <span>৯. মাল্টিমিডিয়া ইন্টারএক্টিভ ক্লাসরুম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="mltmdia_intr_class_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->mltmdia_intr_class_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->mltmdia_intr_class_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>
@@ -317,6 +368,8 @@
                             <th scope="row" style="width: 150px"><span>১০. সাউন্ড সিস্টেম আছে কি </span></th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="sound_system_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->sound_system_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->sound_system_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select>
@@ -329,6 +382,8 @@
                             </th>
                             <th>
                                 <select class="custom-select" style="width:80px" name="electr_device_pdg_yn">
+                                    <option></option>
+
                                     <option value="1" <?php if($instRow->electr_device_pdg_yn =='1'){echo "selected";} ?>>হ্যাঁ(১)</option>
                                     <option value="2" <?php if($instRow->electr_device_pdg_yn =='2'){echo "selected";} ?>>না(২)</option>
                                 </select> </th>

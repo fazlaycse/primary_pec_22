@@ -11,15 +11,31 @@
     <style>
         th, td {
 
-            width:auto !important;
+            width: auto !important;
         }
-        select{
-            width:auto !important;
+
+        select {
+            width: auto !important;
+        }
+
+        .mltipl-select {
+            font-size: 14px;
+        }
+
+        .select-box-align {
+            width: 100px;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        input[type='checkbox'] {
+            margin-right: 3px !important;
         }
     </style>
 </head>
 <body>
-<div class="container kalpurus" id="app" >
+<div class="container kalpurus" id="app">
     {{--Include Header--}}
     @include('common.header')
     {{--Include Header End--}}
@@ -32,7 +48,7 @@
 
             <div class="teacher_profile">
                 <br>
-                <div style="font-size: 18px;font-weight: bold;padding:5px">বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য: </div>
+                <div style="font-size: 18px;font-weight: bold;padding:5px">বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য:</div>
                 <div class="table_third_three">
                     <table class="table table-bordered text-center">
                         <tbody style="background-color: skyblue">
@@ -67,16 +83,18 @@
                             </td>
                             <td>
                                 <the-mask :mask="['##/##/####']" type="text" style="width: auto; align-content: center"
-                                          name="dob" v-model="item.dob" class="js-date" maxlength="10" placeholder="dd/mm/yyyy"/>
+                                          name="dob" v-model="item.dob" class="js-date" maxlength="10"
+                                          placeholder="dd/mm/yyyy"/>
                             <td>
                                 <select class="custom-select" style="width:55px" name="sex" v-model="item.sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                                    <option value="male">পুরুষ (১)</option>
+                                    <option value="female">মহিলা (২)</option>
                                 </select>
                             </td>
 
                             <td>
-                                <select class="custom-select" style="width:55px" name="ethinicity" v-model="item.ethinicity">
+                                <select class="custom-select" style="width:55px" name="ethinicity"
+                                        v-model="item.ethinicity">
                                     <option value="0">না(০)</option>
                                     <option value="1">চাকমা(১)</option>
                                     <option value="2">মারমা(২)</option>
@@ -92,7 +110,8 @@
 
 
                             <td>
-                                <select class="custom-select" style="width:55px" name="deisgnation" v-model="item.deisgnation">
+                                <select class="custom-select" style="width:55px" name="deisgnation"
+                                        v-model="item.deisgnation">
                                     <option value="1">প্রধান শিক্ষক(১)</option>
                                     <option value="2">সহকারী শিক্ষক(২)</option>
                                     <option value="3">প্রাক-প্রাথমিক শিক্ষক(৩)</option>
@@ -108,15 +127,20 @@
                                     <option value="2">সংযুক্ত(২)</option>
                                 </select></td>
                             <td>
-                                <select class="custom-select" style="width:55px" name="inst_present" v-model="item.inst_present">
+                                <select class="custom-select" style="width:55px" name="inst_present"
+                                        v-model="item.inst_present">
                                     <option value="1">উপস্থিত(১)</option>
                                     <option value="2">সি-ইন-এড(২)</option>
                                     <option value="3">ডিপিএড(৩)</option>
                                     <option value="4">বি-এড(৪)</option>
                                     <option value="5">এম-এড(৫)</option>
                                     <option value="6">মাতৃত্বকালীন ছুটি(৬)</option>
-                                    <option value="7">সাদরি(ওরাও)(৭)</option>
-                                    <option value="8">অন্যান্য(৮)</option>
+                                    <option value="7">চিকিৎসাজনিত ছুটি(৭)</option>
+                                    <option value="8">অন্যান্য ছুটি(৮)</option>
+                                    <option value="9">অন-অনুমোদিত অনুপস্থিত (৯)</option>
+                                    <option value="10">সাময়িক বরখাস্ত (১০)</option>
+                                    <option value="11">বিদেশ ভ্রমণ (১১)</option>
+                                    <option value="12">অন্য বিদ্যালয়ে সংযুক্ত (১২)</option>
                                 </select>
                             </td>
                             <td><select class="custom-select" style="width:95px" name="edu_degree"
@@ -138,40 +162,93 @@
                                     <option value="1">হ্যাঁ(১)</option>
                                     <option value="2">না(২)</option>
                                 </select></td>
-                            <td>
-                                <select class="custom-select" style="width:95px" name="short_training"
-                                        v-model="item.short_training">
-                                    <option value="1">বিষয়ভিত্তিক(১)</option>
-                                    <option value="2">আইসিটি(২)</option>
-                                    <option value="3">প্রাক-প্রাথমিক(৩)</option>
-                                    <option value="4">মাকিং স্কীম(৪)</option>
-                                    <option value="5">কাব প্রশিক্ষণ(৫)</option>
-                                    <option value="6">অন্যান্য(৬)</option>
-                                </select>
-
+                            <td class="mltipl-select">
+                                <div class="container select-box-align">
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1">বিষয়ভিত্তিক(১)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_2">আইসিটি(২)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3">প্রাক-প্রাথমিক(৩)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_4">মাকিং
+                                            স্কীম(৪)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_5">কাব
+                                            প্রশিক্ষণ(৫)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_6">অন্যান্য(৬)
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
-                            <td>
-                                <select class="custom-select" style="width:95px" name="long_training"
-                                        v-model="item.long_training">
-                                    <option value="1">সিইনএড(১)</option>
-                                    <option value="2">ডিপিএড(২)</option>
-                                    <option value="3">ডিপিইনএড(৩)</option>
-                                    <option value="4">বিএড(৪)</option>
-                                    <option value="5">এমএড(৫)</option>
-                                    <option value="6">অন্যান্য(৬)</option>
-                                </select>
-
+                            <td class="mltipl-select">
+                                <div class="container select-box-align">
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_1">সিইনএড(১)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_2">ডিপিএড(২)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_3">পিইনএড(৩)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_4">বিএড(৪)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_5">এমএড(৫)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_6">অন্যান্য(৬)
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
-                            <td>
-                                <select class="custom-select" style="width:95px" name="twelve_month_training"
-                                        v-model="item.twelve_month_training">
-                                    <option value="1">বিষয়ভিত্তিক(১)</option>
-                                    <option value="2">আইসিটি(২)</option>
-                                    <option value="3">প্রাক-প্রাথমিক(৩)</option>
-                                    <option value="4">মাকিং স্কীম(৪)</option>
-                                    <option value="5">কাব প্রশিক্ষণ(৫)</option>
-                                    <option value="6">অন্যান্য(৬)</option>
-                                </select>
+                            <td class="mltipl-select">
+                                <div class="container select-box-align">
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_1">বিষয়ভিত্তিক(১)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_2">আইসিটি(২)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_3">প্রাক-প্রাথমিক(৩)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_4">মাকিং
+                                            স্কীম(৪)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_5">কাব
+                                            প্রশিক্ষণ(৫)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.tlv_mon_tr_6">অন্যান্য(৬)
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         </tbody>

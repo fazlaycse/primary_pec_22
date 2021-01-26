@@ -61,6 +61,7 @@
                                     <option value="3">পুরুষ শিক্ষক(৩)</option>
                                     <option value="4">মহিলা শিক্ষিকা(৪)</option>
                                     <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী(৫)</option>
+                                    <option value="6">বালক-বালিকা উভয়ই(৬)</option>
                                 </select>
                             </td>
                             <td>

@@ -29,7 +29,7 @@ class CreateTeacherInfosTable extends Migration
             $table->string('short_training');
             $table->string('long_training');
             $table->string('twelve_month_training');
-            $table->integer('year');
+            $table->string('year');
             $table->integer('institute_id');
             $table->foreign('institute_id')->references('id')->on('institutes');
             $table->timestamps();

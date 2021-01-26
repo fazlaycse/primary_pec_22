@@ -17,9 +17,24 @@ var teacherDataMerged = function () {
                 edu_degree: jsonParsed[i].edu_degree,
                 joining_dt: jsonParsed[i].joining_dt,
                 class_six_eight: jsonParsed[i].class_six_eight,
-                short_training: jsonParsed[i].short_training,
-                long_training: jsonParsed[i].long_training,
-                twelve_month_training: jsonParsed[i].twelve_month_training
+                short_tr_1: jsonParsed[i].short_tr_1,
+                short_tr_2: jsonParsed[i].short_tr_2,
+                short_tr_3: jsonParsed[i].short_tr_3,
+                short_tr_4: jsonParsed[i].short_tr_4,
+                short_tr_5: jsonParsed[i].short_tr_5,
+                short_tr_6: jsonParsed[i].short_tr_6,
+                long_tr_1: jsonParsed[i].long_tr_1,
+                long_tr_2: jsonParsed[i].long_tr_2,
+                long_tr_3: jsonParsed[i].long_tr_3,
+                long_tr_4: jsonParsed[i].long_tr_4,
+                long_tr_5: jsonParsed[i].long_tr_5,
+                long_tr_6: jsonParsed[i].long_tr_6,
+                tlv_mon_tr_1: jsonParsed[i].tlv_mon_tr_1,
+                tlv_mon_tr_2: jsonParsed[i].tlv_mon_tr_2,
+                tlv_mon_tr_3: jsonParsed[i].tlv_mon_tr_3,
+                tlv_mon_tr_4: jsonParsed[i].tlv_mon_tr_4,
+                tlv_mon_tr_5: jsonParsed[i].tlv_mon_tr_5,
+                tlv_mon_tr_6: jsonParsed[i].tlv_mon_tr_6
             }
         );
     }
@@ -46,9 +61,24 @@ var app = new Vue({
                 edu_degree: '',
                 joining_dt: '',
                 class_six_eight: '',
-                short_training: '',
-                long_training: '',
-                twelve_month_training: ''
+                short_tr_1: '',
+                short_tr_2: '',
+                short_tr_3: '',
+                short_tr_4: '',
+                short_tr_5: '',
+                short_tr_6: '',
+                long_tr_1: '',
+                long_tr_2: '',
+                long_tr_3: '',
+                long_tr_4: '',
+                long_tr_5: '',
+                long_tr_6: '',
+                tlv_mon_tr_1: '',
+                tlv_mon_tr_2: '',
+                tlv_mon_tr_3: '',
+                tlv_mon_tr_4: '',
+                tlv_mon_tr_5: '',
+                tlv_mon_tr_6: '',
             };
             console.log(this.rowData);
             this.rowData.push(my_object)
@@ -60,11 +90,16 @@ var app = new Vue({
             Vue.http.headers.common['X-CSRF-TOKEN'] = $('#token').val();
             this.$http.post('teacher_info_page_save', this.rowData)
                 .then(function (response) {
-                    window.location.href = '/thanking_page';
+                    // window.location.href = '/thanking_page';
                 })
                 .catch(function (error) {
                     console.log(error)
                 });
+        },
+        toogle(val){
+             if(val==1){
+             return true;
+             }else return false;
         }
     }
 });
