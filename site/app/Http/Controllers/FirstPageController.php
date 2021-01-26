@@ -15,7 +15,9 @@ class FirstPageController extends Controller
             $request->validate([
                 'emis_code' => 'required|min:9|max:9'
             ]);
-
+            $request->validate([
+                'emis_code' => 'numeric'
+            ]);
             try {
                 $instRow = Institute::where('emis_code', '=', $request->input('emis_code'))->firstOrFail();
                 $request->session()->put('institute_id', $instRow->id);

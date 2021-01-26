@@ -1,4 +1,27 @@
 /*custom fonts*/
+input, select{
+    text-transform: uppercase;
+
+}
+input:focus {
+    outline: none !important;
+    border:1px solid red !important;
+    box-shadow: 0 0 10px #719ECE !important;
+    background-color: deepskyblue !important;
+}
+select:focus {
+    background-color: deepskyblue !important;
+}
+.topnav a{
+    padding: 8px !important;
+    font-size: 15px;
+}
+input [type=submit]{
+    background-color: grey !important;
+}
+.table-bordered th, td {
+    border: 1px solid black !important;
+}
 @font-face {
     font-family: 'Kalpurush';
     src: url('https://fonts.maateen.me/kalpurush/Kalpurush.eot');
@@ -63,5 +86,5 @@
 }
 
 .js-date{
-    width:90px !important;
+    width:100px !important;
 }

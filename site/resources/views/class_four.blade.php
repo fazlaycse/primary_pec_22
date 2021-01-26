@@ -223,7 +223,7 @@
 
                 <div class="pull-right">
 
-                    <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Go Forward">
+                    <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px" value="Save and Next">
 
                 </div>
             </form>
@@ -232,7 +232,7 @@
 
         </div>
         {{--Include Footer--}}
-        @include('common.footer');
+        @include('common.footer')
         {{--Include Footer End--}}
 
     </div>

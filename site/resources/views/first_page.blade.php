@@ -27,7 +27,8 @@
                 <div class="table_heading">
                     <span style="font-weight: bold; font-size: 15px"> ১. ক) বিদ্যালয়ের নাম ও ঠিকানা:</span>
                 </div>
-                <div class="row">
+                <br>
+                <div class="row" style="">
                     <div class="col-3 form-group form-inline">
                         <label for="school_code" class="label-text">বিদ্যালয়ের EMIS কোড:</label> &nbsp;
                         <input type="text" style="width:80px;" class="form-control" name="emis_code" id="school_code"
@@ -39,19 +40,19 @@
                                value="{{$instRow->inst_type}}" maxlength="2">
                     </div>
                 </div>
-                <div class="row border" style="margin:0px">
-                    <div class="col-md-2 border text-center">
-                        <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের নাম <br>(গেজেট অনুযায়ী):</span>
-                    </div>
-                    <div class="col-md-10 border">
+
+                <div class="row border" style="box-shadow: rgb(113, 158, 206) 0px 0px 10px !important; padding: 10px;margin:0px">
+                    <div class="col-md-10">
+                        <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের নাম (গেজেট অনুযায়ী):</span>
+
                         <div class="row form-group form-inline">
                             <label class="label-text" for="bangla_name" style="width:80px">বাংলায়: </label> &nbsp;
-                            <input type="text" style="width:450px" class="form-control" name="name_bangla"
+                            <input type="text" style="width:290px" class="form-control" name="name_bangla"
                                    id="bangla_name" value="{{$instRow->name_bangla}}">
                         </div>
                         <div class="row form-group form-inline">
                             <label class="label-text" for="english_name" style="width:80px"> In English </label> &nbsp;
-                            <input type="text" style="width:450px" class="form-control" name="name_english"
+                            <input type="text" style="width:290px" class="form-control" name="name_english"
                                    id="english_name" value="{{$instRow->name_english}}">
                         </div>
                     </div>
@@ -60,36 +61,39 @@
 
                 <br>
 
-                <div class="row border" style="margin:0px">
+                <div class="row " style="box-shadow: rgb(113, 158, 206) 0px 0px 10px !important; padding: 10px;margin:0px">
 
-                    <div class="col-6 border">
+                    <div class="col-6 ">
+                        <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের ঠিকানা:</span>
                         <div class="row form-group form-inline">
                             <label class="label-text" for="thana" style="width:120px">উপজেলা/থানা: </label> &nbsp;
-                            <select v-model="selected_thana" style="width:250px" class="form-control"  name="thana_id" id="thana"
-                            @change="changeThanaId">
+                            <select v-model="selected_thana" style="width:250px" class="form-control" name="thana_id"
+                                    id="thana"
+                                    @change="changeThanaId">
                                 <option v-for="option in options_thana" v-bind:value="option.value">
                                     @{{ option.text }}
                                 </option>
                             </select>
                         </div>
                         <div class="row form-group form-inline"
-                             style="border-top: 1px solid darkgrey; padding-top: 5px;">
+                             style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
                             <label class="label-text" for="village" style="width:120px"> গ্রাম/ওয়ার্ড: </label> &nbsp;
                             <input type="text" style="width:250px" class="form-control" name="village_word" id="village"
                                    value="{{$instRow->village_word}}">
                         </div>
                     </div>
-                    <div class="col-6 border">
+                    <div class="col-6 ">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="union" style="width:150px"> ইউনিয়ন/পৌরসভা: </label> &nbsp;
-                            <select v-model="selected_union" style="width:250px" class="form-control"  name="union_id" id="union">
+                            <select v-model="selected_union" style="width:250px" class="form-control" name="union_id"
+                                    id="union">
                                 <option v-for="(option, index) in options_union" v-bind:value="index">
                                     @{{ option }}
                                 </option>
                             </select>
                         </div>
                         <div class="row form-group form-inline"
-                             style="border-top: 1px solid darkgrey; padding-top: 5px;">
+                             style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
                             <label class="label-text" for="cluster" style="width:150px"> ক্লাস্টার: </label> &nbsp;
                             <input type="text" style="width:250px" class="form-control" name="cluster" id="cluster"
                                    value="{{$instRow->cluster}}">
@@ -102,7 +106,7 @@
                 <div class="pull-right">
 
                     <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
-                           value="Save and Go Forward">
+                           value="Save and Next">
                 </div>
                 <div style="clear: both">
 
@@ -110,7 +114,7 @@
             </form>
 
             {{--Include Footer--}}
-            @include('common.footer');
+            @include('common.footer')
             {{--Include Footer End--}}
         </div>
     </div>

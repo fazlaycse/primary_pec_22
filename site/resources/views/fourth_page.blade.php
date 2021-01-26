@@ -10,7 +10,11 @@
         window.buildings = '<?php echo $instRowObj->buildings; ?>';
         window.building_infos = '<?php echo $instRowObj->building_infos; ?>';
     </script>
-
+    <style>
+        select {
+            width:auto !important;
+        }
+    </style>
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -51,8 +55,8 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-for="item in rowData">
-                            <td><input type="number" style="width: 70px" name="building_no" v-model="item.building_no">
+                        <tr v-for="(item, index) in rowData">
+                            <td><input type="number" style="width: 40px" name="building_no" v-model="item.building_no=index+1" readonly>
                             </td>
                             <td><input type="number" style="width: 70px" name="storied_number"
                                        v-model="item.storied_number"></td>
@@ -101,13 +105,13 @@
 
                 <input @click="submitFourthPage" type="button" class="btn btn-primary btn-lg"
                        style="text-align:right; margin-top:20px"
-                       value="Save and Go Forward">
+                       value="Save and Next">
             </div>
         </form>
     </div>
     <div style="clear: both"></div>
     {{--Include Footer--}}
-    @include('common.footer');
+    @include('common.footer')
     {{--Include Footer End--}}
 
 </div>

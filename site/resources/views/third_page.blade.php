@@ -27,37 +27,24 @@
             <?php $instRow = $instRowObj->general_info;?>
             <div class="general_info">
                 <div class="row border" style="margin:0px">
-                    <div class="col-md-6 border justify-content-center align-self-center">
-                        <table class="table academic">
+                    <div class="col-md-6 border ">
+                        <table class="table academic table-bordered">
                             <tbody>
                             <tr>
-                                <th scope="row"><label for="academic_function_yn">১. বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে
-                                        কি? </label></th>
-                                <td>
+                                <th scope=""><label for="academic_function_yn">১. বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে কি? </label></th><td>
                                     <select class="custom-select" style="width:70px" name="acdmic_function_yn">
-                                        <option value="1" <?php if ($instRow->acdmic_function_yn == '1') {
-                                            echo "selected";
-                                        } ?> >হ্যাঁ
-                                        </option>
-                                        <option value="2" <?php if ($instRow->acdmic_function_yn == '2') {
-                                            echo "selected";
-                                        } ?> >না
-                                        </option>
+                                        <option value="1" <?php if ($instRow->acdmic_function_yn == '1') {echo "selected";} ?> >হ্যাঁ</option>
+                                        <option value="2" <?php if ($instRow->acdmic_function_yn == '2') {echo "selected";} ?> >না</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">২. বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label></th>
+                                <th scope="row"><label for="">২. বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label>
+                                </th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
-                                        <option value="1" <?php if ($instRow->pprimary_exist_yn == '1') {
-                                            echo "selected";
-                                        } ?>>হ্যাঁ
-                                        </option>
-                                        <option value="2" <?php if ($instRow->pprimary_exist_yn == '2') {
-                                            echo "selected";
-                                        } ?>>না
-                                        </option>
+                                        <option value="1" <?php if ($instRow->pprimary_exist_yn == '1') {echo "selected";} ?>>হ্যাঁ</option>
+                                        <option value="2" <?php if ($instRow->pprimary_exist_yn == '2') {echo "selected";} ?>>না</option>
                                     </select>
                                 </td>
                             </tr>
@@ -108,7 +95,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">৫. বিদ্যালয়ের ভবন সমূহ নিজস্ব সম্পত্তিতে প্রতিষ্ঠিত? </label>
+                                <th scope="row"><label for="">৫. বিদ্যালয়ের ভবন সমূহ নিজস্ব সম্পত্তিতে
+                                        প্রতিষ্ঠিত? </label>
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="blding_own_land_yn">
@@ -167,7 +155,7 @@
                         </table>
                     </div>
                     <div class="col-6 border justify-content-center align-self-center">
-                        <table class="table academic">
+                        <table class="table table-bordered">
                             <tbody>
                             <tr>
                                 <th scope="row"><label for="academic_function_yn">৯. শিখন মাধ্যম? </label></th>
@@ -198,7 +186,8 @@
                                            value="{{$instRow->shift_number}}"></td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">১১. বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label></th>
+                                <th scope="row"><label for="">১১. বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label>
+                                </th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="toilet_yn">
                                         <option value="1" <?php if ($instRow->toilet_yn == '1') {
@@ -280,7 +269,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">১৬. বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত করতে)
+                                <th scope="row"><label for="">১৬. বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত
+                                        করতে)
                                         জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="sntz_facility_yn">
@@ -453,7 +443,7 @@
                 <div class="special_stud_facilities">
                     <div class="row border" style="margin:0px">
                         <div class="col-md-6 border justify-content-center align-self-center">
-                            <table class="table special">
+                            <table class="table table-bordered">
                                 <tbody>
                                 <tr>
                                     <th scope="row"><label for="academic_function_yn">১. শারীরিক প্রতিবন্ধিদের জন্য
@@ -489,7 +479,8 @@
                                 </tr>
 
                                 <tr>
-                                    <th scope="row"><label for="">৩. শারীরিক প্রতিবন্ধিদের হুইল চেয়ার আছে কি না? </label>
+                                    <th scope="row"><label for="">৩. শারীরিক প্রতিবন্ধিদের হুইল চেয়ার আছে কি
+                                            না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:70px" name="wheel_chair_yn">
@@ -556,7 +547,7 @@
                         </div>
 
                         <div class="col-6 border justify-content-center align-self-center">
-                            <table class="table academic">
+                            <table class="table table-bordered">
                                 <tbody>
                                 <tr>
                                     <th scope="row"><label for="">৭. দৃষ্টি প্রতিবন্ধিদের ডেইজি বুক আছে কি না? </label>
@@ -623,7 +614,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">১১. শ্রবণ প্রতিবন্ধিদের নীরব পরিবেশ আছে কি না? </label>
+                                    <th scope="row"><label for="">১১. শ্রবণ প্রতিবন্ধিদের নীরব পরিবেশ আছে কি
+                                            না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="silent_envr_yn">
@@ -639,7 +631,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">১২. শ্রবণ প্রতিবন্ধিদের Hearing Aid আছে কি না? </label>
+                                    <th scope="row"><label for="">১২. শ্রবণ প্রতিবন্ধিদের Hearing Aid আছে কি
+                                            না? </label>
                                     </th>
                                     <td>
                                         <select class="custom-select" style="width:90px" name="hearing_aid_yn">
@@ -663,7 +656,7 @@
             </div>
             <div class="pull-right">
                 <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
-                       value="Save and Go Forward">
+                       value="Save and Next">
             </div>
 
         </form>
@@ -673,7 +666,7 @@
 <div style="clear: both">
 </div>
 {{--Include Footer--}}
-@include('common.footer');
+@include('common.footer')
 {{--Include Footer End--}}
 <script src="js/app.js" defer></script>
 </body>

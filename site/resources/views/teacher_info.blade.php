@@ -31,54 +31,43 @@
         <div class="teacher_info border" style="overflow: scroll; background-color: #b0d4f1;">
 
             <div class="teacher_profile">
-                <span style="font-size: 18px"> বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য: </span>
+                <br>
+                <div style="font-size: 18px;font-weight: bold;padding:5px">বিদ্যালয়ের শিক্ষকের বিস্তারিত তথ্য: </div>
                 <div class="table_third_three">
                     <table class="table table-bordered text-center">
                         <tbody style="background-color: skyblue">
 
-                        <tr>
-                            <td rowspan="2" scope="col">ক্রমিক নম্বর</td>
+                        <tr style="font-weight: bold;">
+                            <td rowspan="2" scope="col">নং</td>
                             <td rowspan="2" scope="col">শিক্ষকের নাম (বাংলা ও ইংরেজি)</td>
-                            <td rowspan="1" scope="col">জন্ম তারিখ(১)</td>
-                            <td rowspan="1" scope="col">লিঙ্গ(২)</td>
-                            <td rowspan="1" scope="col">উপজাতি/ক্ষুদ্র নৃ-গোষ্ঠী(৩)</td>
-                            <td rowspan="1" scope="col">পদ(৪)</td>
-                            <td rowspan="1" scope="col">এ বিদ্যালয়ে পদায়িত(৫)</td>
-                            <td rowspan="1" scope="col">এ বিদ্যালয়ে উপস্থিতি(৬)</td>
-                            <td rowspan="1" scope="col">শিক্ষকতা যোগ্যতা-সর্বোচ্চ(৭)</td>
-                            <td rowspan="1" scope="col">চাকরিতে যোগদানের তারিখ(৮)</td>
-                            <td rowspan="1" scope="col">৬ষ্ঠ-৮ম শ্রেণির ক্লাস(৯)</td>
-                            <td colspan="2" rowspan="1" scope="col">পেশাগত যোগ্যতা(১০)</td>
-                            <td rowspan="1" scope="col">বিগত ১২ মাসের প্রশিক্ষণ</td>
+                            <td rowspan="2" scope="col">জন্ম তারিখ(১)</td>
+                            <td rowspan="2" scope="col">লিঙ্গ(২)</td>
+                            <td rowspan="2" scope="col">উপজাতি/ক্ষুদ্র নৃ-গোষ্ঠী(৩)</td>
+                            <td rowspan="2" scope="col">পদ(৪)</td>
+                            <td rowspan="2" scope="col">এ বিদ্যালয়ে পদায়িত(৫)</td>
+                            <td rowspan="2" scope="col">এ বিদ্যালয়ে উপস্থিতি(৬)</td>
+                            <td rowspan="2" scope="col">শিক্ষকতা যোগ্যতা-সর্বোচ্চ(৭)</td>
+                            <td rowspan="2" scope="col">চাকরিতে যোগদানের তারিখ(৮)</td>
+                            <td rowspan="2" scope="col">৬ষ্ঠ-৮ম শ্রেণির ক্লাস(৯)</td>
+                            <td colspan="2" scope="col">পেশাগত যোগ্যতা(১০)</td>
+                            <td rowspan="2" scope="col">বিগত ১২ মাসের প্রশিক্ষণ</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                             <td>স্বল্প মেয়াদি</td>
                             <td>দীর্ঘ মেয়াদি</td>
-                            <td></td>
                         </tr>
 
                         <tr v-for="(item, index) in rowData">
                             <td style="width: 10px">@{{index+1}}</td>
                             <td>
-                                <input type="text" style="width: 200px;" placeholder="নাম"
+                                <input type="text" style="width: 200px;" placeholder="নাম (বাংলায়):"
                                        name="tname_bangla" v-model="item.tname_bangla"><br><br>
-                                <input type="text" style="width: 200px;" placeholder="Name"
+                                <input type="text" style="width: 200px;" placeholder="Name in English:"
                                        name="tname_english" v-model="item.tname_english">
                             </td>
                             <td>
-                                <the-mask :mask="['##-##-####']" type="text" style="width: auto; align-content: center"
-                                          name="dob" v-model="item.dob" class="js-date" maxlength="10"/>
+                                <the-mask :mask="['##/##/####']" type="text" style="width: auto; align-content: center"
+                                          name="dob" v-model="item.dob" class="js-date" maxlength="10" placeholder="dd/mm/yyyy"/>
                             <td>
                                 <select class="custom-select" style="width:55px" name="sex" v-model="item.sex">
                                     <option value="male">Male</option>
@@ -140,9 +129,9 @@
                                     <option value="6">এমফিল/পিএইচডি(৬)</option>
                                 </select></td>
                             <td>
-                                <the-mask :mask="['##-##-####']" type="text" class="js-date"
+                                <the-mask :mask="['##/##/####']" type="text" class="js-date"
                                           style="width: 70px; align-content: center" name="joining_dt"
-                                          v-model="item.joining_dt"/>
+                                          v-model="item.joining_dt" placeholder="dd/mm/yyyy"/>
                             </td>
                             <td><select class="custom-select" style="width:55px" name="class_six_eight"
                                         v-model="item.class_six_eight">
@@ -197,7 +186,7 @@
 
                 <input @click="submitTeacherInfo" type="button" class="btn btn-primary btn-lg"
                        style="text-align:right; margin-top:20px"
-                       value="Save and Go Forward">
+                       value="Save and Next">
             </div>
             <div style="clear: both">
 
@@ -208,7 +197,7 @@
 
     </div>
     {{--Include Footer--}}
-    @include('common.footer');
+    @include('common.footer')
     {{--Include Footer End--}}
 
 </div>

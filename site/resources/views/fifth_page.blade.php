@@ -9,6 +9,11 @@
     <script>
         window.institute_sanitations = '<?php echo $instRowObj->data; ?>';
     </script>
+    <style>
+        select{
+            width:auto !important;
+        }
+    </style>
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -42,8 +47,8 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-for="i in rowData">
-                            <td><input type="number" style="width: 70px; align-content: center" name="toilet_no" v-model="i.toilet_no"></td>
+                        <tr v-for="(i, index) in rowData">
+                            <td><input type="number" style="width: 50px; align-content: center" name="toilet_no" v-model="i.toilet_no=index+1" readonly></td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_users" v-model="i.toilet_users">
                                     <option  value="1" >বালক(১)</option>
@@ -104,7 +109,7 @@
 
                 <input @click="submitFifthPage" type="button" class="btn btn-primary btn-lg"
                        style="text-align:right; margin-top:20px"
-                       value="Save and Go Forward">
+                       value="Save and Next">
             </div>
         </form>
     </div>
@@ -113,7 +118,7 @@
 
 
     {{--Include Footer--}}
-    @include('common.footer');
+    @include('common.footer')
     {{--Include Footer End--}}
 
 </div>

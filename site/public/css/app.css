@@ -1797,13 +1797,11 @@ pre code {
 
 .table-bordered {
   border: 1px solid #dee2e6;
-
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #6c757d;
-
+  border: 1px solid #dee2e6;
 }
 
 .table-bordered thead th,

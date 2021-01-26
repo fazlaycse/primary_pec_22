@@ -9,6 +9,11 @@
     <script type="text/javascript">
         window.washbolocks = '<?php echo $instRowObj->data; ?>';
     </script>
+    <style>
+        select{
+            width: auto !important;
+        }
+    </style>
 </head>
 <body>
 <div class="container kalpurus" id="app">
@@ -43,7 +48,7 @@
                         </thead>
                         <tbody>
 
-                        <tr v-for="i in rowData">
+                        <tr v-for="(i, index) in rowData">
                             <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount"
                                        v-model="i.wsblk_amount"></td>
                             <td><input type="text" style="width: 70px; align-content: center" name="w_es_year"
@@ -109,7 +114,7 @@
 
                 <input @click="submitSixthPage" type="button" class="btn btn-primary btn-lg"
                        style="text-align:right; margin-top:20px"
-                       value="Save and Go Forward">
+                       value="Save and Next">
             </div>
         </form>
     </div>
@@ -124,7 +129,7 @@
     </div>
 
     {{--Include Footer--}}
-    @include('common.footer');
+    @include('common.footer')
     {{--Include Footer End--}}
 
 </div>

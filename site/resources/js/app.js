@@ -31,6 +31,6 @@ Vue.component('examplecomponent', require('./components/ExampleComponent.vue').d
 Vue.use(VueTheMask)
 Vue.use(VueResource);
 $(document).ready(function () {
-    $(".alert").delay(5000).slideUp(300);
+    $(".alert").delay(3000).slideUp(300);
 });
 
