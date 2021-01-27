@@ -16,6 +16,7 @@ class Institute extends Model
         'district_id',
         'thana_id',
         'union_id',
+        'user_id',
         'village_word',
         'cluster'
     ];
