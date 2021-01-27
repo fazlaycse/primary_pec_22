@@ -87,23 +87,23 @@
                                           placeholder="dd/mm/yyyy"/>
                             <td>
                                 <select class="custom-select" style="width:55px" name="sex" v-model="item.sex">
-                                    <option value="male">পুরুষ (১)</option>
-                                    <option value="female">মহিলা (২)</option>
+                                    <option value="male">১.পুরুষ</option>
+                                    <option value="female">২.মহিলা</option>
                                 </select>
                             </td>
 
                             <td>
                                 <select class="custom-select" style="width:55px" name="ethinicity"
                                         v-model="item.ethinicity">
-                                    <option value="0">না(০)</option>
-                                    <option value="1">চাকমা(১)</option>
-                                    <option value="2">মারমা(২)</option>
-                                    <option value="3">ত্রিপুরা(৩)</option>
-                                    <option value="4">গারো(৪)</option>
-                                    <option value="5">সাঁওতাল(৫)</option>
-                                    <option value="6">মনিপুরি(৬)</option>
-                                    <option value="7">সাদরি(ওরাও)(৭)</option>
-                                    <option value="8">অন্যান্য(৮)</option>
+                                    <option value="0">০.না</option>
+                                    <option value="1">১.চাকমা</option>
+                                    <option value="2">২.মারমা</option>
+                                    <option value="3">৩.ত্রিপুরা</option>
+                                    <option value="4">৪.গারো</option>
+                                    <option value="5">৫.সাঁওতাল</option>
+                                    <option value="6">৬.মনিপুরি</option>
+                                    <option value="7">৭.সাদরি(ওরাও)</option>
+                                    <option value="8">৮.অন্যান্য</option>
                                 </select>
 
                             </td>
@@ -112,45 +112,45 @@
                             <td>
                                 <select class="custom-select" style="width:55px" name="deisgnation"
                                         v-model="item.deisgnation">
-                                    <option value="1">প্রধান শিক্ষক(১)</option>
-                                    <option value="2">সহকারী শিক্ষক(২)</option>
-                                    <option value="3">প্রাক-প্রাথমিক শিক্ষক(৩)</option>
-                                    <option value="4">প্যারা-শিক্ষক(৪)</option>
-                                    <option value="5">পুল শিক্ষক(৫)</option>
+                                    <option value="1">১.প্রধান শিক্ষক</option>
+                                    <option value="2">২.সহকারী শিক্ষক</option>
+                                    <option value="3">৩.প্রাক-প্রাথমিক শিক্ষক</option>
+                                    <option value="4">৪.প্যারা-শিক্ষক</option>
+                                    <option value="5">৫.পুল শিক্ষক</option>
                                 </select>
                             </td>
 
 
                             <td><select class="custom-select" style="width:55px" name="inst_deisgnated"
                                         v-model="item.inst_deisgnated">
-                                    <option value="1">পদায়িত/বদলি(১)</option>
-                                    <option value="2">সংযুক্ত(২)</option>
+                                    <option value="1">১.পদায়িত/বদলি</option>
+                                    <option value="2">২.সংযুক্ত</option>
                                 </select></td>
                             <td>
                                 <select class="custom-select" style="width:55px" name="inst_present"
                                         v-model="item.inst_present">
-                                    <option value="1">উপস্থিত(১)</option>
-                                    <option value="2">সি-ইন-এড(২)</option>
-                                    <option value="3">ডিপিএড(৩)</option>
-                                    <option value="4">বি-এড(৪)</option>
-                                    <option value="5">এম-এড(৫)</option>
-                                    <option value="6">মাতৃত্বকালীন ছুটি(৬)</option>
-                                    <option value="7">চিকিৎসাজনিত ছুটি(৭)</option>
-                                    <option value="8">অন্যান্য ছুটি(৮)</option>
-                                    <option value="9">অন-অনুমোদিত অনুপস্থিত (৯)</option>
-                                    <option value="10">সাময়িক বরখাস্ত (১০)</option>
-                                    <option value="11">বিদেশ ভ্রমণ (১১)</option>
-                                    <option value="12">অন্য বিদ্যালয়ে সংযুক্ত (১২)</option>
+                                    <option value="1">১.উপস্থিত</option>
+                                    <option value="2">২.সি-ইন-এড</option>
+                                    <option value="3">৩.ডিপিএড</option>
+                                    <option value="4">৪.বি-এড</option>
+                                    <option value="5">৫.এম-এড</option>
+                                    <option value="6">৬.মাতৃত্বকালীন ছুটি</option>
+                                    <option value="7">৭.চিকিৎসাজনিত ছুটি</option>
+                                    <option value="8">৮.অন্যান্য ছুটি</option>
+                                    <option value="9">৯.অন-অনুমোদিত অনুপস্থিত</option>
+                                    <option value="10">১০.সাময়িক বরখাস্ত</option>
+                                    <option value="11">১১.বিদেশ ভ্রমণ</option>
+                                    <option value="12">১২.অন্য বিদ্যালয়ে সংযুক্ত</option>
                                 </select>
                             </td>
                             <td><select class="custom-select" style="width:95px" name="edu_degree"
                                         v-model="item.edu_degree">
-                                    <option value="1">এসএসসি এর নিম্মে(১)</option>
-                                    <option value="2">এসএসসি(২)</option>
-                                    <option value="3">এইচএসসি(৩)</option>
-                                    <option value="4">বিএ(৪)</option>
-                                    <option value="5">এমএ(৫)</option>
-                                    <option value="6">এমফিল/পিএইচডি(৬)</option>
+                                    <option value="1">১.এসএসসি এর নিম্মে</option>
+                                    <option value="2">২.এসএসসি</option>
+                                    <option value="3">৩.এইচএসসি</option>
+                                    <option value="4">৪.বিএ</option>
+                                    <option value="5">৫.এমএ</option>
+                                    <option value="6">৬.এমফিল/পিএইচডি</option>
                                 </select></td>
                             <td>
                                 <the-mask :mask="['##/##/####']" type="text" class="js-date"
@@ -159,8 +159,8 @@
                             </td>
                             <td><select class="custom-select" style="width:55px" name="class_six_eight"
                                         v-model="item.class_six_eight">
-                                    <option value="1">হ্যাঁ(১)</option>
-                                    <option value="2">না(২)</option>
+                                    <option value="1">১.হ্যাঁ</option>
+                                    <option value="2">২.না</option>
                                 </select></td>
                             <td class="mltipl-select">
                                 <div class="container select-box-align">

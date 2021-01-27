@@ -56,21 +56,21 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name="wsblk_user"
                                         v-model="i.wsblk_user">
-                                    <option value="1">বালক(১)</option>
-                                    <option value="2">বালিকা(২)</option>
-                                    <option value="3">পুরুষ শিক্ষক(৩)</option>
-                                    <option value="4">মহিলা শিক্ষিকা(৪)</option>
-                                    <option value="5">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী(৫)</option>
-                                    <option value="6">বালক-বালিকা উভয়ই(৬)</option>
+                                    <option value="1">১.বালক</option>
+                                    <option value="2">২.বালিকা</option>
+                                    <option value="3">৩.পুরুষ শিক্ষক</option>
+                                    <option value="4">৪.মহিলা শিক্ষিকা</option>
+                                    <option value="5">৫.বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
+                                    <option value="6">৬.বালক-বালিকা উভয়ই</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="..." name="wsblk_condition"
                                         v-model="i.wsblk_condition">
-                                    <option value="1">ভালো(১)</option>
-                                    <option value="2">নির্মাণাধীন(২)</option>
-                                    <option value="3">জরাজীর্ণ,মেরামত প্রয়োজন(৩)</option>
-                                    <option value="5">পরিত্যক্ত(৪)</option>
+                                    <option value="1">১.ভালো</option>
+                                    <option value="2">২.নির্মাণাধীন</option>
+                                    <option value="3">৩.জরাজীর্ণ,মেরামত প্রয়োজন</option>
+                                    <option value="5">৪.পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>

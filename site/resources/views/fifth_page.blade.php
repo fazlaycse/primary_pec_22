@@ -51,22 +51,22 @@
                             <td><input type="number" style="width: 50px; align-content: center" name="toilet_no" v-model="i.toilet_no=index+1" readonly></td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_users" v-model="i.toilet_users">
-                                    <option  value="1" >বালক(১)</option>
-                                    <option value="2" >বালিকা(২)</option>
-                                    <option value="3" >বালক-বালিকা যৌথ(৩)</option>
-                                    <option value="4" >সহ: শিক্ষক(৪)</option>
-                                    <option value="5" >প্রধান শিক্ষক(৫)</option>
-                                    <option value="6" >শিক্ষকদের যৌথ(৬)</option>
-                                    <option value="7" >বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী(৭)</option>
+                                    <option  value="1" >১.বালক</option>
+                                    <option value="2" >২.বালিকা</option>
+                                    <option value="3" >৩.বালক-বালিকা যৌথ</option>
+                                    <option value="4" >৪.সহ: শিক্ষক</option>
+                                    <option value="5" >৫.প্রধান শিক্ষক</option>
+                                    <option value="6" >৬.শিক্ষকদের যৌথ</option>
+                                    <option value="7" >৭.বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="width:90px" name="toilet_curcond" v-model="i.toilet_curcond">
-                                    <option  value="1" >ভালো(১)</option>
-                                    <option value="2">নির্মাণাধীন(২)</option>
-                                    <option value="3">জরাজীর্ণ,মেরামত প্রয়োজন(৩)</option>
-                                    <option value="4">ঝুকিপূর্ণ,জরুরি মেরামত প্রয়োজন(৪)</option>
-                                    <option value="5">পরিত্যক্ত(৫)</option>
+                                    <option  value="1" >১.ভালো</option>
+                                    <option value="2">২.নির্মাণাধীন</option>
+                                    <option value="3">৩.জরাজীর্ণ,মেরামত প্রয়োজন</option>
+                                    <option value="4">৪.ঝুকিপূর্ণ,জরুরি মেরামত প্রয়োজন</option>
+                                    <option value="5">৫.পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>

@@ -70,11 +70,11 @@
                                 <select class="custom-select" style="width:90px" name="bld_condition"
                                         v-model="item.bld_condition">
                                     <option value="0"> -- </option>
-                                    <option value="1">ভালো(১)</option>
-                                    <option value="2">নির্মাণাধীন(২)</option>
-                                    <option value="3">জরাজীর্ণ(৩)</option>
-                                    <option value="4">ঝুকিপূর্ণ(৪)</option>
-                                    <option value="5">পরিত্যক্ত(৫)</option>
+                                    <option value="1">১.ভালো</option>
+                                    <option value="2">২.নির্মাণাধীন</option>
+                                    <option value="3">৩.জরাজীর্ণ</option>
+                                    <option value="4">৪.ঝুকিপূর্ণ</option>
+                                    <option value="5">৫.পরিত্যক্ত</option>
                                 </select>
                             </td>
                             <td>
