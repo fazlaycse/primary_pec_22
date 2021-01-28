@@ -37,7 +37,7 @@
                     <div class="col-2 form-group form-inline">
                         <label class="label-text" for="school_type">বিদ্যালয়ের ধরণ:</label> &nbsp;
                         <input type="text" style="width:50px" class="form-control" name="inst_type" id="school_type"
-                               value="{{$instRow->inst_type}}" maxlength="2">
+                               value="{{$instRow->inst_type}}" maxlength="2" required>
                     </div>
                 </div>
 
