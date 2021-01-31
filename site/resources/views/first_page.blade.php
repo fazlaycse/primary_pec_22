@@ -29,7 +29,7 @@
                 </div>
                 <br>
                 <div class="row" style="">
-                    <div class="col-3 form-group form-inline">
+                    <div class="col-4 form-group form-inline">
                         <label for="school_code" class="label-text">বিদ্যালয়ের EMIS কোড:</label> &nbsp;
                         <input type="text" style="width:150px;" class="form-control" name="emis_code" id="school_code"
                                value="{{$instRow->emis_code}}" readonly>
