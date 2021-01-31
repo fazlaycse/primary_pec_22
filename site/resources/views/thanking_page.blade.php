@@ -14,7 +14,7 @@
     <hr>
 
     <p class="lead">
-        <a class="btn btn-primary btn-sm" href="/" role="button">Continue to homepage</a>
+        <a class="btn btn-primary btn-sm" href="<?=base_path();?>" role="button">Continue to homepage</a>
     </p>
 </div>
 <script src="js/app.js" defer></script>
