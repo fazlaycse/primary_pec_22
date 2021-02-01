@@ -3,8 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
-class Users extends Model
+use Illuminate\Foundation\Auth\User as Authenticatable;
+class Users extends Authenticatable
 {
    protected $fillable=[
        'token',

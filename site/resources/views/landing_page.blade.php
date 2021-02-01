@@ -117,7 +117,8 @@
                 <form class="form-group" method="post" action="first_page">
                     {{ csrf_field() }}
                     Enter EMIS code : <input type="text" value="" placeholder="EMIS Code" name="emis_code"  style="width:150px;" required/>
-                    User Name : <input type="text" value="" placeholder="User Name" name="username" style="width:200px;" required/>
+                    User Name : <input type="text" value="" placeholder="User Name" name="email" style="width:150px;" required/>
+                    Password : <input type="text" value="" placeholder="Password" name="password" style="width:150px;" required/>
                     <input class="" type="submit" value="Submit"/>
 
                 </form>
