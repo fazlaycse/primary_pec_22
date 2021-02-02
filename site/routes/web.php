@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 /*Page View [done by: Ifti@1/6/2021] update by: suzon@19/01/2021*/
 Route::get('/', function () {
     return view('landing_page');
-});
+})->name('root');
 
 /*first page by suzon*/
 Route::post('first_page', 'FirstPageController@read');
