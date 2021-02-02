@@ -192,3 +192,10 @@ Route::get('buildings_add', 'BuildingsController@create');
 Route::get('/thanking_page', function () {
     return view('thanking_page');
 });
+
+/* Admin pages */
+
+Route::post('/admin-login', 'Admin\LoginController@login' );
+Route::post('/admin-report', 'Admin\ReporController@report' );
+
+Route::get('/admin-logout', 'Admin\LoginController@logout' );

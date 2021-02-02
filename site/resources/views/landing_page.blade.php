@@ -38,6 +38,9 @@
                     পরিচিতি
                 </button> &nbsp;
                 <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#uitrce_info">UITRCE
+                </button> &nbsp;
+                <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+                    Admin Login
                 </button>
                 <div id="ban_info" class="collapse text-justify mt-2 text-white">
                     বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) দেশের শিক্ষা ব্যবস্থাপনায় শিক্ষাতথ্য ও
@@ -53,6 +56,7 @@
                 <div id="uitrce_info" class="collapse text-justify mt-2 text-white">
 
                 </div>
+
             </nav>
         </div>
 
@@ -185,6 +189,38 @@
     <!-- footer ends -->
 </div>
 
+{{--login here --}}
+<div class="container">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="background-color: #C0DBE8">
+                    <div class="form-title text-center">
+                        <h3>Admin Login</h3>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form action="admin-login" method="post">
+                            {{ csrf_field() }}
+                            <div class="form-group">
+                                <input type="email" name= "email" class="form-control" id="email1" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" id="password1" placeholder="Your password" required>
+                            </div>
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{--login ends here--}}
 <script src="js/app.js"></script>
 </body>
 </html>
