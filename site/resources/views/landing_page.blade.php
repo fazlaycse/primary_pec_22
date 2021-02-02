@@ -1,6 +1,7 @@
-@if(Session::has('message'))
-    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-@endif
+<?php
+use Illuminate\Support\Facades\Auth;
+Auth::logout();
+?>
 <html>
 <head>
     <link href="css/custom.css" rel="stylesheet">
@@ -25,6 +26,10 @@
 
 </head>
 <body>
+@if(Session::has('message'))
+    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
+
 <div class="container kalpurus" style="">
     <div class="navHeader"
          style="background-color: #ebf6f9;-webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75); -moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75); box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);">
