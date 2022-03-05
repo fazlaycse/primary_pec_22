@@ -37,7 +37,7 @@ Auth::logout();
             <img src="img/header 01.jpg" class="img-responsive" style="width:100%; height: 100px; margin-top: 10px">
         </div>
         <!-- top menu begins -->
-        <div class="topmenu container">
+        {{--<div class="topmenu container">
             <nav class="row" style="padding: 10px;background:grey;">
                 <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#ban_info">ব্যানবেইস
                     পরিচিতি
@@ -63,7 +63,7 @@ Auth::logout();
                 </div>
 
             </nav>
-        </div>
+        </div>--}}
 
         <!-- topmenu ends -->
 

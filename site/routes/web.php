@@ -194,8 +194,8 @@ Route::get('/thanking_page', function () {
 });
 
 /* Admin pages */
-
+/*
 Route::post('/admin-login', 'Admin\LoginController@login' );
 Route::post('/admin-report', 'Admin\ReporController@report' );
 
-Route::get('/admin-logout', 'Admin\LoginController@logout' );
+Route::get('/admin-logout', 'Admin\LoginController@logout' );*/
