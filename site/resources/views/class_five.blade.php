@@ -18,6 +18,80 @@
                     <div class="table_heading">
                         <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ১৩. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">পঞ্চম শ্রেণি </span></h5></span>
                     </div>
+
+                    <div justify-content-center align-self-center >
+                        <table class="table table-bordered text-center">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th colspan="4">জন্মসাল ভিত্তিক ভর্তিকৃত শিক্ষার্থীর সংখ্যা<br>(২০২১ সালের ২৮ ফেব্রুয়ারি পর্যন্ত ভর্তি রেজিস্টার দেখে
+                                    শিক্ষার্থীর তথ্য দিন)
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="col-3">জন্ম সাল ভিত্তিক বয়স<br>(২৮ ফেব্রুয়ারি ২০২১ এ বয়স)</th>
+                                <th class="col-3">বালক</th>
+                                <th class="col-3">বালিকা</th>
+                                <th class="col-3">মোট</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>২০১৩(৯ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>২০১২(১০ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr> <tr>
+                                <td>২০১১(১১ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>২০১০(১২ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>২০০৯(১৩ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>২০০৮(১৪ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>২০০৭(১৫ বছর+)</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>নির্ধারিত বয়সের বাইরে</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            <tr>
+                                <td>সর্বমোট</td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                     <div class="row border" style="margin:0px">
                         <div class="col-md-6 border justify-content-center align-self-center">
                             <div class="preethnic_number">
