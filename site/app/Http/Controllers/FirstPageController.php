@@ -13,7 +13,7 @@ class FirstPageController extends Controller
     public function read(Request $request)
     {
         if ($request->method() == 'POST') {
-//                echo Hash::make($request->input('123456'));exit;
+            //   echo Hash::make($request->input('123456'));exit;
             $request->validate([
                 'emis_code' => 'required|min:9|max:15',
                 'email' => 'required|email',
@@ -29,6 +29,8 @@ class FirstPageController extends Controller
                 try {
                     $instRow = Institute::where('emis_code', '=', $request->input('emis_code'))->firstOrFail();
                     $request->session()->put('institute_id', $instRow->id);
+                   // echo $instRow;
+                   // exit;
                     return view('first_page')->with(compact('instRow'));
                 } catch (\Exception $e) {
                     // do task when error

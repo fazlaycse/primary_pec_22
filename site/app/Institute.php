@@ -19,6 +19,8 @@ class Institute extends Model
         'user_id',
         'update_user_id',
         'village_word',
-        'cluster'
+        'cluster',
+        'mobile',
+        'head_master_name'
     ];
 }

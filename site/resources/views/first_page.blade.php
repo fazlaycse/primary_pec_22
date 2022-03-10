@@ -81,6 +81,11 @@
                             <input type="text" style="width:250px" class="form-control" name="village_word" id="village"
                                    value="{{$instRow->village_word}}">
                         </div>
+                        <div class="row form-group form-inline">
+                            <label class="label-text" for="union" style="width:150px">মোবাইল </label> &nbsp;
+                            <input type="text" style="width:250px" class="form-control" name="mobile" id="mobile"
+                                   value="{{$instRow->mobile}}">
+                        </div>
                     </div>
                     <div class="col-6 ">
                         <div class="row form-group form-inline">
@@ -98,7 +103,16 @@
                             <input type="text" style="width:250px" class="form-control" name="cluster" id="cluster"
                                    value="{{$instRow->cluster}}">
                         </div>
+                        <div class="row form-group form-inline"
+                             style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
+                            <label class="label-text" for="cluster" style="width:150px"> প্রধান শিক্ষকের নাম </label>
+                            <input type="text" style="width:250px" class="form-control"
+                                   value="{{$instRow->head_master_name}}">
+                        </div>
+
+
                     </div>
+
                 </div>
                 <br>
 
