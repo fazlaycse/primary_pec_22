@@ -16,8 +16,9 @@ class FifthPageController extends Controller
     public function read(Request $request)
     {
 
+
         //deal with Institute_sanitations  Table
-        try {
+      try {
             $row = Institute_sanitations::where('institute_id', '=', $request->session()->get('institute_id'))->get();
             $instRowObj = new \stdClass();
             $instRowObj->data = $row;
@@ -45,8 +46,8 @@ class FifthPageController extends Controller
             try {
                 Institute_sanitations::where('institute_id', '=', $request->session()->get('institute_id'))->delete();
                 Institute_sanitations::insert($reqData);
-                Session::flash('message', 'Data Submitted Successfully!');
-                return response('OK', 200);
+                Session::flash('message', 'Institute_sanitations Data Submitted Successfully!');
+               return response('OK', 200);
             } catch (\Exception $e) {
                 return response(json_encode(['error' => $e->getMessage()]), 401);
             }

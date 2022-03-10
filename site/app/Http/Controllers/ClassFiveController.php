@@ -7,6 +7,7 @@ use App\Ethnic_student;
 use App\Special_students;
 use App\Classwise_students;
 use App\Repeater_students;
+use App\Agewise_students_summary;
 use Session;
 
 class ClassFiveController extends Controller
@@ -21,6 +22,7 @@ class ClassFiveController extends Controller
               exit();*/
 
         $instRow = [];
+
         //deal with Ethnic_student Table
         try {
             $row = Ethnic_student::where('institute_id', '=', $request->session()->get('institute_id'))->where('class_id', '=', 5)->firstOrFail();
@@ -94,6 +96,26 @@ class ClassFiveController extends Controller
                 echo $e;
             }
         }
+        // agewise students summary
+
+        try {
+            $row = Agewise_students_summary::where('institute_id', '=', $request->session()->get('institute_id'))->where('class_id', '=', 5)->firstOrFail();
+            array_push($instRow, $row);
+        } catch (\Exception $e) {
+            // do task when error
+            $row = new Agewise_students_summary();
+            $row->year = 2020;
+            $row->class_id = 5;
+            $row->institute_id = $request->session()->get('institute_id');
+            try {
+               // echo $row;
+                //exit;
+                $row->save(); // returns false
+                array_push($instRow, $row);
+            } catch (\Exception $e) {
+                echo $e;
+            }
+        }
 
 
         $instRowObj = new \stdClass();
@@ -101,6 +123,8 @@ class ClassFiveController extends Controller
         $instRowObj->special_students = $instRow[1];
         $instRowObj->classwise_students = $instRow[2];
         $instRowObj->repeater_students = $instRow[3];
+        $instRowObj->agewise_students = $instRow[4];
+
         return view('class_five')->with('instRowObj',$instRowObj);
 
     }
@@ -108,12 +132,25 @@ class ClassFiveController extends Controller
     public function updateOrcreate(Request $request)
     {
         if ($request->method() == 'POST') {
-            //var_dump($request->all()); exit;
+            $err =[];
+//            var_dump($request->all()); exit;
+            try {
+                $updateOrcreateRow = Agewise_students_summary::updateOrCreate(['institute_id' => $request->session()
+                    ->get('institute_id'),'class_id'=>5],$request->all());
+            } catch (\Exception $e) {
+                array_push($err,$e->getMessage());
+                // do task when error
+               /* echo $e->getMessage();
+                exit();*/
+                Session::flash('message', 'Something went wrong for Agewise_student Table!');
+                return redirect('/class_four');
+            }
+
+
             try {
                 $updateOrcreateRow = Ethnic_student::updateOrCreate(['institute_id' => $request->session()->get('institute_id'),'class_id'=>5], $request->all());
             } catch (\Exception $e) {
-                echo $e->getMessage();
-
+                array_push($err,$e->getMessage());
                 // do task when error
                 /*echo $e->getMessage();
                 exit();*/
@@ -125,7 +162,7 @@ class ClassFiveController extends Controller
 
                 $updateOrcreateRow = Special_students::updateOrCreate(['institute_id' => $request->session()->get('institute_id'),'class_id'=>5], $request->all());
             } catch (\Exception $e) {
-                echo $e->getMessage();
+                array_push($err,$e->getMessage());
 
                 // do task when error
                 /*echo $e->getMessage();
@@ -137,8 +174,7 @@ class ClassFiveController extends Controller
             try {
                 $updateOrcreateRow = Classwise_students::updateOrCreate(['institute_id' => $request->session()->get('institute_id'),'class_id'=>5], $request->all());
             } catch (\Exception $e) {
-                echo $e->getMessage();
-
+                array_push($err,$e->getMessage());
                 // do task when error
                 /*echo $e->getMessage();
                 exit();*/
@@ -150,8 +186,7 @@ class ClassFiveController extends Controller
                 $updateOrcreateRow = repeater_students::updateOrCreate(['institute_id' => $request->session()->get('institute_id'),'class_id'=>5], $request->all());
                 //print_r($request->all());die;
             } catch (\Exception $e) {
-                echo $e->getMessage();
-
+                array_push($err,$e->getMessage());
                 // do task when error
                 /*echo $e->getMessage();
                 exit();*/
@@ -159,9 +194,12 @@ class ClassFiveController extends Controller
                 return redirect('/class_four');
             }
 
-
+            if(sizeof($err)>0){
+                var_dump($err);exit;
+            }
             Session::flash('message', 'Data Saved Successfully!');
             return redirect('/class_six');
+
         }
     }
 }

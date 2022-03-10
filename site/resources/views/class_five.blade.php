@@ -36,57 +36,63 @@
                             </thead>
                             <tbody>
                             <tr>
+                                <?php $instRow = $instRowObj->agewise_students;?>
                                 <td>২০১৩(৯ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="nine_yr_boy" value="{{$instRow->nine_yr_boy}}" ></td>
+                                <td><input type="number" class="w-50" name="nine_yr_girl" value="{{$instRow->nine_yr_girl}}" ></td>
+                                <td><input type="number" class="w-50" name="nine_yr_total" value="{{$instRow->nine_yr_total}}" ></td>
+
                             </tr>
                             <tr>
                                 <td>২০১২(১০ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="ten_yr_boy" value="{{$instRow->ten_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="ten_yr_girl" value="{{$instRow->ten_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="ten_yr_total" value="{{$instRow->ten_yr_total}}"></td>
+
                             </tr> <tr>
                                 <td>২০১১(১১ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="eleven_yr_boy" value="{{$instRow->eleven_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="eleven_yr_girl" value="{{$instRow->eleven_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="eleven_yr_total" value="{{$instRow->eleven_yr_total}}"></td>
                             </tr>
                             <tr>
                                 <td>২০১০(১২ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="twelve_yr_boy" value="{{$instRow->twelve_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="twelve_yr_girl" value="{{$instRow->twelve_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="twelve_yr_total" value="{{$instRow->twelve_yr_total}}"></td>
                             </tr>
                             <tr>
                                 <td>২০০৯(১৩ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="thirteen_yr_boy" value="{{$instRow->thirteen_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="thirteen_yr_girl" value="{{$instRow->thirteen_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="thirteen_yr_total"
+                                    value="{{$instRow->thirteen_yr_total}}"></td>
                             </tr>
                             <tr>
                                 <td>২০০৮(১৪ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="fourteen_yr_boy" value="{{$instRow->fourteen_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="fourteene_yr_girl"
+                                           value="{{$instRow->fourteene_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="fourteen_yr_total"
+                                    value="{{$instRow->fourteen_yr_total}}"></td>
                             </tr>
                             <tr>
                                 <td>২০০৭(১৫ বছর+)</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="fifteen_yr_boy" value="{{$instRow->fifteen_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="fifteen_yr_girl" value="{{$instRow->fifteen_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="fifteen_yr_total" value="{{$instRow->fifteen_yr_total}}"></td>
                             </tr>
                             <tr>
                                 <td>নির্ধারিত বয়সের বাইরে</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="other_yr_boy" value="{{$instRow->other_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="other_yr_girl" value="{{$instRow->other_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="other_yr_total" value="{{$instRow->other_yr_total}}"></td>
                             </tr>
                             <tr>
                                 <td>সর্বমোট</td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
-                                <td><input type="number" class="w-50"></td>
+                                <td><input type="number" class="w-50" name="total_yr_boy" value="{{$instRow->total_yr_boy}}"></td>
+                                <td><input type="number" class="w-50" name="total_yr_girl" value="{{$instRow->total_yr_girl}}"></td>
+                                <td><input type="number" class="w-50" name="grand_total" value="{{$instRow->grand_total}}"></td>
                             </tr>
                             </tbody>
                         </table>
