@@ -106,7 +106,7 @@
                         <div class="row form-group form-inline"
                              style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
                             <label class="label-text" for="cluster" style="width:150px"> প্রধান শিক্ষকের নাম </label>
-                            <input type="text" style="width:250px" class="form-control"
+                            <input type="text" name="head_master_name" style="width:250px" class="form-control"
                                    value="{{$instRow->head_master_name}}">
                         </div>
 
