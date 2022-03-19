@@ -86,7 +86,7 @@
                             <input type="text" style="width:250px" class="form-control" name="mobile" id="mobile"
                                    value="{{$instRow->mobile}}">
                         </div>
-                    </div>বিদ্যালয়ের ঠিকানা:
+                    </div>
                     <div class="col-6 ">
                         <div class="row form-group form-inline">
                             <label class="label-text" for="union" style="width:150px"> ইউনিয়ন/পৌরসভা: </label> &nbsp;
