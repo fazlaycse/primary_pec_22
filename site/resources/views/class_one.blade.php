@@ -204,13 +204,13 @@
                                     <tbody>
                                     <tr>
                                         <?php $instRow = $instRowObj->classwise_students;?>
-                                        <th scope="row">২০১৯</th>
+                                        <th scope="row">২০২০</th>
                                         <td><input type="number" style="width: 50px" name="boy_y_first" value="{{$instRow->boy_y_first}}"></td>
                                         <td><input type="number" style="width: 50px" name="girl_y_first" value="{{$instRow->girl_y_first}}"></td>
                                         <td><input type="number" style="width: 50px" name="total_y_first" value="{{$instRow->total_y_first}}"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">২০২০</th>
+                                        <th scope="row">২০২১</th>
                                         <td><input type="number" style="width: 50px" name="boy_y_second" value="{{$instRow->boy_y_second}}"></td>
                                         <td><input type="number" style="width: 50px" name="girl_y_second" value="{{$instRow->girl_y_second}}"></td>
                                         <td><input type="number" style="width: 50px" name="total_y_second" value="{{$instRow->total_y_second}}"></td>
