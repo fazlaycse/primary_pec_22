@@ -32,7 +32,7 @@ var app = new Vue({
         options_union_all:{
             0:["-Select-"],
             1:["Ward no- 24", "Ward no- 25", "Ward no- 26"],
-            2:["3 Jamuria UP", "7 Digor UP", "11 Dholapara UP"],
+            2:["3 Jamuria UP", "7 Digor UP", "11 Dholapara UP","Deula Bari"],
             3:["Baliyati UP", "Horgoj UP", "Dhankora UP"],
             4:["Bandura UP", "Jontrail UP", "Agla UP"],
             5:["1 Boirag", "4 Bot-toli", "11 Jui-dondi"],
