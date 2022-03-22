@@ -27,7 +27,10 @@ var app = new Vue({
             { text: 'Borhanuddin, Bhola', value: '19' },
             { text: 'Madhabpur, Habiganj ', value: '20' },
             { text: 'Nalitabari, Sherpur', value: '21' },
-            { text: 'Gouripur, Mymensingh ', value: '22' }
+            { text: 'Gouripur, Mymensingh ', value: '22' },
+            { text: 'Motijhil, Dhaka ', value: '23' },
+            { text: 'Demra, Dhaka ', value: '24'},
+            { text: 'Sobujbag, Dhaka ', value: '25'}
         ],
         options_union_all:{
             0:["-Select-"],
@@ -52,7 +55,10 @@ var app = new Vue({
             19:["Gongapur UP", "Kachia UP", "Hasannagar UP"],
             20:["6 Shajahanpur UP", "2 Chowmuhoni UP", "9 Noapara UP"],
             21:["Rajnagar UP", "Nalitabari UP", "Jogania UP"],
-            22:["Bokainagar UP", "Gouripur UP", "Ochintopur UP"]
+            22:["Bokainagar UP", "Gouripur UP", "Ochintopur UP"],
+            23:["Word 24", "Word 25"],
+            24:["Word 49"],
+            25:["Word 27"]
 
         },
         options_union:[]
