@@ -21,6 +21,7 @@ class Institute extends Model
         'village_word',
         'cluster',
         'mobile',
-        'head_master_name'
+        'head_master_name',
+        'deo_name'
     ];
 }
