@@ -113,8 +113,8 @@
                         <div class="row form-group"
                              style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
                             <label class="label-text" for="cluster" style="width:150px"> ডাটা এন্ট্রি অপারেটরের নাম </label>
-                            <input type="text" style="width:250px" class="form-control"
-                                   value="{{$instRow->deo_name}}">
+                            <input type="text" style="width:250px" class="form-control" name="deo_name"
+                                   value="{{Auth::user()->name}}" readonly>
                         </div>
                     </div>
 

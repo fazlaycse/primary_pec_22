@@ -63,7 +63,6 @@ class FirstPageController extends Controller
 
             try {
                 $reqData = $request->all();
-                var_dump($reqData);exit;
                 $reqData['update_user_id'] = Auth::id();
                 $updateOrcreateRow = Institute::updateOrCreate(['id' => $request->session()->get('institute_id')], $reqData);
                 Session::flash('message', 'Data Saved Successfully!');
