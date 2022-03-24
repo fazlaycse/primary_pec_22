@@ -39,7 +39,7 @@ var app = new Vue({
             1:["Ward no- 24", "Ward no- 25", "Ward no- 26"],
             2:["3 Jamuria UP", "7 Digor UP", "11 Dholapara UP","Deula Bari","Deulabari"],
             3:["Baliyati UP", "Horgoj UP", "Dhankora UP","Baraidah","Dargram/Dighalia"],
-            4:["Bandura UP", "Jontrail UP", "Agla UP"],
+            4:["Bandura UP", "Jontrail UP", "Agla UP","Churain","Galimpur"],
             5:["1 Boirag", "4 Bot-toli", "11 Jui-dondi","Roupr","Barshat","2 No. Union"],
             6:["1 Char Jabbar UP", "5 Char Jubli UP", "6 Char Amanullah UP","Char Wapda"],
             7:["Atarok chora UP", "Mainimukh UP", "Langodu UP"],
