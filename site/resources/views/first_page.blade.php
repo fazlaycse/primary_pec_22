@@ -86,11 +86,21 @@
                             <input type="text" style="width:250px" class="form-control" name="village_word" id="village"
                                    value="{{$instRow->village_word}}">
                         </div>
-                        <div class="row form-group form-inline">
-                            <label class="label-text" for="union" style="width:150px">সিটি কর্পোরেশনঃ</label> &nbsp;
-                            <input type="checkbox" style="width:250px" class="form-control" name="mobile" id="mobile"
-                                   value="">
+
+                        <!--NEW CODE-->
+                        <div class="row form-group form-inline">&nbsp;
+                            সিটি কর্পোরেশনঃ
+                            <input type="radio" name="city_corp"  value="1">হ্যা
+                            </br>
+                            <input type="radio" name="city_corp"  value="2"> না
                         </div>
+                        <div class="row form-group form-inline">&nbsp;
+                            পৌরসভাঃ
+                            <input type="radio" name="pourosova"  value="1">হ্যা
+                            </br>
+                            <input type="radio" name="pourosova"  value="2"> না
+                        </div>
+                        <!--NEW CODE END-->
                     </div>
                     <div class="col-6 ">
                         <div class="row form-group form-inline">
@@ -108,12 +118,14 @@
                             <input type="text" style="width:250px" class="form-control" name="cluster" id="cluster"
                                    value="{{$instRow->cluster}}">
                         </div>
+                        <!--
                         <div class="row form-group form-inline"
                              style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
                             <label class="label-text" for="cluster" style="width:150px"> প্রধান শিক্ষকের নাম </label>
                             <input type="text" name="head_master_name" style="width:250px" class="form-control"
                                    value="{{$instRow->head_master_name}}">
                         </div>
+-->
 
                         <div class="row form-group"
                              style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">

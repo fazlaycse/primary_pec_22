@@ -19,9 +19,9 @@
 <div class="topnav">
     <?php use Illuminate\Support\Facades\Request; $slug = Request::segment(count(Request::segments()));?>
     <a href="#" <?php if ($slug == 'first_page') echo 'class="active"' ?>>প্রথম পাতা</a>
-    <a href="#" <?php if ($slug == 'second_page') echo 'class="active"' ?>>দ্বিতীয় পাতা</a>
-    <a href="#" <?php if ($slug == 'third_page') echo 'class="active"' ?>>তৃতীয় পাতা</a>
-    <a href="#" <?php if ($slug == 'fourth_page') echo 'class="active"' ?>>চতুর্থ পাতা</a>
+    <a href="#" <?php if ($slug == 'second_page ') echo 'class="active"' ?>>দ্বিতীয় পাতা</a>
+        <a href="#" <?php if ($slug == 'third_page') echo 'class="active"' ?>>তৃতীয় পাতা</a>
+        <a href="#" <?php if ($slug == 'fourth_page') echo 'class="active"' ?>>চতুর্থ পাতা</a>
     <a href="#" <?php if ($slug == 'fifth_page') echo 'class="active"' ?>>পঞ্চম পাতা</a>
     <a href="#" <?php if ($slug == 'sixth_page') echo 'class="active"' ?>>ষষ্ঠ পাতা</a>
     <a href="#" <?php if ($slug == 'seventh_page') echo 'class="active"' ?>>সপ্তম পাতা</a>

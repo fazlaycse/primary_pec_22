@@ -19,7 +19,7 @@
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">
             <div class="table_heading">
-                <span style="font-weight: bold; font-size: 18px">  ২. ক) বিদ্যালয়ের সাধারণ তথ্যাবলি </span><br>
+                <span style="font-weight: bold; font-size: 18px">  ২.১  বিদ্যালয়ের মৌলিক তথ্য </span><br>
             </div>
         </div>
         <form class="form-group" method="POST" action="third_page_save" enctype="multipart/form-data">
@@ -31,7 +31,12 @@
                         <table class="table academic table-bordered">
                             <tbody>
                             <tr>
-                                <th scope=""><label for="academic_function_yn">১. বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে কি? </label></th><td>
+                                <th scope="row"><label for="">রেজিস্ট্রেশন/ নিবন্ধনের সন </label></th>
+                                <td><input type="text" style="width: 70px" name="reg_year"
+                                           value="{{$instRow->reg_year}}"></td>
+                            </tr>
+                            <tr>
+                                <th scope=""><label for="academic_function_yn"> বিদ্যালয়ে একাডেমিক কার্যক্রম চালু আছে কি? </label></th><td>
                                     <select class="custom-select" style="width:70px" name="acdmic_function_yn">
                                         <option></option>
                                         <option value="1" <?php if ($instRow->acdmic_function_yn == '1') {echo "selected";} ?> >হ্যাঁ</option>
@@ -40,18 +45,66 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">২. বিদ্যালয়ে প্রাক-প্রাথমিক শ্রেণি চালু আছে কি? </label>
-                                </th>
+                                <th scope="row"><label for="academic_function_yn">পাঠদানের মাধ্যম? </label></th>
                                 <td>
-                                    <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
+                                    <select class="custom-select" style="width:90px" name="learning_media">
                                         <option></option>
-                                        <option value="1" <?php if ($instRow->pprimary_exist_yn == '1') {echo "selected";} ?>>হ্যাঁ</option>
-                                        <option value="2" <?php if ($instRow->pprimary_exist_yn == '2') {echo "selected";} ?>>না</option>
+
+                                        <option value="1" <?php if ($instRow->learning_media == '1') {
+                                            echo "selected";
+                                        } ?>>বাংলা মিডিয়াম
+                                        </option>
+                                        <option value="2" <?php if ($instRow->learning_media == '2') {
+                                            echo "selected";
+                                        } ?>>ইংরেজি ভার্সন
+                                        </option>
+                                        <option value="3" <?php if ($instRow->learning_media == '3') {
+                                            echo "selected";
+                                        } ?>>উভয়
+                                        </option>
+                                        <option value="4" <?php if ($instRow->learning_media == '4') {
+                                            echo "selected";
+                                        } ?>>ইংরেজি মিডিয়াম
+                                        </option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">৩. বিদ্যালয়ের গ্রেড </label></th>
+                                <th scope="row"><label for="">আশ্রয়কেন্দ্র কাম বিদ্যালয়</label></th>
+                                <td>
+                                    <select class="custom-select" style="width:70px" name="cycln_shelter_yn">
+                                        <option></option>
+
+                                        <option value="1" <?php if ($instRow->cycln_shelter_yn == '1') {
+                                            echo "selected";
+                                        } ?>>হ্যাঁ
+                                        </option>
+                                        <option value="2" <?php if ($instRow->cycln_shelter_yn == '2') {
+                                            echo "selected";
+                                        } ?>>না
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="">সীমানা প্রাচীর আছে কি? </label></th>
+                                <td>
+                                    <select class="custom-select" style="width:90px" name="boundary_wall_yn">
+                                        <option></option>
+
+                                        <option value="1" <?php if ($instRow->boundary_wall_yn == '1') {
+                                            echo "selected";
+                                        } ?>>পাকা প্রাচীর
+                                        </option>
+                                        <option value="2" <?php if ($instRow->boundary_wall_yn == '2') {
+                                            echo "selected";
+                                        } ?>>নাই
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="">বিদ্যালয়ের গ্রেড </label></th>
                                 <td>
                                     <select class="custom-select" style="width:70px" name="school_grade">
                                         <option></option>
@@ -84,22 +137,41 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">৪. নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
+                                <th scope="row"><label for="">শিফট সংখ্যা? </label></th>
+                                <td><input type="number" style="width: 90px" name="shift_number"
+                                           value="{{$instRow->shift_number}}"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="">শহীদ মিনার আছে কি? </label>
+                                </th>
                                 <td>
-                                    <select class="custom-select" style="width:70px" name="safe_water_yn">
+                                    <select class="custom-select" style="width:90px" name="shaheed_minar_yn">
                                         <option></option>
 
-                                        <option value="1" <?php if ($instRow->safe_water_yn == '1') {
+                                        <option value="1" <?php if ($instRow->shaheed_minar_yn == '1') {
                                             echo "selected";
                                         } ?>>হ্যাঁ
                                         </option>
-                                        <option value="2" <?php if ($instRow->safe_water_yn == '2') {
+                                        <option value="2" <?php if ($instRow->shaheed_minar_yn == '2') {
                                             echo "selected";
                                         } ?>>না
                                         </option>
                                     </select>
                                 </td>
                             </tr>
+                            <tr>
+                                <th scope="row"><label for=""> প্রাক-প্রাথমিক শিক্ষা আছে কি? </label>
+                                </th>
+                                <td>
+                                    <select class="custom-select" style="width:70px" name="pprimary_exist_yn">
+                                        <option></option>
+                                        <option value="1" <?php if ($instRow->pprimary_exist_yn == '1') {echo "selected";} ?>>হ্যাঁ</option>
+                                        <option value="2" <?php if ($instRow->pprimary_exist_yn == '2') {echo "selected";} ?>>না</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+<!--
                             <tr>
                                 <th scope="row"><label for="">৫. বিদ্যালয়ের ভবন সমূহ নিজস্ব সম্পত্তিতে
                                         প্রতিষ্ঠিত? </label>
@@ -118,29 +190,6 @@
                                         </option>
                                     </select>
                                 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label for="">৬. বিদ্যালয়টি আশ্রয়কেন্দ্র কাম বিদ্যালয় হিসেবে নির্মিত
-                                        কি?</label></th>
-                                <td>
-                                    <select class="custom-select" style="width:70px" name="cycln_shelter_yn">
-                                        <option></option>
-
-                                        <option value="1" <?php if ($instRow->cycln_shelter_yn == '1') {
-                                            echo "selected";
-                                        } ?>>হ্যাঁ
-                                        </option>
-                                        <option value="2" <?php if ($instRow->cycln_shelter_yn == '2') {
-                                            echo "selected";
-                                        } ?>>না
-                                        </option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label for="">৭. রেজিস্ট্রেশন/ নিবন্ধনের সন </label></th>
-                                <td><input type="text" style="width: 70px" name="reg_year"
-                                           value="{{$instRow->reg_year}}"></td>
                             </tr>
                             <tr>
                                 <th scope="row"><label for="">৮. বিদ্যুৎ সংযোগ আছে কি? </label></th>
@@ -163,44 +212,51 @@
                                     </select>
                                 </td>
                             </tr>
+                            -->
                             </tbody>
                         </table>
                     </div>
                     <div class="col-6 border justify-content-center align-self-center">
                         <table class="table table-bordered">
                             <tbody>
+                            <thead>২.২ বিদ্যালয়ের উপকরণ ও সরঞ্জামাদি</thead>
+
                             <tr>
-                                <th scope="row"><label for="academic_function_yn">৯. শিখন মাধ্যম? </label></th>
+                                <th scope="row"><label for=""> নিরাপদ পানীয় জলের ব্যবস্থা আছে কি? </label></th>
                                 <td>
-                                    <select class="custom-select" style="width:90px" name="learning_media">
+                                    <select class="custom-select" style="width:70px" name="safe_water_yn">
                                         <option></option>
 
-                                        <option value="1" <?php if ($instRow->learning_media == '1') {
+                                        <option value="1" <?php if ($instRow->safe_water_yn == '1') {
                                             echo "selected";
-                                        } ?>>বাংলা
+                                        } ?>>হ্যাঁ
                                         </option>
-                                        <option value="2" <?php if ($instRow->learning_media == '2') {
+                                        <option value="2" <?php if ($instRow->safe_water_yn == '2') {
                                             echo "selected";
-                                        } ?>>ইংরেজি ভার্সন
-                                        </option>
-                                        <option value="3" <?php if ($instRow->learning_media == '3') {
-                                            echo "selected";
-                                        } ?>>উভয়
-                                        </option>
-                                        <option value="4" <?php if ($instRow->learning_media == '4') {
-                                            echo "selected";
-                                        } ?>>ইংরেজি মিডিয়াম
+                                        } ?>>না
                                         </option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">১০. শিফট সংখ্যা? </label></th>
-                                <td><input type="number" style="width: 90px" name="shift_number"
-                                           value="{{$instRow->shift_number}}"></td>
+                                <th scope="row"><label for="">জীবানুনাশকের ব্যাবস্থা আছে কিনা ?</label></th>
+                                <td>
+                                    <select class="custom-select" style="width:70px" name="sntz_facility_yn">
+                                        <option></option>
+
+                                        <option value="1" <?php if ($instRow->sntz_facility_yn == '1') {
+                                            echo "selected";
+                                        } ?>>হ্যাঁ
+                                        </option>
+                                        <option value="2" <?php if ($instRow->sntz_facility_yn == '2') {
+                                            echo "selected";
+                                        } ?>>না
+                                        </option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
-                                <th scope="row"><label for="">১১. বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label>
+                                <th scope="row"><label for=""> বিদ্যালয়ে টয়লেট (ওয়াশ ব্লক ব্যতীত) আছে কি? </label>
                                 </th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="toilet_yn">
@@ -217,6 +273,25 @@
                                     </select>
                                 </td>
                             </tr>
+                            <tr>
+                                <th scope="row"><label for="academic_function_yn"> বিশেষ চাহিদা সম্পন্ন শিশুদের জন্য
+                                        র‍্যাম্প আছে কি না? </label></th>
+                                <td>
+                                    <select class="custom-select" style="width:70px" name="ramp_yn">
+                                        <option></option>
+
+                                        <option value="1" <?php if ($instRow->ramp_yn == '1') {
+                                            echo "selected";
+                                        } ?>>হ্যাঁ
+                                        </option>
+                                        <option value="2" <?php if ($instRow->ramp_yn == '2') {
+                                            echo "selected";
+                                        } ?>>না
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <!--
                             <tr>
                                 <th scope="row"><label for="">১২. বিদ্যালয়ে ওয়াশ ব্লক নির্মিত হয়েছে কি? </label></th>
                                 <td>
@@ -238,45 +313,10 @@
                                     </select>
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row"><label for="">১৩. শহীদ মিনার আছে কি? </label>
-                                </th>
-                                <td>
-                                    <select class="custom-select" style="width:90px" name="shaheed_minar_yn">
-                                        <option></option>
 
-                                        <option value="1" <?php if ($instRow->shaheed_minar_yn == '1') {
-                                            echo "selected";
-                                        } ?>>হ্যাঁ
-                                        </option>
-                                        <option value="2" <?php if ($instRow->shaheed_minar_yn == '2') {
-                                            echo "selected";
-                                        } ?>>না
-                                        </option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label for="">১৪. সীমানা প্রাচীর আছে কি? </label></th>
-                                <td>
-                                    <select class="custom-select" style="width:90px" name="boundary_wall_yn">
-                                        <option></option>
 
-                                        <option value="1" <?php if ($instRow->boundary_wall_yn == '1') {
-                                            echo "selected";
-                                        } ?>>পাকা প্রাচীর
-                                        </option>
-                                        <option value="2" <?php if ($instRow->boundary_wall_yn == '2') {
-                                            echo "selected";
-                                        } ?>>নাই
-                                        </option>
-                                    </select>
-                                </td>
-                            </tr>
                             <tr>
-                                <th scope="row"><label for="">১৫. প্রতিবন্ধি ও অটিস্টিক শিশুদের জন্য র‍্যাম্পসহ উপযুক্ত
-                                        টয়লেট
-                                        আছে কি?</label></th>
+                                <th scope="row"><label for="">১৫. </label></th>
                                 <td>
                                     <select class="custom-select" style="width:90px" name="disable_student_toilet_yn">
                                         <option></option>
@@ -292,35 +332,18 @@
                                     </select>
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row"><label for="">১৬. বিদ্যালয়ের ভিতরে ও বাহিরে (ভাইরাস/ব্যাক্টেরিয়ামুক্ত
-                                        করতে)
-                                        জীবাণুনাশক ব্যাবহার করা হয় কি না?</label></th>
-                                <td>
-                                    <select class="custom-select" style="width:70px" name="sntz_facility_yn">
-                                        <option></option>
-
-                                        <option value="1" <?php if ($instRow->sntz_facility_yn == '1') {
-                                            echo "selected";
-                                        } ?>>হ্যাঁ
-                                        </option>
-                                        <option value="2" <?php if ($instRow->sntz_facility_yn == '2') {
-                                            echo "selected";
-                                        } ?>>না
-                                        </option>
-                                    </select>
-                                </td>
-                            </tr>
+-->
                             </tbody>
                         </table>
                     </div>
                     <br>
                 </div>
             </div>
+
             <?php $instRow = $instRowObj->curriculums; ?>
             <div class="Second_body">
                 <div class="curriculum border" style="padding:10px; font-size:14px">
-                    <span style="font-weight: bold; font-size: 18px"> ২. খ) বিদ্যালয়ের কোন কোন শ্রেণিতে পাঠদান করানো হয় (বর্ণিত শ্রেণি চালু থাকলে হ্যাঁ অথবা না লিখুন)</span>
+                    <span style="font-weight: bold; font-size: 18px"> ২.৩ বিদ্যালয়ের কোন কোন শ্রেণিতে পাঠদান করানো হয় </span>
                     <div class="col-md-12 border justify-content-center align-self-center">
                         <table class="table table-bordered">
                             <thead>
@@ -476,6 +499,7 @@
                     </div>
                 </div>
             </div>
+        <!--
             <?php $instRow = $instRowObj->special_std_facilities; ?>
             <div class="third_body">
                 <div class="institute_info border" style="padding:10px; font-size:14px">
@@ -722,11 +746,13 @@
                     </div>
                 </div>
             </div>
+
+
+-->
             <div class="pull-right">
                 <input type="submit" class="btn btn-primary btn-lg" style="text-align:right; margin-top:20px"
                        value="Save and Next">
             </div>
-
         </form>
     </div>
 </div>

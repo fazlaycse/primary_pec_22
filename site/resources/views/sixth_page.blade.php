@@ -29,21 +29,20 @@
 
             <hr>
             <div class="table_third_heading2">
-                <span style="font-weight: bold; font-size: 18px"> ৫. বিদ্যালয়ের ওয়াশব্লক ব্যবস্থা <span
-                            style="font-size: 15px">(বিদ্যালয়ের ওয়াশব্লক নির্মিত বলতে নির্মাণকাজ সম্পন্ন পূর্বক ব্যবহার উপযোগী বুঝাবে):</span> <span
-                            style="font-size: 14px; font-weight: normal"> ( শুধুমাত্র বিদ্যালয়ের ধরণ: ০১, ০৪ এবং ৯৯ এর জন্য প্রযোজ্য) </span> </span>
+                <span style="font-weight: bold; font-size: 18px"> ৪। বিদ্যালয়ের ওয়াশব্লক ব্যবস্থার তথ্য</span>
+
                 <div class="table_third_two">
                     <table class="table table-bordered" style="text-align: center">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col">ওয়াশ ব্লকের সংখ্যা</th>
+                            <th scope="col">ক্রমিক নং</th>
                             <th scope="col">নির্মাণের সাল</th>
-                            <th scope="col">ব্যবহারকারী</th>
-                            <th scope="col">বর্তমান অবস্থা</th>
-                            <th scope="col">ওয়াশ ব্লক শিক্ষার্থী কর্তৃক ব্যবহৃত হচ্ছে কি?</th>
-                            <th scope="col">পরিস্কারক দ্রব্যাদি আছে কি?</th>
-                            <th scope="col">টয়লেটে পানির সরবরাহ</th>
-                            <th scope="col">Hand Washing/সাবান আছে কি না?</th>
+                            <th scope="col">ব্যবহারকারীর ধরণ নিচের যেকোন একটি</th>
+                            <th scope="col">বর্তমান অবস্থা নিচের যেকোন একটি</th>
+                            <th scope="col">ওয়াশ ব্লক ব্যবহৃত</th>
+                            <th scope="col">পরিস্কারক দ্রব্যাদি</th>
+                            <th scope="col">পানির সরবরাহ</th>
+                            <th scope="col">হ্যন্ড ওয়াশ/সাবান</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -58,19 +57,25 @@
                                         v-model="i.wsblk_user">
                                     <option value="1">১.বালক</option>
                                     <option value="2">২.বালিকা</option>
-                                    <option value="3">৩.পুরুষ শিক্ষক</option>
-                                    <option value="4">৪.মহিলা শিক্ষিকা</option>
-                                    <option value="5">৫.বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী</option>
-                                    <option value="6">৬.বালক-বালিকা উভয়ই</option>
+                                    <option value="3">৩.বালক ও বালিকা</option>
+                                    <option value="4">৪.শিক্ষক</option>
+                                    <option value="5">৫ শিক্ষিকা</option>
+                                    <option value="6">৬। পুরুষ ও মহিলা শিক্ষক</option>
+                                    <option value="7">৭. সার্বজনীন</option>
                                 </select>
                             </td>
                             <td>
                                 <select class="custom-select" style="..." name="wsblk_condition"
                                         v-model="i.wsblk_condition">
-                                    <option value="1">১.ভালো</option>
-                                    <option value="2">২.নির্মাণাধীন</option>
-                                    <option value="3">৩.জরাজীর্ণ,মেরামত প্রয়োজন</option>
-                                    <option value="5">৪.পরিত্যক্ত</option>
+                                    <option value="1">১.নতুন/ভালো</option>
+                                    <option value="2">২.ব্যাবহারযোগ্য</option>
+                                    <option value="3">৩ মেরামতযোগ্য</option>
+                                    <option value="4">৪.নির্মানাধীন</option>
+                                    <option value="5">৫.পুরানো</option>
+                                    <option value="6">৬.জয়ারাজীর্ণ</option>
+                                    <option value="7">৭.ঝুকিপূর্ণ</option>
+                                    <option value="8">৮.পরিত্যাক্ত</option>
+                                    <option value="9">৯.অজানা</option>
                                 </select>
                             </td>
                             <td>
