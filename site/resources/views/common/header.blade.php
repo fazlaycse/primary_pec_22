@@ -5,12 +5,6 @@
         <span> শিক্ষা মন্ত্রণালয়</span>
         <br>
         <span> বাংলাদেশ শিক্ষা তথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) </span>
-        <br>
-        <span> ১ জহির রায়হান রোড (পলাশী-নীলক্ষেত), ঢাকা-১২০৫</span>
-        <br>
-        <span> www.banbeis.gov.bd</span>
-        <br>
-        <span> e-mail: info@banbeis.gov.bd</span>
     </div>
     <div style="text-align: right;height: 0px;">
         <img class="" style="position: relative; top: -150px; right: 150px;" src="img/mujib_borsho.png" alt="mujib"

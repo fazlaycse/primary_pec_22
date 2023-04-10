@@ -116,11 +116,11 @@ Auth::logout();
 
     <div class="container">
         <div class="pec" style="text-align:center; background-color:#80b1b3; padding: 5px 5px 5px 5px;">
-            <h4> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২১ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
+            <h4> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২২ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
         </div>
         <div class="registration">
             <div class="heading" style="text-align: center;">
-                <h5 class="font-weight-bold" style="text-align: center">বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২১ এর পিইসি তথ্য
+                <h5 class="font-weight-bold" style="text-align: center">বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২২ এর পিইসি তথ্য
                     সংগ্রহ ফরম পূরণের জন্য
                     EMIS কোড দিয়ে "Submit and go to the form" এ ক্লিক করুন</h5>
                 <form class="form-group" method="post" action="first_page">

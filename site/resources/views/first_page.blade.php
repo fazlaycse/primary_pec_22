@@ -55,6 +55,11 @@
                             <input type="text" style="width:290px" class="form-control" name="name_english"
                                    id="english_name" value="{{$instRow->name_english}}">
                         </div>
+                        <div class="row form-group form-inline">
+                            <label class="label-text" for="english_name" style="width:100px"> বিদ্যালয় কোড: </label> &nbsp;
+                            <input type="text" style="width:290px" class="form-control" name="name_english"
+                                   id="english_name" value="{{$instRow->name_english}}">
+                        </div>
                     </div>
 
                 </div>
@@ -82,9 +87,9 @@
                                    value="{{$instRow->village_word}}">
                         </div>
                         <div class="row form-group form-inline">
-                            <label class="label-text" for="union" style="width:150px">মোবাইল </label> &nbsp;
-                            <input type="text" style="width:250px" class="form-control" name="mobile" id="mobile"
-                                   value="{{$instRow->mobile}}">
+                            <label class="label-text" for="union" style="width:150px">সিটি কর্পোরেশনঃ</label> &nbsp;
+                            <input type="checkbox" style="width:250px" class="form-control" name="mobile" id="mobile"
+                                   value="">
                         </div>
                     </div>
                     <div class="col-6 ">

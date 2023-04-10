@@ -136,6 +136,8 @@ class ClassTwoController extends Controller
 
             try {
                 $updateOrcreateRow = Classwise_students::updateOrCreate(['institute_id' => $request->session()->get('institute_id'),'class_id'=>2], $request->all());
+
+
             } catch (\Exception $e) {
                 echo $e->getMessage();
 
