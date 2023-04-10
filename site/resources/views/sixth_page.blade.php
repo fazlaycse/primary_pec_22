@@ -116,6 +116,94 @@
             <hr>
 
 
+
+        </form>
+    </div>
+    <div class="body_table" style="background-color: #b0d4f1;">
+
+        <form class="form-group" method="POST" action="sixth_page_save" enctype="multipart/form-data">
+            {{ csrf_field() }}
+            <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
+
+            <hr>
+            <div class="table_third_heading2">
+                <span style="font-weight: bold; font-size: 18px"> ৫। বিদ্যালয়ের পানীয় জলের ব্যাবস্থার তথ্য</span>
+
+                <div class="table_third_two">
+                    <table class="table table-bordered" style="text-align: center">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">ক্রমিক নং</th>
+                            <th scope="col">নিরাপদ পানির উৎস নিচের যেকোন একটি</th>
+                            <th scope="col">বর্তমান অবস্থা নিচের যেকোন একটি</th>
+                            <th scope="col">আর্সেনিক মুক্ত</th>
+                            <th scope="col">নির্মানের প্রকল্প/প্রোগ্রাম</th>
+                            <th scope="col">ই-কোলাই টেস্ট</th>
+                            <th scope="col">লবণাক্ততা/আয়রন</th>
+                            <th scope="col">স্থাপনের বছর</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+<!--নতুন কোড-->
+                        <tr v-for="(i, index) in rowData">
+                            <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount"
+                                       v-model="i.wsblk_amount"></td>
+                            <td>
+                                <select class="custom-select" style="width:90px" name="wsblk_user"
+                                        v-model="i.wsblk_user">
+                                    <option value="1">১.টিউবওয়েল</option>
+                                    <option value="2">২.সাপ্লাই ওয়াটার</option>
+                                    <option value="3">৩.ডিপ টিউবয়েল</option>
+                                    <option value="4">৪.কুয়া</option>
+                                    <option value="5">৫. পুকুর/নদী</option>
+                                    <option value="6">৬. সংগৃহীত বৃষ্টির পানি</option>
+                                    <option value="7">৭. টারা পাম্প</option>
+                                    <option value="8">৮.অন্যান্য</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px" name="wsblk_std_yn" v-model="i.wsblk_std_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px" name="wsblk_std_yn" v-model="i.wsblk_std_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px" name="wsblk_std_yn" v-model="i.wsblk_std_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn" v-model="i.cleaning_agent_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="custom-select" style="width:80px" name="cleaning_agent_yn" v-model="i.cleaning_agent_yn">
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td><input type="number" style="width: 70px; align-content: center" name="wsblk_amount"
+                                       v-model="i.wsblk_amount"></td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                    <input type="button" id="addRow" class="btn btn-success" @click="addItem" value="Add Row"/>
+
+                </div>
+            </div>
+            <hr>
+
+
             <div class="pull-right">
 
                 <input @click="submitSixthPage" type="button" class="btn btn-primary btn-lg"
