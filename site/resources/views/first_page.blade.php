@@ -18,7 +18,7 @@
     {{--Include Header--}}
     @include('common.header')
     {{--Include Header End--}}
-
+    উপজেলা/থানা:
     <div class="first_body">
         <div class="institute_info border" style="padding:10px; font-size:14px">
             <form class="form-group" method="POST" action="first_page_save">
@@ -71,6 +71,16 @@
                     <div class="col-6 ">
                         <span style="font-weight: bold; font-size: 14px">বিদ্যালয়ের ঠিকানা:</span>
                         <div class="row form-group form-inline">
+                            <label class="label-text" for="thana" style="width:120px">জেলা: </label> &nbsp;
+                            <select v-model="selected_thana" style="width:250px" class="form-control" name="district_id"
+                                    id="district_id"
+                                    @change="changeDistrictId">
+                                <option v-for="option in options_district" v-bind:value="option.value">
+                                    @{{ option.text }}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="row form-group form-inline">
                             <label class="label-text" for="thana" style="width:120px">উপজেলা/থানা: </label> &nbsp;
                             <select v-model="selected_thana" style="width:250px" class="form-control" name="thana_id"
                                     id="thana"
@@ -89,16 +99,18 @@
 
                         <!--NEW CODE-->
                         <div class="row form-group form-inline">&nbsp;
-                            সিটি কর্পোরেশনঃ
-                            <input type="radio" name="city_corp"  value="1">হ্যা
-                            </br>
-                            <input type="radio" name="city_corp"  value="2"> না
+                        <label>    সিটি কর্পোরেশনঃ</label> &nbsp; &nbsp;
+                           <select>
+                               <option value="1">হ্যাঁ</option>
+                               <option value="2">না</option>
+                           </select>
                         </div>
                         <div class="row form-group form-inline">&nbsp;
-                            পৌরসভাঃ
-                            <input type="radio" name="pourosova"  value="1">হ্যা
-                            </br>
-                            <input type="radio" name="pourosova"  value="2"> না
+                            <label>   পৌরসভাঃ</label> &nbsp; &nbsp;
+                            <select>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
                         </div>
                         <!--NEW CODE END-->
                     </div>

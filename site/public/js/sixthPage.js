@@ -50,7 +50,7 @@ var app = new Vue({
             Vue.http.headers.common['X-CSRF-TOKEN'] = $('#token').val();
             this.$http.post('sixth_page_save', this.rowData)
                 .then(function (response) {
-                    window.location.href = 'seventh_page';
+                    window.location.href = 'fifth_page';
                 })
                 .catch(function (error) {
                     alert('Error: Could not save data!')

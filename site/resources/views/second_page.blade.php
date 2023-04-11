@@ -26,7 +26,7 @@
             <div class="institute_info border" style="padding:10px; font-size:14px">
 
                 <div class="table_heading">
-                    <span style="font-weight: bold; font-size: 15px"> ১. খ) বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা এবং ভবন, কক্ষ ও ওয়াশব্লক সংখ্যা:</span>
+                    <span style="font-weight: bold; font-size: 15px"> ১০.১ বিদ্যালয়ের শিক্ষক ও কর্মচারী সংখ্যা</span>
                 </div>
                 <div class="row border" style="margin:0px">
                     <div class="col-md-1 border justify-content-center align-self-center">

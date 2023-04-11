@@ -66,7 +66,7 @@ class FirstPageController extends Controller
                 $reqData['update_user_id'] = Auth::id();
                 $updateOrcreateRow = Institute::updateOrCreate(['id' => $request->session()->get('institute_id')], $reqData);
                 Session::flash('message', 'Data Saved Successfully!');
-                return redirect('/second_page');
+                return redirect('/third_page');
             } catch (\Exception $e) {
                 echo $e->getMessage();
 
