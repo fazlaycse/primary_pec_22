@@ -42,6 +42,7 @@
                                     <th scope="col">সহকারী শিক্ষক</th>
                                     <th scope="col">প্রাক-প্রাথমিক শিক্ষক</th>
                                     <th scope="col">দপ্তরী কাম প্রহরী</th>
+                                    <th scope="col">মন্তব্য</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -51,12 +52,14 @@
                                     <td><input type="number" style="width: 50px" name="onu_ast_teacher" value="{{$instRow->onu_ast_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="onu_pprimary_teacher" value="{{$instRow->onu_pprimary_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="onu_sg" value="{{$instRow->onu_sg}}"></td>
+                                    <td><input type="number" style="width: 50px" name="onu_sg" value="{{$instRow->onu_sg}}"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">সংযুক্তি(In)</th>
                                     <td><input type="number" style="width: 50px" name="att_in_head_teacher" value="{{$instRow->att_in_head_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="att_in_ast_teacher" value="{{$instRow->att_in_ast_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="att_in_pprimary_teacher" value="{{$instRow->att_in_pprimary_teacher}}"></td>
+                                    <td><input type="number" style="width: 50px" name="att_in_sg" value="{{$instRow->att_in_sg}}"></td>
                                     <td><input type="number" style="width: 50px" name="att_in_sg" value="{{$instRow->att_in_sg}}"></td>
                                 </tr>
                                 <tr>
@@ -65,12 +68,14 @@
                                     <td><input type="number" style="width: 50px" name="att_out_ast_teacher" value="{{$instRow->att_out_ast_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="att_out_pprimary_teacher" value="{{$instRow->att_out_pprimary_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="att_out_sg" value="{{$instRow->att_out_sg}}"></td>
+                                    <td><input type="number" style="width: 50px" name="att_out_sg" value="{{$instRow->att_out_sg}}"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">কর্মরত</th>
                                     <td><input type="number" style="width: 50px" name="wk_hd_teacher" value="{{$instRow->wk_hd_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="wk_ast_teacher" value="{{$instRow->wk_ast_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="wk_pprimary_teacher" value="{{$instRow->wk_pprimary_teacher}}"></td>
+                                    <td><input type="number" style="width: 50px" name="working_sg" value="{{$instRow->working_sg}}"></td>
                                     <td><input type="number" style="width: 50px" name="working_sg" value="{{$instRow->working_sg}}"></td>
                                 </tr>
                                 <tr>
@@ -79,6 +84,7 @@
                                     <td><input type="number" style="width: 50px" name="prl_ast_teacher" value="{{$instRow->prl_ast_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="prl_pprimary_teacher" value="{{$instRow->prl_pprimary_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="prl_sg" value="{{$instRow->prl_sg}}"></td>
+                                    <td><input type="number" style="width: 50px" name="prl_sg" value="{{$instRow->prl_sg}}"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">মৃত/ইস্তফা**</th>
@@ -86,14 +92,16 @@
                                     <td><input type="number" style="width: 50px" name="dd_ast_teacher" value="{{$instRow->dd_ast_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="dd_pprimary_teacher" value="{{$instRow->dd_pprimary_teacher}}"></td>
                                     <td><input type="number" style="width: 50px" name="dead_sg" value="{{$instRow->dead_sg}}"></td>
+                                    <td><input type="number" style="width: 50px" name="dead_sg" value="{{$instRow->dead_sg}}"></td>
                                 </tr>
+
                                 </tbody>
                             </table>
 
                         </div>
                     </div>
 
-                    <div class="col-md-1 border justify-content-center align-self-center">
+                  {{--  <div class="col-md-1 border justify-content-center align-self-center">
                         <span style="font-weight: bold; font-size: 16px"> ভবন ও কক্ষ সংক্রান্ত তথ্য </span>
                     </div>
                     <div class="col-4 border justify-content-center align-self-center">
@@ -115,7 +123,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
             <div class="pull-right">

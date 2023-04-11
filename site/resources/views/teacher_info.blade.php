@@ -9,7 +9,7 @@
         window.teacherData = '<?php echo $instRow; ?>';
     </script>
     <style>
-        th, td {
+        th, td{
 
             width: auto !important;
         }
@@ -100,68 +100,130 @@
 
                             <td><select class="custom-select" style="width:95px" name="edu_degree"
                                         v-model="item.edu_degree">
-                                    <option value="1">১.এসএসসি এর নিম্মে</option>
-                                    <option value="2">২.এসএসসি</option>
-                                    <option value="3">৩.এইচএসসি</option>
-                                    <option value="4">৪.বিএ</option>
-                                    <option value="5">৫.এমএ</option>
-                                    <option value="6">৬.এমফিল/পিএইচডি</option>
+                                    <option value="1">১.এমফিল/পিএইচডি</option>
+                                    <option value="2">২.মাস্টার্স</option>
+                                    <option value="3">৩.এলএলএম</option>
+                                    <option value="4">৪.কামিল</option>
+                                    <option value="5">৫.স্নাতক (সম্মান)</option>
+                                    <option value="6">৬.স্নাতক(পাশ)</option>
+                                    <option value="7">৭.বিএসসি ইঞ্জিনিয়ারিং</option>
+                                    <option value="8">৮.পোস্ট গ্রাজুয়েট ডিপ্লোমা</option>
+                                    <option value="9">৯.এলএলবি</option>
+                                    <option value="10">১০.বিএসএস</option>
+                                    <option value="11">১১.বি এস সি ইন এগ্রিকালচার</option>
+                                    <option value="12">১২.ডিপ্লোমা ইন এগ্রিকালচার</option>
+                                    <option value="13">১৩.বিএড অনার্স</option>
+                                    <option value="14">১৪.ফাজিল</option>
+                                    <option value="15">১৫.এইচএসসি</option>
+                                    <option value="16">১৬.আলিম</option>
+                                    <option value="17">১৭.ডিপ্লোমা কোর্স</option>
+                                    <option value="18">১৮.নার্সিং</option>
+                                    <option value="19">১৯.ম্যাটস </option>
+                                    <option value="20">২০.এসএসসি </option>
+                                    <option value="21">২১.দাখিল </option>
+                                    <option value="22">২২.অষ্টম শ্রেণি </option>
+                                    <option value="23">২৩.পঞ্চম শ্রেণি </option>
+                                    <option value="24">২৪.পঞ্চম শ্রেণি পাশ করেননি</option>
+                                    <option value="25">২৫.অশিক্ষিত</option>
                                 </select></td>
                             <td class="mltipl-select">
                                 <div class="container select-box-align">
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(১)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(বাংলা)</div>
+                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(ইংরেজি)</div>
+                                        </div>
+                                            <div class="row">
+                                                <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(গণিত)</div>
+                                            </div>
+                                                <div class="row">
+                                                    <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(বিজ্ঞান)</div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_1" true-value="yes" false-value="no">বিষয়ভিত্তিক(সমাজ)</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_2" true-value="yes" false-value="no">বিদ্যালয় ব্যাবস্থাপনা
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_2" true-value="yes" false-value="no">আইসিটি(২)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">প্রাক-প্রাথমিক
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">প্রাক-প্রাথমিক(৩)
+                                        <div class="row">
+                                            <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">শারীরিক শিক্ষা
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_4" true-value="yes" false-value="no">মাকিং
-                                            স্কীম(৪)
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_5" true-value="yes" false-value="no">কাব
-                                            প্রশিক্ষণ(৫)
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_6" true-value="yes" false-value="no">অন্যান্য(৬)
-                                        </div>
-                                    </div>
-                                </div>
+                                            <div class="row">
+                                                <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">লিডারশিপ
+                                                </div></div>
+                                                <div class="row">
+                                                    <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">একীভূত শিক্ষা
+                                                    </div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">সাবক্লাস্টার
+                                                        </div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">কারিকুলাম ডিসেমিনেশন
+                                                            </div></div>
+                                                            <div class="row">
+                                                                <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">ডিপ্লোমা ইন কম্পিউটার
+                                                                </div></div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">কম্পিউটার কোর্স
+                                                                    </div></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">বেসিক ইন সার্ভিস
+                                                                        </div></div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">আইসিটি ইন এডুকেশন
+                                                                            </div></div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">এমডব্লিউ টি এল
+                                                                                </div></div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">সঙ্গীত
+                                                                                    </div></div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">চারুও কারুকলা
+                                                                                        </div></div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">প্রশিক্ষণবিহীন
+                                                                                            </div></div>
+                                                                                            <div class="row">
+                                                                                                    <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">বৈদেশিক দীর্ঘমেয়াদী
+                                                                                                    </div></div>
+                                                                                                <div class="row">
+                                                                                                    <div class="col-md-12"><input type="checkbox" v-model="item.short_tr_3" true-value="yes" false-value="no">বৈদেশিক স্বল্পমেয়াদী
+                                                                                                    </div></div>
+
+
+
+
+
                             </td>
                             <td class="mltipl-select">
                                 <div class="container select-box-align">
+                                    </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_1" true-value="yes" false-value="no">সিইনএড(১)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_2" true-value="yes" false-value="no">ডিপিএড
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_2" true-value="yes" false-value="no">ডিপিএড(২)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_3" true-value="yes" false-value="no">বিএড
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_3" true-value="yes" false-value="no">পিইনএড(৩)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_4" true-value="yes" false-value="no">সিইনএড
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_4" true-value="yes" false-value="no">বিএড(৪)
+                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_5" true-value="yes" false-value="no">এমএড
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_5" true-value="yes" false-value="no">এমএড(৫)
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><input type="checkbox" v-model="item.long_tr_6" true-value="yes" false-value="no">অন্যান্য(৬)
-                                        </div>
+
                                     </div>
                                 </div>
                             </td>
