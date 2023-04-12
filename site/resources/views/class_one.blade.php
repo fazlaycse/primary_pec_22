@@ -17,8 +17,78 @@
                 {{ csrf_field()}}
                 <div class="student_info1">
                     <div class="table_heading">
-                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ৯. শিক্ষার্থী সংক্রান্ত: <span style="font-size: 18px; font-weight: normal">প্রথম শ্রেণি </span></h5></span>
+                        <span> <h5 class="font-weight-bold" style="background-color:#4dc0b5; padding: 10px"> ৯.২ শিক্ষার্থী সংক্রান্ত: প্রথম শ্রেণি <span style="font-size: 18px; font-weight: normal">প্রথম শ্রেণি </span></h5></span>
                     </div>
+                    <div class="row border" style="margin:0px">
+                        <div class="col-md-6 border justify-content-center align-self-center">
+                            <div class="preclasswise_student">
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="4" style="text-align: center">শ্রেণিভিত্তিক শিক্ষার্থীর সংখ্যা
+                                            (২০২১ সালের ডিসেম্বর ও <br> ২০২২ সালের ২৮ ফ্রেব্রুয়ারি পর্যন্ত
+                                            ভর্তি/হাজিরা রেজিস্টার দেখে তথ্য দিন) </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">সাল</th>
+                                        <th scope="col">বালক</th>
+                                        <th scope="col">বালিকা</th>
+                                        <th scope="col">মোট</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <?php $instRow = $instRowObj->classwise_students;?>
+                                        <th scope="row">২০২১</th>
+                                        <td><input type="number" style="width: 50px" name="boy_y_first" value="{{$instRow->boy_y_first}}"></td>
+                                        <td><input type="number" style="width: 50px" name="girl_y_first" value="{{$instRow->girl_y_first}}"></td>
+                                        <td><input type="number" style="width: 50px" name="total_y_first" value="{{$instRow->total_y_first}}"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">২০২২</th>
+                                        <td><input type="number" style="width: 50px" name="boy_y_second" value="{{$instRow->boy_y_second}}"></td>
+                                        <td><input type="number" style="width: 50px" name="girl_y_second" value="{{$instRow->girl_y_second}}"></td>
+                                        <td><input type="number" style="width: 50px" name="total_y_second" value="{{$instRow->total_y_second}}"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 border ">
+                            <div class="prerepeater_student">
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="4" style="text-align: center">২০২২ সালে একই শ্রেণিতে
+                                            অধ্যয়ন/পুনরাবৃত্তি <br>
+                                            (২০২১ সালের শিক্ষার্থীদের মধ্যে কতজন একই শ্রেণিতে অধ্যয়ন/রিপিট করছে)
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">শিক্ষার্থীর ধরণ</th>
+                                        <th scope="col">বালক</th>
+                                        <th scope="col">বালিকা</th>
+                                        <th scope="col">মোট</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <?php $instRow = $instRowObj->repeater_students;?>
+                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুনরাবৃত্তি</th>
+                                        <td><input type="number" style="width: 50px" name="repeater_boy" value="{{$instRow->repeater_boy}}"></td>
+                                        <td><input type="number" style="width: 50px" name="repeater_girl" value="{{$instRow->repeater_girl}}"></td>
+                                        <td><input type="number" style="width: 50px" name="repeater_total" value="{{$instRow->repeater_total}}"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
                     <div class="row border" style="margin:0px">
                         <div class="col-md-6 border justify-content-center align-self-center">
                             <div class="preethnic_number">
@@ -154,73 +224,7 @@
                         </div>
                     </div>
                     <br>
-                    <div class="row border" style="margin:0px">
-                        <div class="col-md-6 border ">
-                            <div class="prerepeater_student">
-                                <table class="table table-bordered">
-                                    <thead class="thead-dark">
-                                    <tr>
-                                        <th colspan="4" style="text-align: center">২০২১ সালে একই শ্রেণিতে
-                                            অধ্যয়ন/পুনরাবৃত্তি <br>
-                                            (২০২০ সালের শিক্ষার্থীদের মধ্যে কতজন একই শ্রেণিতে অধ্যয়ন/পুনরাবৃত্তি করছে)
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">শিক্ষার্থীর ধরণ</th>
-                                        <th scope="col">বালক</th>
-                                        <th scope="col">বালিকা</th>
-                                        <th scope="col">মোট</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <?php $instRow = $instRowObj->repeater_students;?>
-                                        <th scope="row">একই শ্রেণিতে অধ্যয়ন/পুনরাবৃত্তি</th>
-                                        <td><input type="number" style="width: 50px" name="repeater_boy" value="{{$instRow->repeater_boy}}"></td>
-                                        <td><input type="number" style="width: 50px" name="repeater_girl" value="{{$instRow->repeater_girl}}"></td>
-                                        <td><input type="number" style="width: 50px" name="repeater_total" value="{{$instRow->repeater_total}}"></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
 
-                            </div>
-                        </div>
-                        <div class="col-md-6 border justify-content-center align-self-center">
-                            <div class="preclasswise_student">
-                                <table class="table table-bordered">
-                                    <thead class="thead-dark">
-                                    <tr>
-                                        <th colspan="4" style="text-align: center">শ্রেণিভিত্তিক শিক্ষার্থীর সংখ্যা
-                                            (২০২১ সালের ডিসেম্বর ও <br> ২০২১ সালের ২৮ ফ্রেব্রুয়ারি পর্যন্ত
-                                            ভর্তি/হাজিরা রেজিস্টার দেখে তথ্য দিন) </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">সাল</th>
-                                        <th scope="col">বালক</th>
-                                        <th scope="col">বালিকা</th>
-                                        <th scope="col">মোট</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <?php $instRow = $instRowObj->classwise_students;?>
-                                        <th scope="row">২০২০</th>
-                                        <td><input type="number" style="width: 50px" name="boy_y_first" value="{{$instRow->boy_y_first}}"></td>
-                                        <td><input type="number" style="width: 50px" name="girl_y_first" value="{{$instRow->girl_y_first}}"></td>
-                                        <td><input type="number" style="width: 50px" name="total_y_first" value="{{$instRow->total_y_first}}"></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">২০২১</th>
-                                        <td><input type="number" style="width: 50px" name="boy_y_second" value="{{$instRow->boy_y_second}}"></td>
-                                        <td><input type="number" style="width: 50px" name="girl_y_second" value="{{$instRow->girl_y_second}}"></td>
-                                        <td><input type="number" style="width: 50px" name="total_y_second" value="{{$instRow->total_y_second}}"></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="pull-right">

@@ -161,7 +161,7 @@ class ClassSixController extends Controller
 
 
             Session::flash('message', 'Data Saved Successfully!');
-            return redirect('/teacher_info');
+            return redirect('/second_page');
         }
     }
 }

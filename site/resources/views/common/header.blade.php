@@ -13,7 +13,7 @@
 </div>
 <div class="form_name">
     <div class="heading col-md-12">
-        <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২১ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
+        <h4 style="text-align:center"> বার্ষিক প্রাথমিক বিদ্যালয় শুমারি-২০২২ এর পিইসি তথ্য সংগ্রহ ফরম </h4>
     </div>
 </div>
 <div class="topnav">
@@ -32,6 +32,5 @@
     <a href="#" <?php if ($slug == 'class_five') echo 'class="active"' ?>>পঞ্চম শ্রেণি</a>
     <a href="#" <?php if ($slug == 'class_six') echo 'class="active"' ?>>ষষ্ঠ-অষ্টম শ্রেণি</a>
         <a href="#" <?php if ($slug == 'second_page ') echo 'class="active"' ?>>শিক্ষক সংখ্যা</a>
-
         <a href="#" <?php if ($slug == 'teacher_info') echo 'class="active"' ?>>শিক্ষক ও কর্মচারী</a>
 </div>
