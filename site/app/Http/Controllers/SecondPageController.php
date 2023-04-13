@@ -46,7 +46,7 @@ class SecondPageController extends Controller
             try {
                 $updateOrcreateRow = Institute_summaries::updateOrCreate(['institute_id' => $request->session()->get('institute_id')], $request->all());
                 Session::flash('message', 'Data Saved Successfully!');
-                return redirect('/third_page');
+                return redirect('/teacher_info');
             } catch (\Exception $e) {
                 echo $e->getMessage();exit;
 
