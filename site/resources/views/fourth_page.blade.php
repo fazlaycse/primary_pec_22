@@ -66,13 +66,15 @@
                             <td>
                                 <select class="custom-select" style="width:90px" name=""
                                         v-model="item.storied_number" >
+                                    <option value="0">---</option>
                                     <option value="1">১.নিজস্ব</option>
                                     <option value="2">২.ভাড়া</option>
                                 </select>
                             </td>
                             <!-- new code end-->
-                            <td><input type="number" style="width: 70px" name="storied_number"
-                                       v-model="item.storied_number"></td>
+                            <!--<td><input type="number" style="width: 70px" name="storied_number"
+                                       v-model="item.storied_number"></td>-->
+                            <td><input type="number" style="width: 70px" name="storied_number">
                             <td><input type="number" style="width: 70px" name="estb_year" v-model="item.estb_year"></td>
                             <td><input type="number" style="width: 70px" name="bld_foundation"
                                        v-model="item.bld_foundation"></td>
@@ -91,7 +93,7 @@
                                     <option value="6">৬.জরাজীর্ন</option>
                                     <option value="7">৭.ঝুকিপূর্ন</option>
                                     <option value="8">৮.পরিত্যাক্ত</option>
-                                    <option value="9">৯.পরিত্যাক্ত</option>
+                                    <option value="9">৯.অজানা</option>
                                 </select>
                             </td>
                             <!-- new code start-->
@@ -107,8 +109,10 @@
                             </td>
                             <!-- new code end-->
                             <td>
-                                <select class="custom-select" style="width:90px" name="bld_projt_name"
-                                        v-model="item.bld_projt_name">
+                                <!--<select class="custom-select" style="width:90px" name="bld_projt_name"
+                                        v-model="item.bld_projt_name">-->
+                                <select class="custom-select" style="width:90px" name="bld_projt_name">
+                                    <option value="0"> --- </option>
                                     <option value="1"> পিডিপি-১ </option>
                                     <option value="2"> পিডিপি-২</option>
                                     <option value="3"> পিডিপি-৩</option>

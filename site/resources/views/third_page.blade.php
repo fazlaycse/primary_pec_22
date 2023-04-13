@@ -94,11 +94,11 @@
 
                                         <option value="1" <?php if ($instRow->boundary_wall_yn == '1') {
                                             echo "selected";
-                                        } ?>>পাকা প্রাচীর
+                                        } ?>>হ্যাঁ
                                         </option>
                                         <option value="2" <?php if ($instRow->boundary_wall_yn == '2') {
                                             echo "selected";
-                                        } ?>>নাই
+                                        } ?>>না
                                         </option>
                                     </select>
                                 </td>

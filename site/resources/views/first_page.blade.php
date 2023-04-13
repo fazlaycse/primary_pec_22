@@ -90,12 +90,12 @@
                                 </option>
                             </select>
                         </div>
-                        <div class="row form-group form-inline"
+                        <!--<div class="row form-group form-inline"
                              style="/*border-top: 1px solid darkgrey;*/ padding-top: 5px;">
                             <label class="label-text" for="village" style="width:120px"> গ্রাম/ওয়ার্ড: </label> &nbsp;
                             <input type="text" style="width:250px" class="form-control" name="village_word" id="village"
                                    value="{{$instRow->village_word}}">
-                        </div>
+                        </div> -->
 
                         <!--NEW CODE-->
                         <div class="row form-group form-inline">&nbsp;
@@ -116,7 +116,7 @@
                     </div>
                     <div class="col-6 ">
                         <div class="row form-group form-inline">
-                            <label class="label-text" for="union" style="width:150px"> ইউনিয়ন/পৌরসভা: </label> &nbsp;
+                            <label class="label-text" for="union" style="width:150px"> ওয়ার্ড/ইউনিয়ন: </label> &nbsp;
                             <select v-model="selected_union" style="width:250px" class="form-control" name="union_id"
                                     id="union">
                                 <option v-for="(option, index) in options_union" v-bind:value="index">
